@@ -1,0 +1,25 @@
+<div class="bodyWidth marginZAuto overflowH" style="clear: left" ng-mouseleave="mouseDown()">
+    <div class="floatL navigationBig flex1" style="justify-content: flex-start;" ng-click="indexTypeIsShow=!indexTypeIsShow">
+        <img style="margin-left: 15px;margin-right: 10px" src="/yzxfMall_page/img/fenlei.png" alt="">
+        全部分类
+    </div>
+    <div class="floatL navigationSmall flex1" ng-class="curLocation=='offlineSellerList'?'navigationSmall-selected':''"  ng-click="goPage('/seller/offlineSellerList')">推荐商家</div>
+    <div class="floatL navigationSmall flex1" ng-class="pathParams.pType=='tejia'?'navigationSmall-selected':''"  ng-click="goPage('/seller/commodityList/pType/tejia')">天天特价</div>
+    <div class="floatL navigationSmall flex1" ng-class="pathParams.pType=='gongyi'?'navigationSmall-selected':''"  ng-click="goPage('/seller/commodityList/pType/gongyi')">公益专区</div>
+    <div class="floatL navigationSmall flex1" ng-class="pathParams.pType=='remen'?'navigationSmall-selected':''"  ng-click="goPage('/seller/commodityList/pType/remen')">热门商品</div>
+</div>
+<div class="bodyWidth marginZAuto RePosition">
+    <div class="indexTypeDiv" ng-show="indexTypeIsShow"  ng-mouseleave="mouseDown()" style="z-index: 2;position: absolute">
+        <div class="rowFenlei RePosition" ng-repeat="fl in fenlei" ng-mouseenter="mouseUp(fl._id)"
+             ng-class="typeHover==fl._id?'rowFenleiHover':'rowFenlei'"
+             ng-click="goOperatePage(fl)">
+            <div ng-bind="fl.name"></div>
+            <div class="iconfont icon-right-1-copy AbPosition" style="right: 15px;top: 0;"></div>
+        </div>
+    </div>
+    <div class="indexTypeDivNext AbPosition"  style="z-index: 2;position: absolute" ng-show="typeNext && fenleiNext!=null && fenleiNext.length!=0"
+         ng-mouseenter="mouseUp(typeHover,'no')"  ng-mouseleave="mouseDownChild()">
+        <div class="fenleiNext floatL" ng-repeat="fln in fenleiNext" ng-bind="fln.name"
+             ng-click="goOperatePage(fln)"></div>
+    </div>
+</div>

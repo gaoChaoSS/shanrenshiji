@@ -1,0 +1,6 @@
+<div class="item" ng-repeat="item in menuList.items" ng-click="menuItemClick($event,item);">{{item.name}}</div>
+<div class="count">
+    共
+    <span class="high">{{menuList.items.length}}</span>
+    条
+</div>

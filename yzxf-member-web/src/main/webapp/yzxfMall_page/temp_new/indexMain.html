@@ -1,0 +1,28 @@
+<div ng-repeat="mod in operate" id="{{'nav'+mod.name}}">
+    <img class="pointer" style="width: 100%;margin: 10px 0;" ng-src="{{iconImg(getAdvertList($index))}}" ng-show="getAdvertList($index)!=null" ng-click="advertisingGoPage(mallRectangle[$index])"/>
+    <div class="rowTitle1">
+        <div class="floatL flex1">
+            <img style="height: 20px;" src="{{iconImg(mod.cMallImg)}}" alt="">
+            <span class="font20px marginLeft15" ng-bind="mod.name" style="color: {{mod.bgColor}}"></span>
+        </div>
+        <div class="floatR colorGray888 font14px pointer" ng-click="goPage('/seller/commodityList/pOperate/'+isNullText(mod.pvalue)+'_'+mod.value+'_')">更多>></div>
+    </div>
+    <div class="tableProduct1">
+        <div class="tableLeft pointer" style="background: {{mod.bgColor}}" ng-click="openPage('/seller/commodityInfo/goodsId/'+mod.productList._id)">
+            <div class="leftImg1" style="background-color: {{mod.bgColor}}">
+                <img ng-src="{{iconImg(mod.productList.icon)}}"/>
+            </div>
+            <div class="tableLeft_title">
+                <div class=" font30px textEllipsis"  style="color: {{mod.bgColor}}" ng-bind="mod.productList.name"></div>
+                <div class=" textEllipsis" style="color: {{mod.bgColor}}" ng-bind="mod.productList.tag"></div>
+            </div>
+        </div>
+        <div class="tableRight">
+            <div class="pointer" ng-repeat="product in mod.moduleList" ng-click="goPage('/seller/commodityInfo/goodsId/'+product._id)">
+                <div class="textEllipsis tableRight_title marginTop15" ng-bind="product.name"></div>
+                <div class="textEllipsis tableRight_title lineH20px font16px" ng-bind="product.tag" style="color: {{mod.bgColor}}"></div>
+                <img ng-src="{{iconImg(product.icon)}}"/>
+            </div>
+        </div>
+    </div>
+</div>

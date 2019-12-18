@@ -1,0 +1,32 @@
+<div grid
+     ng-if="!isTree"
+     id="{{id}}_entityGrid"
+     model="{{model}}"
+     entity="{{entity}}"
+     quick-add="true"
+     is-edit="false"
+     select-data-type="{{inputType=='linkEntity'?'one':'more'}}"
+     select-value="{{selectValue}}"
+     select-value-url="{{selectValueUrl}}"
+     include-keys="createTime,creator,name,title,desc"
+     style="width: 100%; height: 100%;"></div>
+
+<div class="layout" style="width: 100%; height: 100%;" ng-if="isTree">
+    <div style="overflow: auto;position: absolute;top:0;left:0;width:200px;bottom:0;border-right:1px solid #ccc;">
+        <div tree-view id="{{id}}_tree" tree-data="demo.tree" model="{{model}}" entity="{{entity}}"
+             value-field='_id' select-type="none"></div>
+    </div>
+    <div style="overflow: auto;position: absolute;top:0;left:200px;right:0;bottom:0;">
+        <div grid
+             id="{{id}}_entityGrid"
+             model="{{model}}"
+             entity="{{entity}}"
+             quick-add="true"
+             is-edit="false"
+             exclude-keys="pid,_id"
+             select-data-type="{{inputType=='linkEntity'?'one':'more'}}"
+             select-value="{{selectValue}}"
+             select-value-url="{{selectValueUrl}}"
+             style="width: 100%; height: 100%;"></div>
+    </div>
+</div>

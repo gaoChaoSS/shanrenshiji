@@ -1,0 +1,160 @@
+.account_HeadDiv{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #DFDFDF;
+}
+.account_HeadDivImg{
+    width: 15%;
+    text-align: right;
+    line-height: 115px;
+}
+.account_typeTitle{
+    margin-top: 20px;
+    line-height: 40px;
+    margin-left: 20px;
+    padding-left: 25px;
+    height: 40px;
+    border-left: 2px solid #DFDFDF;
+    color: rgba(148, 146, 146, 0.57);
+    font-size: 20px;
+}
+.account_rightTypeTitle{
+    margin-right: 120px;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 25px;
+    border: 1px solid #DFDFDF;
+    text-align: center;
+}
+.account_rightTxt{
+    line-height: 80px;
+    margin-right: 25px;
+    font-size: 15px;
+    color: rgba(148, 146, 146, 0.57);
+}
+.accountBk{
+    background: url('/yzxfMall_page/img/loginBk.png') no-repeat;
+    width: 500px;
+    height: 550px;
+    background-size: 100% 95%;
+}
+.accountContentDiv{
+    background-color: #F8FCFF;
+}
+.accountFromDiv{
+    width: 400px;
+    height: 350px;
+    background-color: #FFF;
+    margin-top: 80px;
+    position: absolute;
+    border: 1px solid #DFDFDF;
+    right: 15%;
+}
+.accountFromDiv>div:first-child{
+    height: 20%;
+    width: 100%;
+    font-size: 19px;
+}
+.accountLoginName{
+    border: 1px solid #DFDFDF;
+    width: 80%;
+    margin: 0 auto;
+    height: 35px;
+}
+.accountLoginName>div{
+    height: 20px;
+    margin-top: 7px;
+    width: 15%;
+    color: #DFDFDF;
+    text-align: center;
+    border-right: 1px solid #DFDFDF;
+}
+.accountLoginName>input{
+    border: none;
+    width: 75%;
+    height: 35px;
+    margin-left: 30px;
+}
+.accountLoginName>input:-moz-placeholder{
+    color: #DFDFDF;
+}
+.accountLoginName>input:-ms-input-placeholder{
+    color: #DFDFDF;
+}
+.accountLoginName>input::-webkit-input-placeholder {
+    color: #DFDFDF;
+}
+.loginUserType{
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    margin-top: 5px;
+}
+.loginUserType>div{
+    float: left;
+    margin-left: 55px;
+    font-size: 14px;
+    color: #969696;
+}
+.accountLoginBottom{
+    width: 80%;
+    margin: 10px auto;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+.accountLoginBottom>div:nth-child(2){
+    color: #ff0e0c;
+}
+.forgetPwdDiv{
+    width: 400px;
+    height: 350px;
+    background-color: #FFF;
+    margin-left: 260px;
+    margin-top: 80px;
+    border: 1px solid #DFDFDF;
+}
+.forgetPwdDiv>div:first-child{
+    height: 50%;
+}
+.forgetPwdDiv>div:nth-child(2){
+    height: 25%;
+    text-align: center;
+    font-size: 19px;
+}
+.forgetPwdDiv>div:nth-child(3){
+    height: 25%;
+    text-align: center;
+    font-size: 16px;
+    color: #ff0e0c;
+}
+.account_bottom_infoDiv{
+    height: 100px;
+    background-color: #fff;
+    border-top: 1px solid #DFDFDF;
+}
+.account_bottom_info_text{
+    margin-right: 20px;
+    color: #969696;
+    font-size: 14px;
+}
+.getCodeBtn{
+    width: 28%;
+    height: 37px;
+    position: absolute;
+    right: 39px;
+    top: 0;
+    background: #138bbe;
+    color: #FFF;
+    font-size: 14px
+}
+.getCodeBtn[disabled='disabled'] {
+    color: #888;
+    background: -ms-linear-gradient(top, #F2F2F2, #DFDFDF); /* IE 10 */
+    background: -moz-linear-gradient(top, #F2F2F2, #DFDFDF); /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2F2F2), to(#DFDFDF)); /*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2F2F2), to(#DFDFDF)); /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #F2F2F2, #DFDFDF); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #F2F2F2, #DFDFDF);
+}

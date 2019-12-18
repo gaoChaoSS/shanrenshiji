@@ -1,0 +1,20 @@
+<div class="popWin" ng-class="$$isMax?'max':''">
+    <div class="layout">
+        <div ng-if="!hideTopCon" class="top" style="height:30px;" ng-dblclick="maxWin()">
+            <div class="button iconfont icon-addcollapse fr high" ng-click="close()" size="28"></div>
+            <div class="button max fr" ng-click="maxWin()" ng-class="!$$isMax?'icon-enlarge2':'icon-shrink2'" size="28">
+                <div class="maxIcon"></div>
+            </div>
+            <div class="title fl" ng-bind="title"></div>
+        </div>
+        <div ng-if="!hideDownCon" class="bottom" style="height:35px;line-height: 35px;bottom:0;overflow: hidden">
+            <button class="button" ng-class="item.isHigh?'highT':''" ng-click="clickAction(item)"
+                    ng-repeat="item in actions" ng-bind="item.title">
+            </button>
+        </div>
+        <div class="center windowContent" ng-style="{top:hideTopCon?0:30,bottom:hideDownCon?0:35}">
+            <div ng-transclude></div>
+            <div style="width:100%;height:100%;" ng-include="contentTempUrl"></div>
+        </div>
+    </div>
+</div>

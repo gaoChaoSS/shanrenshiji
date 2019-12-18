@@ -1,0 +1,116 @@
+.file-upload {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+
+.file-upload>.fileSelectCon {
+    border: 1px dashed #ccc;
+    background-color: #fff;
+}
+
+.file-upload>.fileSelectCon>.fileLabel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 30px;
+    color: #aaa;
+}
+
+.file-upload>.fileSelectCon>.fileInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0.01;
+    cursor: pointer;
+}
+
+.file-upload>.item {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: #ddd;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.file-upload>.item>.infoCon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.file-upload>.item>.infoCon.loading {
+    opacity: 0.4;
+}
+
+.file-upload>.item>.infoCon.title {
+    padding: 15px 4px;
+    text-align: center;
+}
+
+.file-upload>.item>img {
+    
+}
+
+.file-upload>.item[data-load="false"]:HOVER>.actionBar {
+    display: block;
+}
+
+.file-upload>.item>.icon-enlarge {
+    border-radius: 0 0 4px 0;
+}
+
+.file-upload>.item>.icon-pencil {
+    border-radius: 0 0 4px 4px;
+}
+
+.file-upload>.item>.icon-cross2 {
+    border-radius: 0 0 0 4px;
+}
+
+.file-upload>.item>.actionBar {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.file-upload>.item>.actionBar>div.high {
+    padding: 5px;
+    border-right: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.file-upload>.item>.actionBar>div.high:HOVER {
+    box-shadow: 0 0 2px #aaa;
+}
+
+.file-upload>.item.selected>.icon-checkbox-checked {
+    display: block;
+}
+
+.file-upload>.item>.icon-checkbox-checked {
+    position: absolute;
+    font-size: 16px;
+    bottom: 0;
+    right: 0;
+    padding: 4px;
+    border-radius: 4px 0 0 0;
+    background-color: #fff;
+    display: none;
+    bottom: 0;
+}

@@ -1,0 +1,40 @@
+<div class="gridContent">
+    <form ng-if="isEdit=='true'" name="gridQuickAddForm" ng-submit="saveData();" novalidate class="contentRow addRow" style="display: block;" ng-style="{width:contentWidth}">
+        <div class="cell fl lb" ng-class="field.type" ng-style="{width:field.__width}" ng-repeat="field in headerRow">
+            <input ng-blur="checkInput(field,formData,1)" ng-model="formData[field.name]" ng-if="(field.inputType=='input'||field.inputType=='textarea')&&!field.setByServer"
+                ng-if="headerRow.length>($index+1)&&!field.setByServer" ng-class="getQuickAddClass(field,formData)" /> <i ng-if="field.type=='boolean'&&!field.setByServer"
+                ng-click="formData[field.name]=!formData[field.name]" ng-class="formData[field.name]?'icon-checkmark':'icon-cross'"></i> <select ng-if="field.inputType=='select'&&!field.setByServer"
+                ng-model="formData[field.name]" ng-options="a for a in field.$$inputTypeList">
+                <option value="">---请选择---</option>
+            </select>
+        </div>
+        <div class="cell fl lb end">
+            <button type="submit" style="width: 1px; height: 1px; overflow: hidden;">保存</button>
+            <i class="button icon-cross high" style="font-size: 10px;" ng-click="clearQuickAddData();" title="清除输入的数据"></i>
+        </div>
+        <div class="clearDiv"></div>
+    </form>
+    <div class="contentRow" ng-style="{width:contentWidth}" ng-repeat="item in $$items" ng-class="item.__selected?'selected':''">
+        <!-- 循环格子 -->
+        <div class="cell fl" ng-repeat="field in headerRow" ng-style="{width:field.__width}" ng-dblclick="editCell($parent.$index,$index,$event);" ng-click="clickCell($parent.$index,$index)"
+            title="{{item[field.name]}}" ng-class="showCellClass($parent.$index,$index)">
+            <!-- 显示状态 -->
+            <div class="lb" ng-class="field.type" ng-if="(field.type=='string'||field.type=='long'||field.type=='int'||field.type=='double')&&!data.__cellMdata[$parent.$index+ '_' + $index]">{{item[field.name]}}</div>
+            <!-- 编辑状态 -->
+            <!-- 输入框 -->
+            <input ng-class="field.type+' '+(data.__cellErrMsg[$parent.$parent.$index + '_' + $index].length>0?'err':'')"
+                ng-if="(field.inputType=='input'||field.inputType=='textarea')&&data.__cellMdata[$parent.$index+ '_' + $index]&&!field.setByServer"
+                ng-model="data.__cellData[$parent.$parent.$index+ '_' + $index]" ng-keyup="saveCellData($parent.$parent.$index,$index,$event);"
+                ng-blur="saveCellData($parent.$parent.$index,$index,$event);" auto-focus="true" />
+            <!-- 简单选择框 -->
+            <select ng-change="saveCellData($parent.$parent.$index,$index,$event);" ng-if="field.inputType=='select'&&data.__cellMdata[$parent.$index+ '_' + $index]&&!field.setByServer"
+                ng-model="data.__cellData[$parent.$parent.$index+ '_' + $index]" ng-options="a for a in field.$$inputTypeList">
+                <option value="">---请选择---</option>
+            </select>
+        </div>
+        <div class="cell fl lb end">
+            <i ng-if="isEdit=='true'" class="button icon-cross high" style="font-size: 10px;" ng-click="deleteItem($index)" title="删除单条"></i>
+        </div>
+        <div class="clearDiv"></div>
+    </div>
+</div>

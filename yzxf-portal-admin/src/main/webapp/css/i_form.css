@@ -1,0 +1,141 @@
+.myform {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    box-shadow: 0 0 6px #ddd;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.popWin .myform {
+    border: 0;
+}
+
+.myform > .buttonCon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #ddd;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px;
+}
+
+.myform > .buttonCon.top {
+    top: 0;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+
+}
+
+.myform > .buttonCon.down {
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.myform > .rowList {
+    position: absolute;
+    top: 35px;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.myform > .rowList > .row {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.myform > .rowList > .row:last-child {
+    margin-bottom: 5px;
+}
+
+.myform > .rowList > .row > .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    background-color: #eee;
+    border-right: 1px solid #ccc;
+    padding: 0 8px;
+    line-height: 35px;
+    color: #666;
+    text-align: right;
+}
+
+.myform > .rowList > .row > .inputCon {
+    margin-left: 110px;
+    margin-right: 26px;
+    padding: 2px 4px;
+    min-height: 35px;
+    line-height: 31px;
+    position: relative;
+}
+
+.myform > .rowList > .row > .inputCon > div.value {
+    padding: 6px;
+    line-height: 1.5em;
+}
+
+.myform > .rowList > .row > .inputCon > div.i {
+    content: '';
+}
+
+.myform > .rowList > .row > .inputCon > input, .myform > .rowList > .row > .inputCon > textarea {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid #fff;
+}
+
+.myform > .rowList > .row > .inputCon > textarea {
+    min-height: 6em;
+    line-height: 1.5em;
+}
+
+.myform > .rowList > .row > .isNotNull {
+    position: absolute;
+    /* line-height: 35px; */
+    text-align: center;
+    width: 15px;
+    right: 16px;
+    top: 0;
+    /* bottom: 0; */
+    padding-top: 10px;
+}
+
+.myform .button.boolean {
+    font-size: 18px;
+    padding: 0 2px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.myform .num {
+    text-align: left;
+}
+
+.myform .linkItem {
+    min-height: 30px;
+}
+
+.myform .delLinkItem {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}

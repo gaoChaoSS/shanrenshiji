@@ -1,0 +1,170 @@
+
+.newsCon {
+    margin-top: 20px;
+    position: relative;
+}
+
+.newsNav {
+    float: left;
+    padding: 0;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center !important;
+}
+
+.newsNav li {
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: #F5F4F5;
+    cursor: pointer;
+    border-top: 1px solid #F5F4F5;
+}
+
+.newsNav li:hover {
+    background-color: #65C5F1 !important;
+    color: #fff;
+}
+
+.newsNavSelect {
+    border-left: 2px solid #0076B1;
+    width: 148px !important;
+    background-color: #65C5F1 !important;
+    color: #fff;
+}
+
+.mod-scroll{
+    position:relative;
+    max-width: 1080px;
+    margin:40px auto;
+    cursor:pointer;
+}
+
+.scroll-title{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #ccc;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 120px 0 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rollPicture {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.rollPicture img {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    left: 100%;
+    transition: width 2s;
+    -moz-transition: width 2s;
+    -webkit-transition: width 2s;
+    -o-transition: width 2s;
+}
+
+.rollPicture img:first-child {
+    left: 0;
+}
+
+.rollNumber {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.rollNumber>div {
+    float:left;
+    background-color: #888;
+    margin:20px 10px;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0);
+    transition:0.5s all;
+}
+/*.rollNumber>div:hover{*/
+    /*!*margin:20px 10px;*!*/
+    /*width:20px;*/
+    /*height:20px;*/
+/*}*/
+
+.currentRollNum {
+    background-color: #fff!important;
+}
+
+.newsArticle {
+    display: inline-block;
+    padding: 50px 0;
+    border-bottom: 1px dotted #dbdbdb;
+    width: 100%;
+    position:relative;
+    min-height:290px;
+}
+
+.newsArticle img {
+    width: 100px;
+}
+
+.newsArticle .newsDesc {
+    font-size: 14px;
+    line-height: 25px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #888;
+    margin-top:40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-indent: 28px;
+}
+
+.newsArticle span {
+    color: #429DCB;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.articleTitle {
+    font-size: 20px;
+    overflow:hidden;
+}
+.articleTitle>a{
+    float:left;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.articleSource {
+    float:right;
+    font-size: 14px;
+    color: #999;
+    line-height: 20px;
+}
+
+.line {
+    width: 100%;
+    border-top: 1px solid #dbdbdb;
+}
+
+.articlePicture {
+    position:absolute;
+    top:50px;
+    left:0;
+    width:300px;
+    height:190px;
+}

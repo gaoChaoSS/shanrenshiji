@@ -1,0 +1,150 @@
+<!--第1部分-->
+<div class="mall_public_Head">
+    <div class="mall_Head bodyWidth">
+        <!--地区选择-->
+        <div class="mall_select_address">
+            <span ng-bind="showArea.name"></span>
+            <span>|</span>
+            <span ng-click="isShowArea=!isShowArea" class="btn-top1">切换城市</span>
+            <span class="iconfont icon-down" ng-click="isShowArea=!isShowArea"></span>
+            <div class="mask-tran1" ng-show="isShowArea" ng-click="isShowArea=false"></div>
+            <div class="winCon2" ng-show="isShowArea">
+                <div class="list1">
+                    <div class="textEllipsis" ng-repeat="area in areaList" ng-bind="area.name"
+                         ng-click="getAreaCur(area)"></div>
+                </div>
+                <div class="list1-btn" ng-click="getAreaCur(selectedArea[selectedArea.length-1],true)"
+                     ng-show="selectedArea.length>1">返回
+                </div>
+            </div>
+        </div>
+        <!--功能选择-->
+        <div class="mall_select_function">
+            <div ng-mouseenter="isMyHover=true" ng-mouseleave="isMyHover=false"
+                 class="mall_select_functionDiv floatR ">
+                我的账户<span class="iconfont icon-down" style=""></span>
+                <div ng-show="isMyHover" class="myHoverDiv floatL">
+                    <div class="myHoverDivFirst" ng-click="goPage('/my/my')">关于我的<span class="iconfont icon-down"
+                                                                                       style=""></span></div>
+                    <div ng-click="goPage('/my/order');setNav()">我的订单</div>
+                    <div ng-click="goPage('/my/comment');setNav()">我的评价</div>
+                    <div ng-click="goPage('/my/collection');setNav()">我的收藏</div>
+                    <div ng-click="goPage('/my/pensionMoney');setNav()">我的养老金</div>
+                    <div ng-click="goPage('/my/wallet');setNav()">我的钱包</div>
+                    <div ng-click="goPage('/my/coupon');setNav()">我的卡券</div>
+                    <div ng-click="goPage('/my/setting');setNav()">账户设置</div>
+                </div>
+            </div>
+            <div class="mall_select_functionDiv floatR colorBlue1" ng-show="myInfo!=null" ng-click="loginOut()">
+                注销
+            </div>
+            <div class="mall_select_functionDiv floatR" ng-click="goPage('/account/reg');setNav()"
+                 ng-show="myInfo==null">注册
+            </div>
+            <div class="mall_select_functionDiv floatR" ng-show="myInfo!=null"
+                 ng-bind="loginAfterName==null?myInfo.phone:loginAfterName"></div>
+            <div class="mall_select_functionDiv floatR" ng-click="goPage('/account/login');setNav()"
+                 ng-show="myInfo==null">登录
+            </div>
+
+
+            <!--<div ng-mouseenter="isMobileHover=true" ng-mouseleave="isMobileHover=false"-->
+            <!--class="mall_select_functionDiv floatL ">-->
+            <!--手机APP<span class="iconfont icon-down" style=""></span>-->
+            <!--<div ng-show="isMobileHover" class="mobileHoverDiv floatL">-->
+            <!--<div style="text-align: center">扫一扫</div>-->
+            <!--<img src="/yzxfMall_page/img/2Dcode.png" alt="">-->
+            <!--<div style="text-align: center;color: #E3226B;margin-top: -15px">会员版</div>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+<!--第2部分-->
+<div class="">
+    <div class=" mall_Head bodyWidth">
+        <!--logo1-->
+        <div class="floatL mall_public_Logo" style="padding-top: 15px;" ng-click="goPage('/home/index');setNav()">
+            <img src="/yzxfMall_page/img/logo1.png" style="width: 170px;">
+        </div>
+        <!--logo2-->
+        <div class="floatL mall_public_Logo logoKouhao">
+            <!--<img class="" src="/yzxfMall_page/img/logo2.png" alt="">-->
+        </div>
+        <!--搜索框-->
+        <div style="width: 494px;overflow: hidden;float: right;">
+            <form ng-submit="goPageSearch()">
+                <div style="width: 100px;overflow: hidden;height: 30px;line-height: 30px">
+                    <div class="floatL " ng-click="setSearchType('seller')"
+                         ng-class="searchType=='seller'?'head_select_type_hover':'head_select_type_none'">商家
+                    </div>
+                    <div class="floatL " ng-click="setSearchType('product')"
+                         ng-class="searchType=='product'?'head_select_type_hover':'head_select_type_none'">商品
+                    </div>
+                </div>
+                <div class="floatR head_select">
+                    <input type="text" ng-model="searchSOP" placeholder="请输入商家或商品" ng-change="setSearchSOP(searchSOP)">
+                    <div class="floatR" ng-click="goPageSearch()">
+                        <div class="iconfont icon-fangdajing" style="font-size: 25px;color: #fff;"></div>
+                    </div>
+                </div>
+                <button type="submit" ng-show="false"></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--购物车-->
+<div class="mod-transparent">
+    <!--<div class="mod-opacityLeft"></div>-->
+    <div class="mod-cart">
+        <div class="cart-nav">
+            <div id="myCart" ng-click="showCart()"><span class="iconfont2 icon2-gouwuche"></span> 购物车</div>
+        </div>
+        <div class="cart-list">
+            <div>
+                <div class="block-btn1 iconfont" ng-class="isSelectedAll?'block-btn1-selected icon-gou':''"
+                     ng-click="selectAll()"></div>
+                <div ng-click="selectAll()" class="marginLeft5">全选</div>
+            </div>
+            <div class="cart-item" ng-repeat="cart in cartList track by $index">
+                <div class="cart-item-top">
+                    <div>
+                        <div class="block-btn1 iconfont" ng-click="selectSeller($index,!cart.isSellerSelected)"
+                             ng-class="cart.isSellerSelected?'block-btn1-selected icon-gou':''"></div>
+                        <div class="textEllipsis marginLeft5 font14px colorGray666" style="width: 220px;"
+                             ng-bind="cart.sellerName"></div>
+                    </div>
+                    <!--<div ng-bind="cart.sellerPrice"></div>-->
+                </div>
+                <div class="cart-item-main" ng-repeat="product in cart.product track by $index">
+                    <div class="block-btn1 marginTop15 iconfont" ng-click="selectCart($parent.$index,$index)"
+                         ng-class="product.isSelected?'block-btn1-selected icon-gou':''"></div>
+                    <img class="img-product1" ng-src="{{iconImgUrl(product.productIcon)}}"
+                         ng-click="goPage('/seller/commodityInfo/goodsId/'+product.productId)"/>
+                    <div class="text1 textHightTwo">
+                        <span ng-repeat="spec in product.spec" ng-bind="spec.name + ':' + spec.items+' '"></span>
+                    </div>
+                    <div class="cart-item-bottom">
+                        <div class="mod-count">
+                            <div ng-click="setPayNum($parent.$index,$index,-1)">-</div>
+                            <div ng-bind="product.count">1</div>
+                            <div ng-click="setPayNum($parent.$index,$index,1)">+</div>
+                        </div>
+                        <div class="iconfont icon-cuowu cart-item-del" ng-click="delCart(product._id)"></div>
+                        <div ng-bind="'¥ '+isNullZero(product.price)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-bottom">
+            <div class="cart-bottom-text">
+                <div class="floatL colorGray666" ng-bind="'已选 '+isNullZero(totalCount)+' 件'"></div>
+                <div class="floatR colorRed3" ng-bind="'¥ '+isNullZero(totalPrice)"></div>
+            </div>
+            <button ng-click="payOrder()">去结算</button>
+        </div>
+    </div>
+</div>
+

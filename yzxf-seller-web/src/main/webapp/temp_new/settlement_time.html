@@ -1,0 +1,17 @@
+<span>
+    <select ng-model="selectTime[0]" ng-options="year1.date for year1 in startYear"
+            ng-change="getTimeYear(0)">
+    </select>
+    <select ng-model="selectTime[1]" ng-options="month1.date for month1 in startMonth"
+            ng-show="selectedShow[0]">
+    </select>
+</span>
+<span style="">---------</span>
+<span>
+    <select ng-model="selectTime[2]" ng-options="year2.date for year2 in endYear"
+            ng-change="getTimeYear(2)">
+    </select>
+    <select ng-model="selectTime[3]" ng-options="month2.date for month2 in endMonth"
+            ng-show="selectedShow[2]">
+    </select>
+</span>

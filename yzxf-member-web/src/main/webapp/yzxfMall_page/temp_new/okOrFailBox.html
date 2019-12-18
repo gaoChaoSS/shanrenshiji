@@ -1,0 +1,15 @@
+<div class="hideMenu overflowHidden" ng-show="isBox" style="display: flex;align-items: center;justify-content: center;">
+    <!--提醒白块-->
+    <div style="width: 450px;height: 200px;margin: 0 auto;background-color: #fff;">
+        <!--信息-->
+        <div style="position:relative;height: 70%;display: flex;align-items: center;justify-content: center;text-align: center;">
+            <img style="position:absolute;left:40px" ng-show="okOrFail"  src="/yzxfMall_page/img/yirenzheng.png" alt="">
+            <img style="position:absolute;left:40px" ng-show="!okOrFail" src="/yzxfMall_page/img/weirenzheng.png" alt="">
+            <div class="floatL" style="width: 60%;font-size: 20px;" ng-show="okOrFail">操作成功 !</div>
+            <div class="floatL" style="width: 60%;font-size: 20px;" ng-show="!okOrFail">操作失败 !</div>
+        </div>
+        <!--确定-->
+        <div style="font-size: 20px;height: 29%;text-align: center;border-top: 1px solid #DFDFDF;
+        display: flex;align-items: center;justify-content: center;" ng-click="isBox=false">确定</div>
+    </div>
+</div>

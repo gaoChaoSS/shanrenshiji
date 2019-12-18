@@ -1,0 +1,94 @@
+.html-editor {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+.html-editor > .layout {
+    background-color: #eee;
+}
+
+.html-editor > .layout > .top {
+    padding: 2px 4px;
+    background-color: #eee;
+}
+
+.html-editor > .layout > .top > * {
+    float: left;
+    display: block;
+}
+
+.html-editor > .layout > .top > hr {
+    padding: 0;
+    margin: 2px;
+    height: 24px;
+    border-left: 1px solid #ccc;
+}
+
+.html-editor > .layout > .top > .button {
+    background-color: #eee;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 5px 2px;
+    color: #000;
+}
+
+.html-editor > .layout > .top > .button[disabled="disabled"], .html-editor > .layout > .top > .button[disabled="disabled"]:HOVER {
+    background-color: #eee;
+    border: 1px solid #eee;
+    color: #ccc;
+}
+
+.html-editor > .layout > .top > .button:HOVER {
+    background-color: #bbb;
+    border: 1px solid #444;
+}
+
+.html-editor > .layout > .bottom {
+    padding: 4px;
+    background-color: #eee;
+}
+
+.html-editor > .layout > .bottom > span {
+    color: #888;
+    font-size: 12px;
+}
+
+.htmlEditContent {
+    padding: 18px;
+    background-color: #fff;
+    max-width: 790px;
+    margin: auto;
+
+}
+
+.htmlEditContent a {
+    color: blue;
+}
+
+.htmlEditContent > *, .htmlEditContent p {
+    padding: 8px 0;
+    text-indent: 2em;
+    line-height: 180%;
+    font-size: 14px;
+}
+
+.htmlEditContent * {
+    line-height: 180%;
+}
+
+.html-editor p.imgCon {
+    text-align: center;
+}
+
+.html-editor img {
+    display: block;
+    height: auto;
+    margin: 5px auto;
+    max-width: 90%;
+    padding: 16px;
+}
+
+.html-editor img.outSiteImg {
+    border: 1px solid salmon;
+}

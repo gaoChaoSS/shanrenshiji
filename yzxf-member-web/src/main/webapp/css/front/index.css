@@ -1,0 +1,608 @@
+/*页面整体样式*/
+.index_page_globalDiv {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*顶部搜索框div*/
+.indexTitle {
+    height: 40px !important;
+}
+
+.imgStyle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 25px;
+}
+
+#indexRow {
+    background-color: #fff;
+    width: 55%;
+    margin-left: 25%;
+    height: 25px;
+    border-radius: 25px;
+    position: relative;
+    top: 8px;
+}
+
+#indexRow > .rowTitle > span {
+    position: absolute;
+    left: 0;
+    font-size: 22px;
+}
+
+#indexRow > input {
+    position: absolute;
+    left: 35px;
+    height: 25px;
+    border: none;
+    width: calc(100% - 50px);
+}
+
+.title > .titlePlus {
+    float: right;
+    margin-top: -18px;
+    font-size: 20px;
+    margin-right: 3%;
+    color: #fff;
+}
+
+/*首页快捷按钮*/
+/*三角形*/
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-bottom: 12px solid #257194;
+    border-right: 10px solid transparent;
+    opacity: 0.9;
+    position: absolute;
+    right: 11%;
+    top: -12px;
+}
+
+.indexBtnDiv {
+    width: 125px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #2a2a2a;
+    opacity: 0.9;
+    z-index: 3;
+}
+
+/*每一行按钮*/
+.indexBtnDiv > .indexBtnRow {
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    padding-left: 15px;
+}
+
+.indexBtnDiv > .indexBtnRow:last-child {
+    border: none;
+}
+
+.indexBtnDiv > .indexBtnRow > span {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 5px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #2a2a2a;
+}
+
+/*页面头部图片div*/
+.index_page_headImgDiv {
+    padding: 0;
+    width: 100%;
+    height: 180px;
+}
+
+.index_page_Img {
+    width: 100%;
+    height: 100%;
+}
+
+/*页面中部按钮*/
+.index_iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+}
+
+.index_page_middle_btn {
+    margin: 0px auto;
+    padding: 0;
+    width: 100%;
+    height: 65px;
+    background: #138bbe;
+}
+
+.tuijianIngCon {
+    position: absolute;
+    bottom: 10px;
+    max-height: 140px;
+    max-width: 84px;
+    left: 10px;
+}
+
+.index_page_middle_btn > .btn_split {
+    float: left;
+    background-color: #D7D7D7;
+    margin-top: 5px;
+    height: 40px;
+    width: 1px;
+}
+
+/*我的养老金*/
+.index_page_btn_left {
+    width: 49.9%;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+
+.index_page_btn_left div {
+    color: #FFD64E;
+    font-size: 26px;
+}
+
+.index_page_btn_left p {
+    color: #FFD64E;
+}
+
+/*积分*/
+.index_page_btn_middle {
+    width: 49.9%;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+
+.index_page_btn_middle div {
+    color: #F99E31;
+    font-size: 26px;
+}
+
+.index_page_btn_middle p {
+    color: #F99E31;
+}
+
+/*扫一扫*/
+.index_page_btn_right {
+    width: 33.3%;
+    float: right;
+    text-align: center;
+}
+
+.index_page_btn_right div {
+    color: #26A6E1;
+    font-size: 26px;
+}
+
+.index_page_btn_right p {
+    color: #26A6E1;
+}
+
+/*中部按钮第二部分*/
+.index_page_middleTwo_btn {
+    width: 100%;
+    overflow: auto;
+    background-color: #FFFFFF;
+}
+
+.tejiaStyle {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+}
+
+/*按钮整体大小*/
+.index_page_middleTwo_btn_function {
+    width: 25%;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+/*按钮标题*/
+.index_page_middleTwo_btnText {
+    text-align: center;
+}
+
+.index_page_middleTwo_btn_function > .iconfont {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 25px;
+    padding: 6px;
+}
+
+/*背景色*/
+/*浅粉红*/
+.lightPinkBg {
+    background-color: #FB928C;
+}
+
+/*浅蓝色*/
+.lightBlueBg {
+    background-color: #6CBFFE;
+}
+
+/*浅紫色*/
+.lightPurpleBg {
+    background-color: #687EEE;
+}
+
+/*浅绿色*/
+.lightGreenBg {
+    background-color: #67D04C;
+}
+
+/*粉红色*/
+.pinkBg {
+    background-color: #FF786D;
+}
+
+/*橘黄色*/
+.orangeBg {
+    background-color: #FC9B4B;
+}
+
+/*黄色*/
+.orangeYellowBg {
+    background-color: #F4A33B;
+}
+
+/*深橙色*/
+.deepOrangeBg {
+    background-color: #E86A22;
+}
+
+/*天天特价*/
+.index_page_dayDay {
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/*天天特价标题*/
+.index_page_dayDay_title {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.index_page_dayDay_title_divOne {
+    height: 30px;
+    text-align: center;
+}
+
+.index_page_dayDay_title_divTwo {
+    width: 25%;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+
+.index_page_dayDay_titleRed {
+    color: #EA3B2C;
+    font-size: 14px;
+    text-align: center;
+}
+
+.index_page_dayDay_titleGray {
+    color: #fff;
+    position: absolute;
+    right: 6px;
+    top: 3px;
+    width: 55%;
+}
+
+.tMoreStyle {
+    height: 20px;
+    width: 20px;
+}
+
+.index_page_dayDay_titleIcon {
+    color: #999;;
+    font-size: 13px;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+/*天天特价商品*/
+.index_page_dayDayGoods {
+    width: 100%;
+    height: 90px;
+    margin-top: -6px;
+}
+
+.index_page_dayDayGoodsInfo {
+    background-color: #FFFFFF;
+    width: 25%;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.index_page_dayDayGoodsInfoImg {
+    width: 100%;
+}
+
+.index_page_dayDayGoodsInfoBtn {
+    width: 80%;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 5px;
+    border: 1px solid red;
+    color: #EA3B2C;
+    background-color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+/*附近的商家div*/
+.index_page_hotTao {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.index_page_hotTao_notMarginBottom {
+    margin-bottom: 0;
+}
+
+/*附近的商家标题*/
+.index_page_hotTaoTitle {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #F2F2F2;
+    position: relative;
+}
+
+.index_page_hotTaoTitle > .index_page_hotTaoBtnOne {
+    color: #EA3B2C;
+    font-size: 22px;
+    position: absolute;
+    left: 15px;
+    line-height: 26px;
+}
+
+.index_page_hotTaoBtnTwo {
+    position: absolute;
+    line-height: 30px;
+    right: 6px;
+    color: #999;
+}
+
+.index_page_hotTaoText {
+    color: #999;
+    position: absolute;
+    left: 10px;
+    line-height: 35px;
+}
+
+.index_page_hotTaoText img {
+    height: 25px;
+    float: left;
+    margin: 5px 0px;
+}
+
+.index_page_hotTaoInfo {
+    width: 100%;
+    /* height: 235px; */
+    overflow: hidden;
+}
+
+.index_page_hotTaoInfo > div {
+    /*line-height: 100px;*/
+    border: none;
+    width: 50%;
+    /* height: 86px; */
+    float: left;
+    /* margin: 0 1%; */
+    overflow: hidden;
+    /* box-shadow: 0 0 2px #aaa; */
+    /*padding: 4px;*/
+}
+
+/*左边大图*/
+.index_page_hotTaoInfo .firstBigPhoto {
+    width: 100%;
+    height: 165px;
+    float: left;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.index_page_recommendBusinessInfo .firstBigPhoto {
+    margin-right: 1%;
+    width: 39%;
+    height: 172px;
+    line-height: 170px;
+    float: left;
+    overflow: hidden;
+}
+
+.index_page_hotTaoInfo > div > img {
+    width: 100%;
+    /*box-shadow: 0 0 3px #aaa;*/
+}
+
+.storeTitle {
+    font-size: 14px;
+    text-align: center;
+    /* margin-top: 15px; */
+    font-weight: bold;
+}
+
+/*推荐商家div*/
+.index_page_recommendBusiness {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+}
+
+.index_page_recommendBusinessTitle {
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.index_page_recommendBusinessBtnOne {
+    margin-left: 15px;
+    color: red;
+    font-size: 18px;
+}
+
+.index_page_recommendBusinessBtnTwo {
+    position: relative;
+    left: 60%;
+    color: #8B8B8B;
+    font-size: 18px;
+}
+
+.index_page_recommendBusinessText {
+    margin-left: 5px;
+    color: #8B8B8B;
+}
+
+.index_page_recommendBusinessInfo {
+    width: 100%;
+    height: 172px;
+}
+
+.index_page_recommendBusinessInfo > div {
+    line-height: 100px;
+    border: none;
+    width: 27%;
+    height: 86px;
+    float: left;
+    margin: 0 1%;
+}
+
+.index_page_recommendBusinessInfo > div > img {
+    width: 100%;
+}
+
+/*底部按钮样式*/
+.index_page_bottomBtn {
+    font-size: 18px;
+}
+
+.productName {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.indexBox1{
+    width: 95%;
+    height: calc(100% - 60px);
+    margin: 0 auto;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.indexBox2{
+    background-size: 100% auto;
+    background-position: center center;
+}
+.indexBox3{
+    float: left;
+    width: 30%;
+    height: 146px;
+    background-size: auto 100%;
+    background-position: center center;
+}
+/*首页热门商品字体*/
+.indexProduct{
+    height: 60px;
+    text-align: center;
+    color: #999;
+    margin-top:10px;
+}
+.indexProduct>span{
+    color: #E60000;
+    font-size: 19px;
+    font-weight: 500;
+}
+/*首页特价专区标签*/
+.teJiaP{
+    font-size: 13px;
+    padding: 5px 0;
+    height: 30px;
+}
+.redYun{
+    background-image: url(/yzxfMember_page/img/xiangyun.png);
+    background-size: 100% 20px;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.redYun>span{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.tuiJianBlue{
+    font-size: 13px;
+    color: #5FB0E9;
+    text-align: center;
+}
+.imgCarousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    animation: carousel 5s infinite;
+    -webkit-animation: carousel 5s infinite;
+}
+.imgSelectBtn{
+    width: 10px;
+    height:10px;
+    background: rgba(0, 0, 0, 0.5);
+    border:1px solid rgba(255, 255, 255, 0);
+    border-radius:50%;
+    margin:0 10px;
+    transition:0.5s all;
+    cursor:pointer;
+}
+.imgSelectBtn:hover{
+    border:1px solid rgba(255, 255, 255, 0.7);
+    box-shadow:0 0 5px 1px rgba(0, 0, 0, 0.8);
+}
+.imgSelected{
+    background: rgba(255, 255, 255, 0.5);
+}

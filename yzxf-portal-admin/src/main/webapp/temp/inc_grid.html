@@ -1,0 +1,100 @@
+<div class="gridContent" onscroll="angular.element(this).scope().scrollContent(this)">
+    <!--添加一条数据-->
+    <form name="gridQuickAddForm" ng-submit="saveData();" novalidate class="contentRow addRow"
+          style="display: block;position: relative;" ng-style="{width:contentWidth}">
+        <div class="cell fl textNowrap" ng-class="item.type" ng-style="{width:item.__width}"
+             ng-repeat="item in headerRow|filter:{$$selected: true}">
+            <!--input-->
+            <input ng-blur="checkInput(item,formData,1)" ng-model="formData[item.name]"
+                   placeholder="{{'输入'+item.title}}" type="{{item.inputType}}"
+                   ng-keyup="filterList(item)"
+                   ng-if="(item.inputType=='input'||item.inputType=='password'||item.inputType=='textarea')&&!item.setByServer&&!item.readOnly"
+                   ng-class="getQuickAddClass(item,formData)"/>
+            <!--boolean-->
+            <i class="iconfont" ng-if="item.type=='boolean'&&!item.setByServer&&!item.readOnly"
+               ng-click="formData[item.name]=!formData[item.name]"
+               ng-class="formData[item.name]?'icon-jianchacheck35 green':'icon-addcollapse notHigh'"></i>
+            <!--select-->
+            <select ng-if="item.inputType=='select'&&!item.setByServer&&!item.readOnly"
+                    ng-model="formData[item.name]" ng-options="a._id as a.name for a in item.$$inputTypeList">
+                <option value="">---请选择---</option>
+            </select>
+            <!-- date -->
+            <input ng-if="item.$$dateInput&&!item.setByServer&&!item.readOnly"
+                   placeholder="{{'选择'+item.$$name}}"
+                   ng-model="formData['$$'+item.name]"
+                   ng-mousedown="$event.stopPropagation()"
+                   ng-blur="$$fouce=null"
+                   ng-focus="$$fouce=item.name"
+                   ng-required="item.minLength>0"
+                   ng-click="showDate(null,$index)"
+                   ng-readonly="true"/>
+
+            <!-- readOnly -->
+            <div ng-if="item.setByServer||item.readOnly" ng-bind="formData[item.name]"
+                 style="line-height: 34px;height: 100%;width:100%;" class="textNowrap"></div>
+        </div>
+        <button type="submit"
+                style="width: 1px; height: 1px; overflow: hidden;visibility: hidden;position: absolute;"></button>
+        <!--<div class="cell fl textNowrap end">-->
+        <!--<button type="submit" style="width: 1px; height: 1px; overflow: hidden;">保存</button>-->
+        <!--<i class="button icon-cross high" style="font-size: 10px;" ng-click="clearQuickAddData();"-->
+        <!--title="清除输入的数据"></i>-->
+        <!--</div>-->
+    </form>
+    <!-- 编辑模式 -->
+    <div ng-if="isEdit" class="contentRow" ng-style="{width:contentWidth}" ng-repeat="item in data.items"
+         ng-class="(item.__selected?'selected':'')">
+        <!-- 循环格子 -->
+        <div class="cell fl" ng-repeat="field in headerRow"
+             ng-show="field.$$selected"
+             ng-style="{width:field.__width}"
+             ng-dblclick="editCell($parent.$index,$index,$event);"
+             ng-click="clickCell($parent.$index,$index)"
+             title="{{item['$$'+field.name]}}" ng-class="showCellClass($parent.$index,$index)">
+            <!-- 显示状态 -->
+            <div class="textNowrap" ng-class="field.type+' '+field.inputType+' '+field.name"
+                 ng-if="(field.type=='string'||field.type=='long'||field.type=='int'||field.type=='double')&&!__cellMdata[$parent.$index+ '_' + $index]"
+                 ng-bind="item['$$'+field.name]"></div>
+            <!-- 编辑状态 -->
+            <!-- 输入框 -->
+            <input type="{{inputTypeStr(field)}}"
+                   ng-class="field.type+' '+(data.__cellErrMsg[$parent.$parent.$index + '_' + $index].length>0?'err':'')"
+                   ng-if="(field.inputType=='input'||field.inputType=='dateTime'||field.inputType=='textarea')&&__cellMdata[$parent.$index+ '_' + $index]&&!field.setByServer"
+                   ng-model="__cellData[$parent.$parent.$index+ '_' + $index]"
+                   ng-keyup="saveCellData($parent.$parent.$index,$index,$event);"
+                   ng-blur="saveCellData($parent.$parent.$index,$index,$event);" auto-focus="true"/>
+            <!-- 简单选择框 -->
+            <select ng-change="saveCellData($parent.$parent.$index,$index,$event);"
+                    ng-if="field.inputType=='select'&&__cellMdata[$parent.$index+ '_' + $index]&&!field.setByServer"
+                    ng-keyup="cancelSelect($parent.$parent.$index,$index,$event)"
+                    ng-model="__cellData[$parent.$parent.$index+ '_' + $index]"
+                    ng-options="a._id as a.name for a in field.$$inputTypeList">
+                <option value="">---请选择---</option>
+            </select>
+        </div>
+        <!--<div class="cell fl textNowrap end" style="padding: 2px;">-->
+        <!--<i ng-if="isEdit" class="button icon-cross high" style="font-size: 10px;"-->
+        <!--ng-click="deleteItem($index)" title="删除单条"></i>-->
+        <!--</div>-->
+    </div>
+    <!-- 查看模式 -->
+    <div ng-if="!isEdit" class="contentRow" ng-style="{width:contentWidth}" ng-repeat="item in data.items"
+         ng-class="item.$$syncClass+' '+(item.__selected?'selected':'')">
+        <!-- 循环格子 -->
+        <div class="cell fl" ng-repeat="field in headerRow"
+             ng-show="field.$$selected"
+             ng-style="{width:field.__width}"
+             ng-dblclick="editCell($parent.$index,$index,$event);"
+             ng-click="clickCell($parent.$index,$index)"
+             title="{{item[field.name]}}" ng-class="showCellClass($parent.$index,$index)">
+            <!-- 显示状态 -->
+            <div class="textNowrap" ng-class="field.type+' '+field.inputType+' '+field.name"
+                 ng-if="(field.type=='string'||field.type=='long'||field.type=='int'||field.type=='double')&&!__cellMdata[$parent.$index+ '_' + $index]"
+                 ng-bind="item['$$'+field.name]">
+            </div>
+        </div>
+        <!--<div class="cell fl textNowrap end"></div>-->
+        <!--<div class="clearDiv"></div>-->
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="html-editor">
+    <div layout>
+        <div data-type="top" size="30" style="overflow: hidden">
+            <button ng-disabled="!$$selecteText||!isEdit" class="button icon-bold" title="对选中的字体加粗"
+                    ng-mousedown="exeComm('bold');"></button>
+            <button ng-disabled="!$$selecteText||!isEdit" class="button icon-underline" title="对选中的字体下划线"
+                    ng-mousedown="exeComm('underline');"></button>
+            <button ng-disabled="!$$selecteText||!isEdit" class="button icon-italic" title="对选中的字体改为斜体"
+                    ng-mousedown="exeComm('italic');"></button>
+            <button ng-disabled="!isEdit" class="button icon-text-color"></button>
+            <hr/>
+
+            <button ng-disabled="!isEdit" class="button icon-paragraph-left" title="居左"
+                    ng-mousedown="exeComm('justifyLeft');"></button>
+            <button ng-disabled="!isEdit" class="button icon-paragraph-center" title="居中"
+                    ng-mousedown="exeComm('justifyCenter');"></button>
+            <button ng-disabled="!isEdit" class="button icon-paragraph-right" title="居右"
+                    ng-mousedown="exeComm('justifyRight');"></button>
+            <hr/>
+            <button ng-disabled="!isEdit" class="button icon-images" title="插入图片"
+                    ng-mousedown="exeComm('img');">
+            </button>
+            <button ng-disabled="!$$selecteText||!isEdit" class="button icon-link" title="插入链接"
+                    ng-mousedown="exeComm('createLink');"></button>
+            <!--<button ng-disabled="!isEdit" class="button icon-table2" title="插入表格"-->
+            <!--ng-mousedown="exeComm('table');"></button>-->
+            <!--<button ng-disabled="!isEdit" class="button icon-list-numbered" title="插入列表"-->
+            <!--ng-mousedown="exeComm('list');"></button>-->
+            <hr/>
+            <button ng-disabled="!isEdit" class="button icon-undo" title="回退操作"
+                    ng-mousedown="exeComm('undo');"></button>
+            <button ng-disabled="!isEdit" class="button icon-redo" title="反回退操作"
+                    ng-mousedown="exeComm('redo');"></button>
+            <button ng-disabled="!isEdit||!$$isEmpty" class="button" ng-mousedown="formatCode();">优化格式</button>
+            <hr/>
+            <button ng-disabled="!isEdit" class="button" ng-mousedown="uploadOtherPic();">下载站外图片
+            </button>
+            <hr/>
+            <button class="button" ng-mousedown="editBtn();" ng-class="isEdit?'highT':''">编辑
+            </button>
+            <hr/>
+            <button ng-disabled="!isEdit" class="button icon-floppy-disk" ng-mousedown="saveData();" title="保存数据">
+            </button>
+            <!--<button class="button icon-enlarge" title="最大化窗口"></button>-->
+        </div>
+        <div data-type="bottom" size="30" class="notHigh" ng-bind="statusMsg"></div>
+        <div data-type="center" class="htmlEditContent" ng-focus="focusEditor($event);" ng-blur="blurEditor($event);"
+             contenteditable="{{isEdit}}" ng-class="isEdit?'':'show'"
+             ng-keyup="contentChange($event);"
+             ng-mouseup="contentChange($event);">
+        </div>
+    </div>
+</div>

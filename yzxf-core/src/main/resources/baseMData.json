@@ -1,0 +1,43 @@
+[
+  {
+    "name": "LinkTable",
+    "fieldList": [
+      {
+        "name": "_id",
+        "type": "string"
+      },
+      {
+        "name": "createTime",
+        "type": "long"
+      },
+      {
+        "name": "creator",
+        "type": "string"
+      },
+      {
+        "name": "entityName",
+        "type": "string"
+      },
+      {
+        "name": "entityField",
+        "type": "string"
+      },
+      {
+        "name": "entityId",
+        "type": "string"
+      },
+      {
+        "name": "linkModule",
+        "type": "string"
+      },
+      {
+        "name": "linkEntity",
+        "type": "string"
+      },
+      {
+        "name": "linkEntityId",
+        "type": "string"
+      }
+    ]
+  }
+]

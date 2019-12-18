@@ -1,0 +1,27 @@
+<div class="countCon fl notHigh" style="padding: 4px">
+    共 <span class="high" ng-bind="data.totalPage"></span> 页
+</div>
+<div class="button fl" ng-show="data.pageNo>1" ng-click="filter.pageNo=1;query();">&lt;&lt;</div>
+<div class="button fl" ng-show="data.pageNo>1" ng-click="filter.pageNo=filter.pageNo-1;query();">
+    &lt;</div>
+<div class="button fl" ng-show="data.totalPage>1" ng-repeat="p in data.pageNums"
+     ng-click="filter.pageNo=p;query();" ng-class="data.pageNo==p?'current':''" ng-bind="p">
+</div>
+<div class="button fl" ng-show="data.pageNo<data.totalPage"
+     ng-click="filter.pageNo=filter.pageNo+1;query();">&gt;</div>
+<div class="button fl" ng-show="data.pageNo<data.totalPage"
+     ng-click="filter.pageNo=data.totalPage;query();">&gt;&gt;</div>
+<div class="countCon fl notHigh" style="padding: 4px">
+    共 <span class="high" ng-bind="data.totalNum"></span> 条
+</div>
+<div class="fl notHigh" style="padding: 1px;">
+    每页
+    <form ng-submit="filter.pageNo=1;query();">
+        <input ng-model="filter.pageSize" maxlength="3" minlength="1"
+               style="width: 40px; text-align: center;" class="high"/>
+    </form>
+    条
+</div>
+<div class="fl notHigh" style="padding: 4px;" ng-show="data.totalPage>5">
+    共 <span class="high">{{data.totalPage}}</span> 页
+</div>

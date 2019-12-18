@@ -1,0 +1,46 @@
+<c3p0-config>
+    <named-config name="mysql_kyb_db">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/kyb_db?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true
+        </property>
+        <property name="user">root</property>
+        <property name="password">zq2014</property>
+
+        <property name="initialPoolSize">5</property>
+        <property name="maxIdleTime">30</property>
+        <property name="maxPoolSize">100</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxStatements">400</property>
+    </named-config>
+    <named-config name="mysql_yzxf_db">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/yzxf_new?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true
+        </property>
+        <property name="user">root</property>
+        <property name="password">zq2014</property>
+        <property name="idleConnectionTestPeriod">30</property>
+
+        <property name="initialPoolSize">5</property>
+        <property name="maxIdleTime">30</property>
+        <property name="maxPoolSize">100</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxStatements">400</property>
+    </named-config>
+    <named-config name="mysql_yzxf_pro_db">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/yzxf_new?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true
+        </property>
+        <property name="user">root</property>
+        <property name="password">zq2014</property>
+        <property name="idleConnectionTestPeriod">30</property>
+
+        <property name="initialPoolSize">5</property>
+        <property name="maxIdleTime">30</property>
+        <property name="maxPoolSize">100</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxStatements">400</property>
+
+        <property name="automaticTestTable">test_c3p0</property>
+    </named-config>
+
+</c3p0-config>

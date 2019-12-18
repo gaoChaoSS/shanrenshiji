@@ -1,0 +1,151 @@
+body {
+    overflow: auto;
+    padding: 0;
+}
+
+.pcCon {
+    display: block;
+}
+
+.mobileCon {
+    display: none;
+}
+
+.allCon {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 3px #ddd;
+    height: 800px;
+    margin: 20px auto;
+    width: 500px;
+}
+
+.tab-bottom {
+    background-color: #293038;
+    bottom: 0;
+    height: auto;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 150px;
+    z-index: 4;
+}
+
+.tab-bottom > .item.pcCon {
+    width: 100%;
+    background-color: #293038;
+    border: 0;
+    padding: 12px 0;
+}
+
+.tab-bottom > .item.pcCon > i {
+    float: left;
+    width: 50px;
+    color: #aaa;
+}
+
+.tab-bottom > .item.pcCon > div {
+    float: left;
+    width: 100px;
+    text-align: left;
+    color: #fff;
+}
+
+.tab-bottom > .item.pcCon:hover {
+    background-color: #666;
+}
+
+.tab-bottom > .item.pcCon.selected:hover, .tab-bottom > .item.pcCon.selected {
+    background-color: #43bcf4;
+}
+
+.tab-bottom > .item.pcCon.selected > i {
+    color: #fff;
+}
+
+.tab > .item > i > div.notifi {
+    left: 28px;
+    top: -10px;
+}
+
+.topPageCon {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0px;
+    max-width: 1200px;
+    margin: 10px auto 55px auto;
+}
+
+.topPageCon.index {
+    left: 150px;
+    position: fixed;
+    overflow: auto;
+}
+
+.bottomBtnCon {
+    position: relative;
+    width: 400px;
+    padding: 0 10px;
+}
+
+.productTypeList {
+    top: 50px;
+    bottom: 0px;
+    left: 150px;
+    width: 120px;
+}
+
+.productTypeList > .item, .productTypeList > .item.selected {
+    border-left: 0;
+    padding-left: 15px;
+}
+
+.productList {
+    margin-left: 120px;
+}
+
+.productList > .item {
+    float: left;
+    width: 33.33%;
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+}
+
+.nextStepCon {
+    text-align: left;
+}
+
+.topBar, .top_title {
+}
+
+.allActionCon {
+    position: relative;
+    top: 0;
+    border-left: 0;
+    margin: 0 10px;
+}
+
+.top_title {
+    position: static;
+    background-color: #111;
+    color: #fff;
+    height: 50px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.topBtn {
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.filter {
+    margin: 10px;
+}
+
+.addressList {
+    margin: 10px 10px 0 10px;
+}
+
+

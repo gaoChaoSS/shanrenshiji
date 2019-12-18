@@ -1,0 +1,10 @@
+<img class="imgCarousel" ng-repeat="img in imgList" ng-src="{{iconImg(img.icon)}}" ng-show="imgCur==$index" ng-click="advertisingGoPage(img)">
+<div class="flex1 imgSelect">
+    <div class="imgSelectBtn" ng-repeat="img in imgList" ng-click="selectImg($index)" ng-class="imgCur==$index?'imgSelected':''"></div>
+</div>
+<div class="bannerSmall1">
+    <div class="floatR">
+        <img ng-src="{{iconImg(mallAdvertising[0].icon)}}" ng-click="advertisingGoPage(mallAdvertising[0])"/>
+        <img ng-src="{{iconImg(mallAdvertising[1].icon)}}" ng-click="advertisingGoPage(mallAdvertising[1])"/>
+    </div>
+</div>

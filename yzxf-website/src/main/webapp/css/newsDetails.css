@@ -1,0 +1,48 @@
+
+.mod-center{
+    width:1080px;
+    margin:0 auto;
+}
+.detailCon {
+    margin-top: 20px;
+    min-height: 500px;
+}
+
+.detailTitle {
+    font-size: 25px;
+    line-height: 70px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.detailSource {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.detailText,.detailText span,.detailText div{
+    font-size: 16px !important;
+    color: #888;
+    line-height: 30px;
+    text-indent: 35px;
+}
+
+.detailText p {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.detailText p, .detailText * {
+    color: #555;
+}
+
+.detailText img {
+    width:100%;
+    /*max-width: 650px;*/
+    margin: 20px auto;
+    display: block;
+}

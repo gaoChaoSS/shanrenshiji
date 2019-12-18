@@ -1,0 +1,339 @@
+/*商家顶部条件筛选区域*/
+.store_panel .storeSelect {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+}
+
+/*条件按钮*/
+.store_panel .storeSelectBtn {
+    flex: 1;
+    position: relative;
+    /*float: left;*/
+    /*width: 30%;*/
+    height: 20px;
+    line-height: 20px;
+    /*margin-left: 2.5%;*/
+    margin-top: 10px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    color: #888;
+}
+
+.store_panel .storeSelectBtn:first-child {
+    border-left: none;
+}
+
+/*条件按钮右侧图标*/
+.store_panel .storeSelectBtnIcon {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    color: #888;
+}
+
+/*选择条件*/
+.store_panel .storeSelected {
+    color: #000;
+    font-weight: 900;
+    text-shadow: 0 0 1px #888;
+}
+
+/*!*隐藏的条件菜单*!*/
+/*.store_panel .storeSelectMenu{*/
+/*position: absolute;*/
+/*top: 25px;*/
+/*left: -1px;*/
+/*width: 100%;*/
+/*list-style: none;*/
+/*overflow: auto;*/
+/*height: 400px;*/
+/*overflow-x: hidden;*/
+/*}*/
+/*.store_panel .storeSelectMenu li{*/
+/*position: relative;*/
+/*width: calc(100% + 2px);*/
+/*height: 38px;*/
+/*line-height: 40px;*/
+/*text-align: center;*/
+/*background: #FAFAFA;*/
+/*border: 1px solid #E4E3E4;*/
+/*border-bottom: none;*/
+/*color: #aaa;*/
+/*font-size: 13px;*/
+/*}*/
+/*.store_panel .storeSelectMenu li:last-child{*/
+/*border-bottom-left-radius: 5px;*/
+/*border-bottom-right-radius: 5px;*/
+/*border-bottom:1px solid #E4E3E4;*/
+/*}*/
+/*!*选中某一个筛选条件*!*/
+/*.store_panel .storeSelectMenu li .selectedIcon{*/
+/*position:absolute;*/
+/*right:2%;*/
+/*top:10px;*/
+/*color: #00ae00;*/
+/*font-size:18px;*/
+/*}*/
+/*!*点击条件查询出现遮罩层*!*/
+/*.store_panel .selectOpen{*/
+/*position:fixed;*/
+/*top:0;*/
+/*left:0;*/
+/*width:100%;*/
+/*height:100%;*/
+/*background: rgba(0, 0, 0, 0.5);*/
+/*}*/
+
+/*商家列表*/
+.store_panel .sectionSeller {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+
+.store_panel .iconSeller1 {
+    width: 20%;
+    position: absolute;
+    top: 20px;
+}
+
+.store_panel .iconSeller2 {
+    padding: 2px;
+    border-radius: 3px;
+    background: #138bbe;
+    color: #fff;
+}
+
+.store_panel .iconSeller3 {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #30C900;
+    font-size: 30px;
+}
+
+.store_panel .introTitle {
+    font-size: 16px;
+    width: 90%;
+}
+
+.store_panel .sellerIntro {
+    margin-left: 25%;
+}
+
+.store_panel .sellerAddress {
+    width: 100%;
+    /* border-top: 1px dashed #ccc; */
+    /*height: 26px;*/
+    line-height: 15px;
+    color: #888;
+}
+
+.store_panel .sellerDesc {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #888;
+}
+
+/*商家店页面头部*/
+.storeInfoHead {
+    width: 100%;
+    position: relative;
+    /*background-image: url('/yzxfMember_page/img/storeInfoHead.jpg');*/
+    /*background-size:100%,100%;*/
+    padding-bottom: 10px;
+}
+
+/*商家店页面头部返回按钮*/
+.storeInfoHead > .storeBack {
+    color: #fff;
+    padding-top: 5px;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+/*商家店页面商家LOGO*/
+.storeInfoHeadLogo {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.storeInfoHeadLogo > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+    border: solid #FFFFFF 1px;
+}
+
+/*商家店页面商家简介*/
+.storeInfoHeadTitle {
+    float: left;
+    width: 55%;
+    /* text-align: center; */
+    margin-left: 1%;
+    margin-top: 7px;
+}
+
+.storeInfoHeadTitle > .storeName {
+    border-bottom: 1px solid #FFF;
+    font-size: 17px;
+    color: #fff;
+}
+
+.storeInfoHeadTitle > div {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 6px;
+}
+
+.storeInfoHeadTitle > div > .storeHeadIcon {
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+}
+
+/*商家店页面右边图标*/
+.storeInfoHeadRightIcon {
+    float: right;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+
+.storeInfoHeadRightIcon .storeIconRight {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+/*地图*/
+.storeAddressImg {
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+.storeAddressImg > img {
+    width: 100%;
+
+}
+
+/*下拉菜单*/
+.store_panel .optionMenu {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
+}
+
+.store_panel .optionBtn {
+    color: #888;
+    float: left;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.store_panel .menuBtn1 {
+    flex: 1px;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.store_panel .optionBtn2 {
+    color: #268BBF;
+    border: 1px solid #268BBF;
+}
+
+/*阴影遮罩*/
+.store_panel .hidePanel1 {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: fixed;
+}
+
+.store_panel .hidePanel2 {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 50px;
+    z-index: 4;
+    position: fixed;
+    bottom: 0;
+}
+
+.areaStore {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    background-color: #fff;
+}
+
+.areaStore > .areaTitle {
+    font-weight: bold;
+    font-size: 17px;
+    padding: 5px 0px 15px 15px;
+}
+
+.areaStore > .flItem {
+    float: left;
+    width: 33%;
+    padding: 0 5px 0px 5px;
+    position: relative;
+}
+
+.areaStore > .flItem div img {
+    width: 100%;
+    height: 69px;
+}
+
+.areaStore > .flItem > .descCon p {
+    color: #999;
+    padding: 2px 0;
+}
+
+.areaStore > .flItem .juliCon {
+    /*position: absolute;*/
+    /*bottom:0;*/
+    /*right: 23px;*/
+    width: 69px;
+    height: 20px;
+    text-align: center;
+    background: #555;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 12px;
+    margin:auto;
+}
+
+.areaStore > .flItem > .descCon p:first-child {
+    color: #666;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-align:center;
+}
+
+.areaStore > .flItem > .descCon p:last-child {
+    color: #138bbe;
+}
+
+.areaStore > .flItem > .descCon p span {
+    color: #138bbe;
+}

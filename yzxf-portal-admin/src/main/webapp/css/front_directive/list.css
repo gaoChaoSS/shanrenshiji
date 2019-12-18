@@ -1,0 +1,54 @@
+.list_base_con {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.list_base_con > .list_base_item:first-child {
+    border-top: 0;
+}
+
+.list_base_con > .list_base_item {
+    border-top: 1px solid #ddd;
+    padding: 10px 16px;
+    position: relative;
+    background-color: #fff;
+}
+
+.list_base_con > .list_base_item > .icon {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.list_base_con > .list_base_item > .notifi {
+    border-radius: 50%;
+    padding: 0 6px;
+    position: absolute;
+    right: 6px;
+    top: 9px;
+}
+
+.list_base_con > .list_base_item > .title {
+    margin: 0 20px;
+}
+
+.list_base_con > .list_base_item > .hasAction:BEFORE {
+    font-family: "iconfont";
+    content: "\e619";
+    position: absolute;
+    right: 4px;
+    color: #888;
+    top: 10px;
+}
+
+.list_base_con > .list_base_item > .desc {
+    position: absolute;
+    right: 24px;
+    top: 12px;
+}
+
+.listView > .loadmore {
+    padding: 16px;
+}
+

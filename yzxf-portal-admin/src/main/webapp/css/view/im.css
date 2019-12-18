@@ -1,0 +1,406 @@
+.center {
+    background-color: #fff;
+}
+
+#indexTop {
+    background-color: #eee;
+    padding: 6px 12px;
+}
+
+.center>.index_top {
+    font-size: 18px;
+}
+
+.onlineStatusIcon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 8px 0 0 2px;
+}
+
+.onlineStatusIcon.off {
+    background-color: red;
+}
+
+.onlineStatusIcon.on {
+    background-color: green;
+}
+
+.onlineStatus {
+    padding: 5px 5px 0 2px;
+    font-size: 11px;
+}
+
+.addContactCon {
+    padding: 8px 20px;
+}
+
+.addContactCon:HOVER>div {
+    color: green;
+}
+
+.contactList>.item {
+    height: 60px;
+}
+
+.contactList .avatar {
+    margin: 3px 12px;
+}
+
+.contactList .avatarCon {
+    border: 0;
+}
+
+.contactList>.item.contact {
+    height: 36px;
+}
+
+.contactList>.item>.nameCon {
+    border-bottom: 1px solid #eee;
+    padding: 4px 2px;
+}
+
+.contactList>.item.selected {
+    background-color: #eee;
+}
+
+.contactList>.item.selected>.center {
+    background-color: transparent;
+}
+
+.contactList>.item>.nameCon>.title {
+    font-weight: 600;
+    padding: 5px 3px 3px;
+    margin-right: 90px;
+}
+
+.contactList>.item.contact>.nameCon>.title {
+    padding: 5px 0;
+}
+
+.contactList>.item>.nameCon>.time {
+    font-size: 11px;
+    padding: 0px 2px;
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 80px;
+    z-index: 2;
+}
+
+.contactList>.item>.nameCon>.reqStatus {
+    font-size: 11px;
+    padding: 0px 2px;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 140px;
+    z-index: 2;
+}
+
+.contactList>.item>.nameCon>.notifi {
+    border-radius: 30px;
+    box-shadow: 0 0 1px red;
+    font-size: 10px;
+    padding: 1px 4px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 2;
+}
+
+.contactList>.item>.nameCon>.notHigh {
+    font-size: 11px;
+}
+
+.chatBtn {
+    color: #888;
+    font-size: 23px;
+    text-align: center;
+    text-shadow: 0 0 4px #ccc;
+}
+
+.leftBtnCon>div {
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.leftBtnCon .item {
+    font-size: 22px;
+}
+
+.leftBtnCon>div>div {
+    color: #777;
+}
+
+.leftBtnCon>div:HOVER>div,.leftBtnCon>div.selected>div,.chatBtn.selected,.chatBtn:HOVER {
+    color: green;
+    text-shadow: 0 0 4px #ccc;
+}
+
+.topBtnCon>.chatBtn {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.top_title:BEFORE {
+    font-size: 14px;
+    color: #888;
+    padding-right: 2px;
+}
+
+.top_title>span {
+    font-size: 16px;
+}
+
+.chatBtn.downBtn {
+    font-size: 16px;
+    padding: 8px;
+    background-color: #eee;
+}
+
+.chatBtn.delMsg:BEFORE {
+    font-size: 13px;
+    padding-right: 5px;
+}
+/**消息列表**/
+.msgList {
+    
+}
+
+.msgList>.item {
+    position: relative;
+    padding: 8px 0 0 0;
+}
+
+.msgList>.item.isSame {
+    padding: 0;
+}
+
+.msgList>.item>.avatar {
+    top: 12px;
+    left: 38px;
+    position: absolute;
+}
+
+.msgList>.item>.name {
+    margin: 0 0 0 80px;
+    font-weight: 600;
+    padding: 4px 60px 4px 0;
+}
+
+.msgList>.item>.content {
+    margin: 0 80px 0 80px;
+    line-height: 170%;
+}
+
+.msgList>.item>.time {
+    position: absolute;
+    right: 6px;
+    top: 36px;
+    font-size: 11px;
+}
+
+.msgList>.item.isSame>.time {
+    top: 0px;
+}
+
+.loadingImg {
+    width: 12px;
+    height: 12px;
+}
+
+.newMsgTip {
+    position: absolute;
+    z-index: 4;
+    background-color: yellow;
+    width: 80px;
+    bottom: 60px;
+    left: 0px;
+}
+
+button.mainBtn {
+    width: 200px;
+    border-radius: 4px;
+    padding: 6px;
+    text-align: center;
+}
+
+.userInfoCon {
+    margin: 20px auto;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+}
+
+.userInfoCon>.title {
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    padding: 18px 4px 0;
+}
+
+.userInfoCon>.avatarCon {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.userInfoCon>.baseInfoCon {
+    margin-left: 130px;
+    min-height: 130px;
+}
+
+.userInfoCon .desc {
+    padding: 6px 12px;
+}
+
+.row {
+    min-height: 25px;
+    position: relative;
+}
+
+.row>.header {
+    position: absolute;
+    width: 70px;
+    top: 0;
+    left: 0;
+    text-align: right;
+    color: #888;
+}
+
+.row>.value {
+    margin-left: 70px;
+}
+
+.event {
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    margin-left: 12px;
+    margin-top: 6px;
+}
+
+.event>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.event>.title {
+    
+}
+
+.postList {
+    margin-left: 6px;
+}
+
+.postList>li {
+    padding: 4px;
+}
+
+.leftTitle {
+    background-color: #ddd;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 6px 10px;
+    margin-bottom: 1px;
+    font-size: 15px;
+}
+/** 关于头像的样式设定 **/
+.avatarCon {
+    overflow: hidden;
+}
+
+.avatar {
+    border-radius: 50%;
+    color: #fff;
+    background-color: green;
+    text-align: center;
+}
+
+.avatarCon.max>.avatar {
+    font-size: 45px;
+    height: 100px;
+    padding: 15px;
+    width: 100px;
+}
+
+.avatarCon.middle>.avatar {
+    font-size: 19px;
+    height: 50px;
+    padding: 11px;
+    width: 50px;
+}
+
+.avatarCon.min>.avatar {
+    font-size: 16px;
+    height: 30px;
+    padding: 3px;
+    width: 30px;
+}
+
+.groupMembers>.item {
+    width: 80px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.groupMembers>.item>.avatar {
+    margin: 5px 15px;
+}
+
+.setting>.item {
+    padding: 10px 10px 10px 20px;
+    border-top: 1px solid #eee;
+}
+
+.whoInput {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 0 5px 0 0;
+    bottom: 60px;
+    box-shadow: 0 0 1px #ccc;
+    left: 0;
+    padding: 2px 13px;
+    position: absolute;
+    z-index: 3;
+}
+
+.center.inputText {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.center.uploadImg {
+    border: 0;
+    border-radius: 0;
+    background-color: #eee;
+}
+
+.imgItem.add {
+    background-color: #fff;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    color: #aaa;
+    font-size: 30px;
+    height: 100px;
+    padding: 23px;
+    text-align: center;
+    width: 100px;
+    position: relative;
+}
+
+.imgItem.add>.fileInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.01;
+    z-index: 2;
+    cursor: pointer;
+}

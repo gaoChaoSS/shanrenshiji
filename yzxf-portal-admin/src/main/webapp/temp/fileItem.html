@@ -1,0 +1,18 @@
+
+<div class="fl item" data-load="{{item.$$uploading}}" ng-class="item.$$selected?'selected':''">
+    <img ng-if="item.isImage" ng-click="item.$$selected=!item.$$selected" class="infoCon" base-src="{{item.url}}" ng-class="item.$$uploading?'loading':''" base-type="fix" base-width="100"
+        base-height="100" />
+    <div ng-if="!item.isImage" ng-click="item.$$selected=!item.$$selected" class="infoCon title" ng-if="!item.$$uploading">
+        <div style="font-size: 25px; padding-top: 12px; padding-bottom: 4px" class="icon-file-text notHigh"></div>
+        <div class="textNowrap" title="{{item.name}}">{{item.name}}</div>
+    </div>
+    <canvas class="infoCon" width="100" height="100" ng-if="item.$$uploading"></canvas>
+    <div class="actionBar">
+        <div class="icon-cross2 high fl" ng-click="remove(item)" title="删除文件"></div>
+        <div class="icon-pencil high fl" ng-click="edit(item)" title="编辑图片"></div>
+        <div class="icon-enlarge high fl" ng-if="item.isImage" ng-click="full(item)" title="查看图片"></div>
+        <div class="icon-folder-download high fl" ng-if="!item.isImage" ng-click="downloadFile(item)" title="下载文件"></div>
+        <div class="clearDiv"></div>
+    </div>
+    <div class="icon-checkbox-checked high"></div>
+</div>

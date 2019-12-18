@@ -1,0 +1,764 @@
+.myPageLeftNavDiv{
+    width: 13%;
+    height: 85%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.myNavRowDiv{
+    width: 100%;
+    height: 13%;
+    border: 1px solid #DFDFDF;
+    border-bottom: none;
+    line-height: 50px;
+    font-size: 18px;
+    cursor:pointer;
+}
+.myNavRowDiv>span{
+    margin-left: 25px;
+}
+.myNavRowDivLast{
+    width: 100%;
+    /*height: 48%;*/
+    border: 1px solid #DFDFDF;
+    line-height: 50px;
+    font-size: 18px;
+    cursor:pointer;
+}
+.myNavRowDivLast>span{
+    margin-left: 25px;
+}
+.myNavRowDivLast>ul{
+    list-style: none;
+    counter-reset:count;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: left;
+    cursor:pointer;
+}
+.myNavLi{
+    text-indent: 40px;
+}
+.myNavLi-round{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background:#DFDFDF;
+    border-radius:50%;
+    margin-right:5px;
+}
+/*.myNavLi:before{*/
+    /*margin-right: 5px;*/
+    /*font-size: 12px;*/
+    /*padding-left: 40px;*/
+    /*color: #DFDFDF;*/
+    /*cursor:pointer;*/
+/*}*/
+.myNavLiIn{
+    background: #138bbe;
+    color: #fff;
+    cursor:pointer;
+}
+/*.myNavLiIn:before{*/
+    /*content: '●';*/
+    /*margin-right: 5px;*/
+    /*font-size: 12px;*/
+    /*color: #fff;*/
+/*}*/
+.myPageRightContent{
+    width: 86.8%;
+    margin-left: 2px;
+    margin-top: 30px;
+}
+.memberInfoDiv{
+    width: 100%;
+    height:30%;
+    background-color: #F6F6F6;
+    overflow: hidden;
+    background-image: url('/yzxfMall_page/img/myPensionBG.png');
+}
+.MemberInfo{
+    width: 99%;
+    height: 67%;
+    margin-left: 1%;
+    margin-top: 1%;
+    border: 1px solid #DFDFDF;
+}
+.memberHeadDiv{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #138bbe;
+    margin: 15px 25px;
+}
+.memberHeadImg{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.memberHeadName{
+    line-height: 115px;
+    font-size: 20px;
+}
+.memberIsReal{
+    margin: 48px 40px;
+}
+.memberIsReal>img{
+    width: 16px;
+}
+.memberIsReal>span{
+    font-size: 18px;
+}
+.memberMoney{
+    text-align: center;
+    height: 60%;
+    margin:23px 0;
+    margin-right: 10px;
+    line-height: 65px;
+}
+.MemberInfoTitle{
+    height: 30%;
+    line-height: 80px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+.MemberInfoContent{
+    padding-left: 40px;
+}
+.MemberInfoContent>div{
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.changeBtn{
+    color: #fff;
+    background-color: #EF5495;
+    border: none;
+    width: 40px;
+    height: 16px;
+    font-size: 12px;
+    margin-left: 50px;
+}
+.myOrderRightContent{
+    width: 85%;
+    margin-left: 1%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: 1px solid #DFDFDF;
+}
+.orderTitle{
+    width: 90%;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #DFDFDF;
+}
+.orderTitle>div{
+    height: 30px;
+    cursor: pointer;
+    margin: 10px 15px;
+    padding: 0 10px;
+}
+.orderContent{
+    width: 90%;
+    margin: 0 auto;
+}
+.orderTableTitle{
+    height: 40px;
+    line-height: 40px;
+    color: rgba(89, 89, 89, 0.69);
+    margin: 10px 0;
+}
+.orderTableList td{
+    height: 100px;
+    padding-top: 10px;
+    vertical-align: baseline;
+    border-bottom: 1px dashed #ddd;
+}
+ .orderTableList {
+    margin: 10px 0;
+}
+.orderListImg{
+    width: 90px;
+    height: 90px;
+    cursor:pointer;
+}
+.orderGoodsName{
+    top: 10px;
+    right: 0;
+    width: 170px;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.orderGoodsSeller{
+    bottom: 20px;
+    left: 150px;
+    font-size: 15px;
+    color: #ff0e0c;
+    cursor:pointer;
+}
+.orderInfoDiv{
+    overflow: hidden;
+    border: 1px solid #DFDFDF;
+    margin: 30px auto;
+}
+.orderInfoTitle{
+    width: 90%;
+    height: 45px;
+    margin: 30px auto;
+    border-bottom: 1px solid #dfdfdf;
+}
+.orderInfoTable{
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #dfdfdf;
+}
+.tableTrGray{
+    background-color: #f4f4f4;
+    width: 100%;
+    height:60px;
+    line-height: 60px;
+}
+.tableTrGray>span{
+    margin-left: 30px;
+}
+.tableTdWhite{
+     width: 100%;
+     height:80px;
+     line-height: 80px;
+     font-size: 15px;
+ }
+.tdText{
+    margin-left: 30px;
+}
+.clickBtn{
+    background-color: #138bbe;
+    color: #FFF;
+    cursor:pointer;
+}
+.commentDiv{
+    width: 90%;
+    border-bottom: 1px dashed #ddd;
+    margin: 0 auto;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.memberPHDiv{
+    width: 99%;
+    margin-left: 1%;
+    border: 1px solid #DFDFDF;
+    overflow: hidden;
+    background-image: url('/yzxfMall_page/img/myPensionBG.png');
+}
+.memberTradeDiv{
+    width: 99%;
+    margin-left: 1%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #DFDFDF;
+}
+.tradeDiv{
+    width: 90%;
+    border-bottom: 1px solid #DFDFDF;
+    margin: 0 auto;
+    height: 100px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+.tradeTypeBtn{
+    width: 10%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: #F6F6F6;
+    cursor:pointer
+}
+.tradeTypeBtnClick{
+    width: 10%;
+    height: 58px;
+    margin-top: 20px;
+    border: 1px solid #DFDFDF;
+    cursor:pointer
+}
+.tradeTypeBtnNone{
+    width: 10%;
+    height: 60px;
+    margin-top: 21px;
+    background-color: #DFDFDF;
+}
+.timeSelected{
+    margin-top: 30px;
+}
+.timeSelected>input{
+    width: 140px;
+    padding:10px 0;
+}
+.walletDiv{
+    width: 99%;
+    height: 600px;
+    margin-left: 1%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #DFDFDF
+}
+.walletContent{
+    width: 90%;
+    height: 489px;
+    margin: 20px auto;
+}
+.topUpBtn{
+    left: 105px;
+    top: 70px;
+    width: 202px;
+    height: 50px;
+    background-color: #138bbe;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    cursor:pointer;
+}
+.tradeType{
+    padding: 5px 5px;
+    cursor:pointer;
+}
+.hoverTopUp{
+    border: 1px solid #dfdfdf;
+    border-bottom: none;
+    padding: 4px 4px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    cursor:pointer;
+}
+.tradeTypeLi{
+    width: 170px;
+    height: 120px;
+    left: 409px;
+    top: 107px;
+    border: 1px solid #DFDFDF;
+}
+.tradeTypeLi>ul{
+    list-style: none;
+    counter-reset:count;
+}
+.tradeTypeLi>ul>li{
+    line-height: 40px;
+    margin-left: 20px;
+    cursor:pointer;
+}
+.tradeTypeLiefault:before{
+    content: '◉';
+    margin-right: 5px;
+    font-size: 12px;
+    color: #DFDFDF;
+}
+.myCouponDiv{
+    width: 85%;
+    margin: 30px 0;
+    margin-left: 1%;
+    border: 1px solid #DFDFDF;
+}
+.tradeTypeLiHover:before{
+    content: '◉';
+    margin-right: 5px;
+    font-size: 12px;
+    color: #ff0e0c;
+}
+.couponInfo{
+    width: 25%;
+    height: 225px;
+    margin: 30px 42px;
+    color: #FFF;
+}
+.couponInfoBGIOK{
+    background-image: url('/yzxfMall_page/img/coupon.png');
+}
+.couponInfoBGINO{
+    background-image: url('/yzxfMall_page/img/couponNO.png');
+}
+.couponInfoBGIUSE{
+    background-image: url('/yzxfMall_page/img/couponUse.png');
+}
+.couponInfo>div:first-child{
+    top: 30px;
+    font-size: 25px;
+    margin-left: 40px;
+}
+.couponInfo>div:first-child>span{
+    font-size: 40px;
+    margin-left: 10px;
+}
+.couponInfo>div:nth-child(2){
+    top: 45px;
+    font-size: 13px;
+    right: 5px;
+    margin-left: 40px;
+}
+.couponInfo>div:nth-child(2)>span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.couponInfo>div:nth-child(3){
+    top: 100px;
+    font-size: 13px;
+    margin-left: 20px;
+}
+.couponInfo>div:nth-child(3)>span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.couponInfo>div:nth-child(4){
+    top: 130px;
+    font-size: 13px;
+    margin-left: 20px;
+}
+.couponInfo>div:nth-child(4)>span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.couponInfo>div:nth-child(5){
+    top: 160px;
+    font-size: 13px;
+    margin-left: 20px;
+}
+.couponInfo>div:nth-child(5)>span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.couponInfo>div:nth-child(6){
+    top: 190px;
+    font-size: 13px;
+    margin-left: 20px;
+}
+.couponInfo>div:nth-child(6)>span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.noCouponDiv{
+    width: 50%;
+    height: 700px;
+}
+.noCouponTxt{
+    width: 100%;
+    height:40%;
+}
+.noCouponTxt>div:first-child{
+    bottom: 50px;
+    font-size: 21px;
+}
+.noCouponTxt>div:nth-child(2){
+    bottom: 15px;
+    font-size: 17px;
+    color: #138bbe;
+}
+.addressList{
+    width: 90%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.addressText{
+    width:50%;
+}
+.addressList>div:nth-child(2){
+    line-height: 100px;
+    margin-left: 20px;
+    color: #138bbe;
+}
+.addressDiv{
+    width: 70%;
+    border: 1px solid #DFDFDF;
+    height: 100%;
+    padding-bottom: 20px;
+    transition:0.5s all;
+}
+.addressDiv:hover{
+    background-color: rgba(19, 139, 190, 0.2);
+}
+.addressDiv>div:first-child{
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+.addressDiv>div:nth-child(2){
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+.addressDiv>div:nth-child(2)>span{
+    color: #949292;
+}
+.addressDiv>div:nth-child(2)>span:nth-child(2){
+    margin-left: 10px;
+}
+.passwordDiv{
+    margin: 20px 5%;
+}
+.passwordDiv>select{
+    width: 115px;
+    margin-left: 25px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.passwordDiv>input{
+    width: 300px;
+    height: 40px;
+    margin-left: 30px;
+}
+.hideMenu{
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 4;
+    position: fixed;
+    width: 100%;
+    left: auto;
+    height: 100%;
+    top: 0;
+}
+.addNewTakesDiv{
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    min-height: 400px;
+    min-width: 700px;
+    overflow: auto;
+    padding: 30px 0;
+    margin: 50px auto 0;
+    position: relative;
+}
+.addressBtn{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    line-height: 50px;
+}
+.addressBtn>button{
+    width: 80px;
+    height: 45px;
+    border: none;
+    background-color: #138bbe;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.addressBtn>span{
+    margin: 0px 20px;
+    font-size: 14px;
+    color: #138bbe;
+    cursor:pointer;
+}
+
+
+.winCon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    overflow: auto;
+}
+.enterPsw {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 450px;
+    min-width:260px;
+    overflow: hidden;
+}
+.enterInput {
+    display: inline-block;
+    margin-top: 20px;
+}
+.enterInput input {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border: 1px solid #888;
+    border-left: none;
+    border-radius: 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.enterInput input:first-child {
+    border-left: 1px solid #888;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.enterInput input:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.enterInputDes {
+    margin-top: 20px;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.selectDiv {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display:flex;
+}
+
+.selectDiv div {
+    flex: 1;
+    border: 1px solid #eee;
+    float: left;
+    font-size: 16px;
+    padding: 5px 0;
+    height: 40px;
+    line-height: 40px;
+    transition:0.5s all;
+    cursor:pointer;
+}
+.selectDiv>div:hover{
+    background:#138bbe;
+    color:#fff;
+}
+
+/*订单检查-图标*/
+.iconStatus1{
+    font-size: 50px!important;
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.5s all;
+}
+.closeText1{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    color:#999;
+    cursor:pointer;
+    font-size:14px;
+    line-height:40px;
+}
+.commentStatusBox{
+    position: absolute;
+    width: 230px;
+    height: 80px;
+    opacity: 0.88;
+    top: 200px;
+    left: 285px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+}
+.table-pay-btn1{
+    float:left;
+    width: 100px;
+    height: 30px;
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor:pointer;
+    transition:0.5s all;
+    color:#666;
+}
+.table-pay-btn1:hover{
+    color:#333;
+    border: 1px solid #333;
+}
+.loessYellow {
+    color: #FBBA00;
+}
+.gray888 {
+    color: #888!important;
+}
+
+/*我的订单标题栏*/
+.mod-title1{
+    position: absolute;
+    top: -43px;
+    left: 0;
+    overflow: hidden;
+}
+.mod-title1>div{
+    float: left;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    cursor:pointer;
+    color:#888;
+    transition:0.5s all;
+    border-bottom: 3px solid #ccc;
+}
+.mod-title1-select{
+    font-size:20px;
+    color:#138bbe!important;
+    border-bottom: 3px solid #138bbe!important;
+}
+
+.mod-win1{
+    position:relative;
+    width:80%;
+    max-width:800px;
+    min-widtH:400px;
+    height:500px;
+    overflow:auto;
+    background:#fff;
+}
+.btn-close2{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    color: #000;
+    font-size: 25px!important;
+    cursor:pointer;
+}
+.win1-title1{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    margin: 0 20px;
+}
+.mod-win1>textarea,.mod-win1>input{
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    resize: none;
+    width: calc(100% - 80px);
+    border-radius: 5px;
+    height: 200px;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+}
+
+.mod-win1>input{
+    height:auto;
+}
+
+.mod-win1>button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px 30px;
+    font-size: 20px;
+    border: none;
+    background: #138bbe;
+    color: #fff;
+    border-radius: 5px;
+    cursor:pointer;
+}

@@ -1,0 +1,43 @@
+.layout {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.layout>div {
+    position: absolute;
+}
+
+.layout>.center {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.layout>.top {
+    border-bottom: 1px solid #ccc;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.layout>.left {
+    border-right: 1px solid #ccc;
+    overflow: auto;
+}
+
+.layout>.right {
+    border-left: 1px solid #ccc;
+    overflow: auto;
+}
+
+.layout>.bottom {
+    border-top: 1px solid #ccc;
+    overflow: auto;
+    left: 0;
+    right: 0;
+}

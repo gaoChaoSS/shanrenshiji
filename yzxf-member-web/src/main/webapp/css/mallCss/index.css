@@ -1,0 +1,205 @@
+#closePop {
+    top: 10px;
+    right: 10px;
+    left: auto;
+    bottom: auto;
+    display: block;
+    background-color: #fff;
+    color: #000;
+    opacity: 0.78;
+    font-size: 30px;
+    padding: 6px;
+}
+
+/*弹出窗口*/
+#markLoading, #dataLoading, #dropUploadCon {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: none;
+
+}
+.mark {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 5;
+}
+#dataLoading {
+    box-shadow: 0 0 4px #000;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px 5px;
+    text-align: center;
+    top: 100px;
+    width: 120px;
+    opacity: 0.6;
+}
+/*malert*/
+.alertMsgText {
+    position: fixed;
+    font-size: 12px;
+    height: auto;
+    padding: 3px 20px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px #000;
+    border-radius: 2px;
+    margin: 4px;
+    opacity: 0.9;
+    z-index: 100;
+}
+
+.indexLeftNavDiv{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    text-align: center;
+    transition:0.5s all;
+}
+
+.indexLeftNavDiv>a{
+    text-decoration:none
+}
+.indexLeftNavDiv>a>div{
+    padding: 15px 0;
+    border-top: 1px solid #DFDFDF;
+    width: 35px;
+    font-size: 12px;
+    height: 18px;
+    color: #138bbe;
+    background-color: #fff;
+    overflow:hidden;
+}
+.indexLeftNavDiv>a:last-child>div{
+    padding: 15px 0;
+    border-top: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+/*1600宽度下的网页的导航标签*/
+.indexLeftNavDiv-mini{
+    left: 0;
+    border: 1px solid #138bbe;
+    box-shadow: 0 0 10px 1px rgba(19, 139, 190, 0.3);
+}
+.navBtn-mini{
+    padding-top: 5px;
+    background: #138bbe;
+    color: #fff;
+    font-size: 20px;
+    transition:0.5s all;
+    cursor:pointer;
+    height:25px;
+    line-height:25px;
+}
+.navBtn-mini:hover{
+    background: #138bbe;
+}
+/*!*隐藏样式*!*/
+/*.navBtn-mini-hide{*/
+    /*animation:hide1 1.5s infinite;*/
+    /*animation-iteration-count: 1;*/
+    /*animation-fill-mode : forwards;*/
+/*}*/
+/*@keyframes hide1 {*/
+    /*0%{left:0}*/
+    /*50%{left:-40px}*/
+    /*51%{left:-1000px;top:200px;transform:rotate(0deg)}*/
+    /*52%{left:-1000px;top:10px;transform:rotate(90deg)}*/
+    /*53%{height:30px;overflow:hidden;top:10px;left:-40px;transform:rotate(90deg)}*/
+    /*80%{height:30px;overflow:hidden;top:10px;left:20px;transform:rotate(90deg)}*/
+    /*100%{height:30px;overflow:hidden;top:10px;left:10px;transform:rotate(90deg)}*/
+/*}*/
+/*!*显示样式*!*/
+/*.navBtn-mini-show{*/
+    /*animation:show1 1.5s infinite;*/
+    /*animation-iteration-count: 1;*/
+    /*animation-fill-mode : forwards;*/
+/*}*/
+/*@keyframes show1 {*/
+    /*0%{height:30px;overflow:hidden;top:10px;left:10px;transform:rotate(90deg)}*/
+    /*20%{height:30px;overflow:hidden;top:10px;left:20px;transform:rotate(90deg)}*/
+    /*49%{height:30px;overflow:hidden;top:10px;left:-40px;transform:rotate(90deg)}*/
+    /*50%{height:30px;left:-1000px;top:10px;transform:rotate(90deg)}*/
+    /*51%{height:30px;left:-1000px;top:10px;transform:rotate(0deg)}*/
+    /*52%{height:30px;left:-40px;top:200px;}*/
+    /*100%{height:auto;left:0;top:200px;}*/
+/*}*/
+
+
+.navBtn-Text{
+    transition:0.5s all;
+    z-index:1;
+}
+.navBtn-Text:hover{
+    background:#138bbe;
+    color:#fff;
+}
+
+.indexRightNavDiv{
+    position: fixed;
+    top: 425px;
+    right: 10%;
+    text-align: center;
+    height: 69px;
+    width: 40px;
+    border: 1px solid #DFDFDF;
+}
+.indexRightNavTopY{
+    height: 25px;
+    color: #b5b5b5;
+    border-bottom: 1px solid #DFDFDF;
+    padding-top: 5px;
+    background: #fff;
+}
+.indexRightNav2DCY{
+    height: 40px;
+    width: 42px;
+    margin-left: -1px;
+    background: #ff0e0c;
+    text-align: center;
+    line-height: 50px;
+}
+.indexRightNavTopN{
+    height: 25px;
+    color: #b5b5b5;
+    border-bottom: 1px solid #DFDFDF;
+    padding-top: 5px;
+    background: #fff;
+
+}
+.indexRightNav2DCN{
+    height: 38px;
+    width: 40px;
+    margin-left: 0px;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+}
+.indexRightNavTopY>div>a{
+    text-decoration:none;
+    font-size: 12px;
+    color: #138bbe;
+}
+.indexErweima{
+    position: absolute;
+    border: 1px solid #DFDFDF;
+    top: -35px;
+    left: -130px;
+    width: 120px;
+    height: 140px;
+    background: #FFF;
+}
+.indexErweima>img{
+    margin: 7px 0;
+}
+.indexErweima>div{
+    font-size: 13px;
+}

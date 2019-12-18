@@ -1,0 +1,156 @@
+.topPageCon {
+    max-width: 500px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 50px 10px #aaa;
+    height: 700px;
+    position:relative;
+    overflow:auto;
+    overflow-y:hidden;
+}
+
+.topPageCon.index, .topPageCon.hideTop {
+    margin-top: 30px;
+}
+
+.tab-bottom {
+    bottom: auto;
+    top: 672px;
+    width: 498px;
+    margin: auto;
+    position: absolute;
+}
+
+.topPageCon > .form_section > .loginBk {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    width: 498px;
+    left: auto;
+    bottom: auto;
+    height: 698px;
+}
+
+.topPageCon >.form_section .hideMenu{
+    position: absolute;
+    width: 498px;
+    left: auto;
+    height: 699px;
+    top: 0;
+}
+
+.topPageCon .index_page_globalDiv {
+    position: static;
+}
+
+.topPageCon .form_section .hideCommodityBtn{
+    position:absolute;
+    bottom:0;
+}
+.topPageCon .title_section .titleFixed{
+    position:absolute;
+}
+.topPageCon .form_section .mod-bottom1{
+    position:absolute;
+    bottom:55px;
+}
+/*地址选择*/
+.topPageCon .form_section .sectionLocation {
+    width: 498px;
+    height: 698px;
+    position: static;
+}
+.topPageCon .form_section .sectionLocation2 {
+    height: 648px;
+}
+.topPageCon .form_section .sectionLocation3 {
+    height: 590px;
+}
+
+.topPageCon .overflowPC{
+    width: 498px;
+    height: 698px;
+    overflow:auto;
+    padding-bottom:300px;
+}
+
+.loginCon{
+    margin-top:30px;
+}
+
+.loginPanel{
+    /*margin-top: 30px;*/
+    width: 498px;
+    height: 700px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 50px 10px #aaa;
+}
+
+.topPageCon .form_section .hideCommodityBtn{
+    position: absolute;
+    bottom: 0;
+}
+
+.topPageCon .form_section .fixedBottom {
+    position: absolute;
+}
+
+.topPageCon .form_section .hideCommodityMenu {
+    width: 498px;
+    position: absolute;
+}
+
+.topPageCon .store_panel .hidePanel1,.topPageCon .store_panel .hidePanel2{
+    width:498px;
+}
+.topPageCon .store_panel .hidePanel1{
+    width: 100%;
+    height: 700px;
+    position: absolute
+}
+
+.loadingBk{
+    margin-top: 0 !important;
+}
+.index_page_hotTaoInfo .firstBigPhoto {
+    height: 180px;
+}
+
+/*首页热门商品字体*/
+.topPageCon .indexProduct{
+    height: 80px !important;
+}
+.topPageCon .indexProduct>span{
+    color: #E60000;
+    font-size: 20px;
+    font-weight: 500;
+}
+/*首页特价专区标签*!*/
+.topPageCon .teJiaP{
+    font-size: 18px;
+    padding: 5px 0;
+    height: 35px;
+}
+.topPageCon .redYun{
+    background-image: url(/yzxfMember_page/img/xiangyun.png);
+    background-size: 100% 20px;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.topPageCon .redYun>span{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.topPageCon .storeTitle {
+    font-size: 16px;
+    text-align: center;
+    /* margin-top: 15px; */
+    font-weight: bold;
+}
+.topPageCon .tuiJianBlue{
+    font-size: 15px;
+    color: #5FB0E9;
+    text-align: center;
+}

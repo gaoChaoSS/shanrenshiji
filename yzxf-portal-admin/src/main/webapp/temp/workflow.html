@@ -1,0 +1,12 @@
+<div id="{{id}}" class="workflow">
+    <div class="toolbar" ng-class="minToolbar?'min':''">
+        <div class="title" ng-click="minToolbar=!minToolbar">
+            <div class="icon" ng-class="!minToolbar?'icon-backward2':'icon-forward3'"></div>
+        </div>
+        <div class="item" ng-class="item.type=='hr'?'hr':'con'" ng-repeat="item in toolbar" title="{{item.title}}"
+             ng-click="item.clickAction()">
+            <div class="icon" ng-if="item.type!='hr'" ng-class="item.iconClass"></div>
+            <div class="text" ng-if="item.type!='hr'" ng-bind="item.name"></div>
+        </div>
+    </div>
+</div>

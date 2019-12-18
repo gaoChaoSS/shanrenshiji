@@ -1,0 +1,18 @@
+<div style="width: 100%; height: 100%; overflow: auto;">
+    <table>
+        <thead>
+            <tr>
+                <td class="headerTd selectedTd" ng-class="__selectAll?'icon-checkbox-checked':'icon-checkbox-unchecked'" ng-click="selectAll()"></td>
+                <td class="headerTd" ng-repeat="field in headerRow">{{field.title}}</td>
+                <td class="headerTd"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in $$items">
+                <td class="selectedTd" ng-class="item.__selected?'icon-checkbox-checked':'icon-checkbox-unchecked'" ng-click="selectRow(item)"></td>
+                <td ng-repeat="field in headerRow" ng-class="showCellClass($parent.$index,$index)">{{item[field.name]}}</td>
+                <td><i href="">详情...</i> <i ng-if="isEdit=='true'" class="button icon-cross high" style="font-size: 10px;" ng-click="deleteItem($index)" title="删除单条"></i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

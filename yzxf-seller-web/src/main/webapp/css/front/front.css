@@ -1,0 +1,1741 @@
+body * {
+    font-family: 'inherit, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif';
+    line-height: 170%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    cursor: default;
+    font-size: 14px;
+    /*现金交易 字体大小*/
+    /*font-size: 17px;*/
+    color: #444;
+}
+
+body {
+    cursor: default;
+    border: 0;
+    background-color: #eee;
+    margin: 0 auto;
+}
+
+.fontMax {
+    font-size: 24px;
+    font-size: 1.35rem;
+}
+
+.font1 {
+    font-size: 20px;
+    font-size: 1.188rem;
+}
+
+.font2 {
+    font-size: 17px;
+    font-size: 1.063rem;
+
+}
+
+.font3 {
+    font-size: 16px;
+    font-size: 1.000rem;
+}
+
+.font4 {
+    font-size: 13px;
+    font-size: 0.813rem;
+}
+
+.font5 {
+    font-size: 12px;
+    font-size: 0.750rem;
+}
+
+.textNowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.lb {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: #444;
+}
+
+input[type="file"] {
+    border: 0 none;
+    left: 0;
+    line-height: 0;
+    margin: 0;
+    opacity: 0.01;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+input, textarea {
+    padding: 2px 8px;
+    padding: 0.45rem 0.5rem;
+    /*border: 1px solid #ccc;*/
+    border-radius: 3px;
+}
+
+input:focus, textarea:focus {
+    r-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 0 3px rgba(82, 168, 236, 0.8);
+    outline: 0 none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearDiv {
+    float: none;
+    clear: both;
+}
+
+.button {
+    margin: 1px;
+    padding: 10px;
+    line-height: 100%;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #555;
+    text-align: center;
+    border: 1px solid;
+}
+
+.button.main {
+    min-width: 180px;
+}
+
+.highT, .notifi, .highlight_back, .item > .icon-cross {
+    color: orangered;
+    background-color: #fff;
+    border: 1px solid;
+}
+
+.button.highL.main {
+    background-color: #449fdb;
+    color: #fff;
+    border: 1px solid #449fdb;
+}
+
+.highL {
+    background-color: #449fdb;
+    color: #fff;
+
+}
+
+.highOK {
+    color: forestgreen;
+    background-color: #fff;
+}
+
+/*底部的按钮*/
+
+.highN {
+}
+
+.bottomBtnCon {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    left: 0;
+    right: 0;
+}
+
+.bottomBtnCon > .button {
+    border-radius: 0;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+
+.price {
+    font-family: Arial;
+}
+
+.high {
+    color: orangered;
+}
+
+.backInput {
+    background-color: #ddd;
+}
+
+.block > .item > .centerCell.input > input.error,
+.block > .item > .centerCell.input > textarea.error,
+.error, .backInput.error {
+    background-color: #FFC8B4;
+}
+
+.green {
+    color: green;
+}
+
+.num {
+    color: #43bcf4;
+}
+
+.notHigh {
+    color: #888;
+}
+
+#pageLoadingCon {
+    padding: 25% 10px;
+    text-align: center;
+    position: fixed;
+    top: 50px;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 3;
+    display: none;
+}
+
+#pageLoadingCon.notIndex {
+    bottom: 0;
+}
+
+.topPageCon {
+    margin-top: 60px;
+    margin-bottom: 55px;
+}
+
+.topPageCon.index, .topPageCon.hideTop {
+    margin-top: 0;
+}
+
+.topPageCon.wechatCon {
+    margin-top: 15px;
+}
+
+.topPageCon.popCon {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 6;
+}
+
+.mark {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 5;
+}
+
+.topPageCon.popCon.mark {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.mainMenuCon {
+    width: 200px;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    background-color: #fff;
+    border0-left: 1px solid #ccc;
+    box-shadow: 0 0 6px #aaa;
+    z-index: 5;
+}
+
+.dateCon {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 55px;
+    z-index: 6;
+
+}
+
+.dateCon > .dayList {
+    width: 294px;
+    margin: auto;
+    box-shadow: 0 0 6px #aaa;
+    background-color: #fff;
+}
+
+.dayList .cell {
+    width: 42px;
+    padding: 6px 0;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+.dayList .cell.month {
+    width: 49px;
+}
+
+.dayList .cell:hover, .dayList .cell3 > .citem:hover {
+    background-color: #eee;
+}
+
+.dayList .cell3 > .citem {
+    width: 50%;
+    padding: 6px 0;
+    font-weight: 600;
+}
+
+.dayList .cell3 {
+    width: 126px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.dateCon > .dayList > .item.header {
+}
+
+.dateCon > .dayList > .item.noThisMonthTd {
+    background-color: #eee;
+    color: #888;
+}
+
+.mainMenuCon > .item:hover {
+    background-color: #eee;
+}
+
+#toTop, #goHome, #closePop {
+    background-color: #000;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    bottom: 58px;
+    color: #fff;
+    font-size: 22px;
+    height: 45px;
+    opacity: 0.4;
+    padding: 8px;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+    width: 45px;
+    z-index: 100;
+    display: none;
+}
+
+#goHome {
+    bottom: 120px;
+    display: block;
+}
+
+#closePop {
+    top: 10px;
+    right: 10px;
+    left: auto;
+    bottom: auto;
+    display: block;
+    background-color: #fff;
+    color: #000;
+    opacity: 0.78;
+    font-size: 30px;
+    padding: 6px;
+}
+
+/*弹出窗口*/
+#markLoading, #dataLoading, #dropUploadCon {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: none;
+
+}
+
+#dropUploadCon {
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: none;
+    background-color: #ccc;
+    border: 3px dashed red;
+    padding: 100px 0 0;
+    text-align: center;
+    font-size: 22px;
+    z-index: 10;
+
+}
+
+#markLoading {
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+#dataLoading {
+    box-shadow: 0 0 4px #000;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px 5px;
+    text-align: center;
+    top: 100px;
+    width: 120px;
+    opacity: 0.6;
+}
+
+.topBarBg {
+    position: fixed;
+    top: -2px;
+    left: 0;
+    right: 0;
+    height: 52px;
+    background-color: #222;
+    z-index: 2;
+}
+
+.top_left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    z-index: 3;
+    padding: 3px 30px 3px 15px;
+}
+
+.top_left > .item {
+    line-height: 150%;
+}
+
+.top_right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    z-index: 3;
+}
+
+.topBtn {
+    text-align: center;
+    color: #fff;
+    top: 0;
+    height: 50px;
+    width: 54px;
+    padding-top: 15px;
+    z-index: 2;
+}
+
+.topBtn:HOVER, .topBtn:ACTIVE, .top_left:hover {
+    background-color: #666;
+    cursor: pointer;
+}
+
+.top_title {
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 70px;
+    right: 70px;
+    height: 50px;
+    padding-top: 12px;
+    z-index: 2;
+}
+
+.bottomBar {
+    position: fixed;
+    border-bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eee;
+    height: 50px;
+    z-index: 2;
+}
+
+.bottomBar > .bottomBtn {
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    padding: 6px;
+    border-top: 1px solid #ccc;
+}
+
+.bottomBar > .bottomBtn:HOVER, .bottomBar > .bottomBtn.selected {
+    border-top: 1px solid #449fdb;
+    color: #449fdb;
+}
+
+.bottomBar > .bottomBtn::before {
+    display: block;
+    font-size: 20px;
+    padding: 0 0 3px;
+}
+
+.focusBar {
+
+}
+
+.focusBar > .item {
+    width: 33.33%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.focusBar > .item:HOVER, .focusBar > .item:ACTIVE {
+    background-color: #eee;
+}
+
+.focusBar > .item > .focusBtn::before {
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    font-size: 50px;
+    height: 50px;
+    margin: 2px auto;
+    text-align: center;
+    width: 50px;
+}
+
+.hr {
+    background-color: #eee;
+    height: 10px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.con_title {
+    padding: 10px 8px;
+}
+
+/*banner*/
+.banner {
+    position: relative;
+}
+
+.banner > img {
+    width: 100%;
+}
+
+.banner > .title_mark {
+    background-color: #000;
+    opacity: 0.2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    position: absolute;
+}
+
+.banner > .title {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    position: absolute;
+    color: #fff;
+    padding: 6px 10px;
+}
+
+/* 左边图片，右边文字的列表*/
+.img_text_list > .item {
+    position: relative;
+    border-top: 1px solid #eee;
+    padding: 10px;
+}
+
+.img_text_list > .item > img {
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 3px;
+}
+
+.img_text_list > .item > .con {
+    margin-left: 100px;
+    min-height: 70px;
+}
+
+.img_text_list > .item > .con > .title {
+
+}
+
+.img_text_list > .item > .con > .desc {
+    padding: 4px 0;
+    min-height: 30px;
+}
+
+.text_list > .item {
+    position: relative;
+    border-top: 1px solid #eee;
+    padding: 10px;
+}
+
+.text_list > .item > .title {
+    border-left: 2px solid orangered;
+    padding: 0 0 0 8px;
+}
+
+/*模板2的样式*/
+.temp2_bar {
+    margin: 8px auto;
+    padding: 10px;
+}
+
+.temp2_bar > .item:HOVER {
+    background-color: #eee;
+}
+
+.temp2_bar > .item {
+    width: 50%;
+    position: relative;
+    padding: 6px 2px;
+}
+
+.temp2_bar > .item_hr {
+    height: 1px;
+    border: 1px solid #eee;
+}
+
+.temp2_bar > .item:FIRST-CHILD {
+    border-left: 0;
+}
+
+.temp2_bar > .item > .title {
+    text-align: center;
+    padding: 15px 0;
+    margin-right: 60px;
+}
+
+.temp2_bar > .item > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 6px;
+    right: 16px;
+    position: absolute;
+}
+
+.listCount {
+    padding: 10px;
+}
+
+/*模板3的bar*/
+.temp3_bar {
+
+}
+
+.temp3_bar > .item {
+    width: 25%;
+    padding: 10px 4px;
+    text-align: center;
+    border-bottom: 3px solid #eee;
+}
+
+.temp3_bar > .item:HOVER {
+    border-bottom: 3px solid #449fdb;
+}
+
+.article > .title {
+    margin: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.article > .content {
+    padding: 10px;
+}
+
+.article > .content * {
+    line-height: 180%;
+    color: #666;
+}
+
+.article > .content p {
+    padding: 10px 0;
+}
+
+/*mainform*/
+.mainForm {
+    display: block;
+}
+
+.mainForm > .row {
+    position: relative;
+    min-height: 50px;
+}
+
+.mainForm > .row > .field {
+    position: absolute;
+    width: 120px;
+    top: 0;
+    left: 0;
+    height: 30px;
+    text-align: right;
+    padding: 3px 10px;
+}
+
+.mainForm > .row > .input {
+    margin-left: 120px;
+    text-align: left;
+}
+
+.mainForm > .buttonCon {
+    padding: 15px 0;
+}
+
+/*malert*/
+.alertMsgText {
+    position: fixed;
+    font-size: 12px;
+    height: auto;
+    padding: 3px 20px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px #000;
+    border-radius: 2px;
+    margin: 4px;
+    opacity: 0.9;
+    z-index: 100;
+}
+
+/*index 类似APP的下面的tab*/
+.tab-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 3;
+}
+
+.tab-bottom > .item {
+    float: left;
+    text-align: center;
+    background-color: #fff;
+    border-top: 2px solid #E5E4E5;
+    /*border-right: 1px solid #aaa;*/
+    padding: 6px 2px;
+    line-height: 90%;
+}
+
+.tab-top > .item {
+    float: left;
+    text-align: center;
+    border-bottom: 4px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 10px 2px;
+}
+
+.tab-top > .item:before {
+    padding-right: 4px;
+}
+
+.tab-top > .item:hover, .tab-top > .item.selected {
+    border-bottom: 3px solid #449fdb;
+    background-color: #449fdb;
+    color: #fff;
+}
+
+.tab-top > .item:hover > *, .tab-top > .item.selected > * {
+    color: #fff;
+}
+
+.tab-bottom > .item:hover, .tab-bottom > .item.selected {
+    /*border-top: 3px solid #449fdb;*/
+}
+
+.tab > .item > i {
+    position: relative;
+    font-size: 20px;
+}
+
+.tab > .item > i > div.notifi {
+    border-radius: 50%;
+    padding: 2px;
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    min-width: 22px;
+    height: 22px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.tab > .item:hover > *, .tab > .item.selected > * {
+    color: #138bbe;
+}
+
+/*过滤列表的css*/
+.filter {
+    background-color: #ddd;
+    padding: 2px;
+}
+
+.filter > .item {
+    position: relative;
+    border-bottom: 1px dotted #ccc;
+    padding: 0 10px;
+}
+
+.filter > .item > .field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    padding: 5px;
+
+}
+
+.filter > .buttonCon {
+    padding: 5px;
+}
+
+.filter > .buttonCon > button {
+    min-width: 90px;
+}
+
+.filter > .showOrHideCon {
+    text-align: center;
+    padding: 8px;
+}
+
+.filter > .showOrHideCon:hover {
+    background-color: #eee;
+}
+
+.filter > .item > .value {
+    margin-left: 70px;
+    min-height: 35px;
+    padding: 4px;
+}
+
+.storeTitle {
+    overflow: hidden;
+    padding: 2px;
+    background-color: #fff;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.storeTitle > .title {
+    margin-right: 110px;
+    padding: 8px;
+}
+
+.storeTitle > .iconfont {
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    width: 50px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.storeTitle > *:hover {
+    background-color: #eee;
+}
+
+.storeTitle > .iconfont.icon-search {
+    right: 1px;
+}
+
+.storeTitle > .iconfont.icon-news {
+    right: 52px;
+}
+
+.mainItem {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.mainItem > .item {
+    float: left;
+    text-align: center;
+    width: 100px;
+    position: relative;
+    padding: 0 0 10px 0;
+}
+
+.mainItem > .item:hover {
+    background-color: #eee;
+}
+
+.mainItem > .item > .icon {
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    height: 50px;
+    margin: 5px auto;
+    padding: 12px;
+    width: 50px;
+}
+
+/* 左边图片的列表模式 */
+.leftImgItem {
+    position: relative;
+}
+
+.leftImgItem > img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.leftImgItem > .content {
+    min-height: 50px;
+    margin-left: 65px;
+}
+
+.leftImgItem > .content > div {
+    padding: 2px 0;
+}
+
+/***  具体页面的css  ***/
+.productTypeList {
+    background-color: #eee;
+    bottom: 50px;
+    left: 0;
+    position: fixed;
+    top: 50px;
+    width: 95px;
+    overflow: auto;
+    z-index: 1;
+    border-right: 1px solid #ccc;
+}
+
+.productTypeList.edit {
+    top: 0;
+    margin-bottom: 50px;
+}
+
+.productTypeList.edit.editTypeModel {
+    right: 0;
+    width: auto;
+}
+
+.productTypeList > .item:first-child {
+    border-top: 0px solid #ccc;
+}
+
+.productTypeList > .item {
+    padding: 14px 6px;
+    border-bottom: 1px solid #ccc;
+    border-left: 5px solid #ccc;
+    position: relative;
+}
+
+.productTypeList > .item.base {
+    background-color: #ddd;
+}
+
+.productTypeList > .item.icon:before {
+    padding-right: 5px;
+}
+
+.productTypeList > .item.selected {
+    border-left: 5px solid #449fdb;
+    background-color: #fff;
+    color: #449fdb;
+}
+
+.productTypeList > .item.selected * {
+    color: #449fdb;
+}
+
+.action {
+    padding: 10px;
+    text-align: center;
+    /* box-shadow: 0 0 4px #ddd; */
+    /* background-color: #eee; */
+    border-radius: 50%;
+    border: 1px solid;
+    margin: 6px;
+}
+
+.item.edit > .actionCon {
+    position: absolute;
+    top: 5px;
+    width: 106px;
+    right: 0;
+}
+
+.productList {
+    margin-top: 0px;
+    margin-left: 95px;
+    margin-bottom: 15px;
+    padding-top: 4px;
+}
+
+.productList.cartList, .productList.main {
+    margin-left: 0px;
+}
+
+.productList > .item {
+    padding: 5px 10px 5px 5px;
+    border-bottom: 4px solid #eee;
+    position: relative;
+    background-color: #fff;
+    min-height: 80px;
+}
+
+.productList > .item.confirm {
+    background-color: #fff;
+    border-bottom: 0 solid #eee;
+    border-radius: 3px;
+    margin: 2px 0px;
+    padding: 0px;
+    position: relative;
+    min-height: 50px;
+}
+
+.sellerList > .item {
+    padding: 5px;
+    position: relative;
+    background-color: #eee;
+    border-radius: 3px;
+    margin: 4px 0;
+    border: 0;
+}
+
+.productList > .item > .content.confirm {
+    min-height: 45px;
+    margin-left: 56px;
+}
+
+.productList > .item > img.confirm {
+    width: 40px;
+    height: 40px;
+}
+
+.indexTabCon {
+    padding-bottom: 60px;
+}
+
+/* orderList */
+.orderList > .item {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 8px 10px 2px;
+}
+
+.orderList > .item > div {
+    padding: 8px 4px;
+}
+
+.orderList > .item > div.info {
+    border-bottom: 1px solid #eee;
+}
+
+.orderList > .item > div.info.products {
+    border-radius: 3px;
+    padding: 8px;
+}
+
+.orderList > .item > .buttonCon > button {
+    min-width: 60px;
+}
+
+.productItem:first-child {
+    border-top: 0px dashed #eee;
+}
+
+.productItem {
+    position: relative;
+    border-bottom: 1px dashed #eee;
+
+}
+
+.productItem > .icon {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.productItem > .icon > img {
+    width: 35px;
+    height: 35px;
+}
+
+.productItem > .name {
+    margin-left: 45px;
+    margin-right: 100px;
+    padding: 10px 0;
+}
+
+.productItem > .name.edit {
+    margin-left: 85px;
+}
+
+.productItem > img {
+    height: 33px;
+    left: 6px;
+    position: absolute;
+    top: 6px;
+    width: 33px;
+}
+
+.productItem > .imgCon {
+    left: 6px;
+    position: absolute;
+    top: 6px;
+}
+
+.productItem > .imgCon > img {
+    width: 33px;
+    height: 33px;
+}
+
+.productItem > .count, .productItem > .price {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.productItem > .count.return {
+    right: 100px;
+}
+
+.productItem > .count.returnShow {
+    right: 80px;
+}
+
+.productItem > .count {
+    right: 65px;
+}
+
+.productItem > .price {
+    right: 10px;
+}
+
+.orderInfo > .productItem {
+    border-bottom: 0 solid #eee;
+}
+
+/*商户销售商品列表*/
+.sellProductList {
+    padding: 0 10px;
+}
+
+.sellProductList > .item:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.sellProductList > .item {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+
+}
+
+.sellProductList > .item > img {
+    position: absolute;
+    top: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.sellProductList > .item > .name {
+    margin-left: 50px;
+    margin-right: 65px;
+    min-height: 40px;
+    padding-top: 8px;
+}
+
+.sellProductList > .item > .count {
+    text-align: right;
+    top: 5px;
+    right: 0;
+    position: absolute;
+    width: 60px;
+    padding: 12px 4px;
+}
+
+/*商户列表*/
+.sellerList > .item {
+    padding: 4px;
+}
+
+/* 每个商品下面的 选择商品数量的+ 和 - */
+.cbtn {
+    background-color: #aaa;
+    border: 1px solid #888;
+    border-radius: 50%;
+    color: #fff;
+    height: 23px;
+    padding: 4px;
+    width: 24px;
+}
+
+.down_cart {
+    bottom: 50px;
+    height: 45px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    opacity: 0.95;
+}
+
+.down_cart > div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.down_cart > div > .num {
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    padding: 2px 4px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.down_cart > div > .allPrice {
+    color: #fff;
+    margin: 0px 80px 0 60px;
+    padding: 10px 2px;
+}
+
+.down_cart > div > .go {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    padding: 5px 0px;
+    background-color: #fff;
+    width: 80px;
+    text-align: center;
+    bottom: 6px;
+    border-radius: 20px;
+}
+
+.rightFixed.icon-home2 {
+    bottom: 120px;
+    opacity: 0.5;
+    color: white;
+    padding-top: 12px;
+    background-color: #000;
+    font-size: 32px;
+    height: 55px;
+    width: 55px;
+    z-index: 1;
+}
+
+.inputNum {
+    margin: 0 2px;
+    padding: 0 5px;
+    text-align: center;
+    width: 40px;
+}
+
+.moveBtn {
+    background-color: orangered;
+    border-radius: 50%;
+    bottom: 80px;
+    font-size: 22px;
+    height: 20px;
+    width: 20px;
+    opacity: 0.5;
+    right: 10px;
+    position: fixed;
+}
+
+/* 订单确认 收货地址 */
+.address {
+    padding: 10px;
+    position: relative;
+}
+
+.address.block.zhiti {
+    margin: 4px 10px;
+}
+
+.address.block.zhiti.selected {
+    border: 1px solid orangered;
+}
+
+.address > .item {
+    padding: 3px 0;
+}
+
+.address.block > .item {
+    padding: 10px 0;
+    margin-right: 40px;
+}
+
+.address > .item > div > input, .address > .item > textarea {
+    width: 100%;
+    padding: 12px 8px;
+}
+
+/* 收货地址列表 */
+.addressList {
+    margin: 110px 10px 0 10px;
+}
+
+.addressList.edit > .item {
+    min-height: 110px;
+}
+
+.addressList > .item {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.addressList > .item > .highT {
+    padding: 2px 4px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.rightAction {
+    position: relative;
+}
+
+.rightAction > .actionCon {
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+
+.allActionCon {
+    z-index: 1;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left: 0;
+    padding: 6px 0;
+    margin: 0px 10px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    /*border-left: 1px solid #ccc;*/
+}
+
+/* 编辑和查看数据的块*/
+.blockInfo {
+    border: 1px dashed #ddd;
+    border-radius: 6px;
+    margin: 10px;
+}
+
+.block {
+    background-color: #fff;
+    margin: 5px 10px 30px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.block.hide {
+    margin: 4px 10px 4px 10px;
+}
+
+.block > .item:first-child {
+    border-top: 0px solid #ddd;
+}
+
+.block > .item {
+    border-top: 1px solid #ddd;
+    min-height: 35px;
+    position: relative;
+}
+
+/*.block > .item:hover {*/
+/*background-color: #eee;*/
+/*}*/
+
+.block > .item.title {
+    padding: 2px;
+}
+
+.block > .item.title > .fl {
+    padding: 8px;
+    font-weight: bold;
+}
+
+.block > .item > .leftCell {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #888;
+    text-align: right;
+    width: 95px;
+    padding: 12px 12px 10px 2px;
+}
+
+.block > .item > .centerCell {
+    margin: 0 0 0 95px;
+    padding: 12px 0;
+}
+
+.block > .item.three > .centerCell {
+    margin: 0 60px 0 95px;
+}
+
+.block > .item > .centerCell.input {
+    padding: 6px 6px 6px 0;
+}
+
+.block > .item > .centerCell.input > input, .block > .item > .centerCell.input > textarea {
+    background-color: #eee;
+    width: 100%;
+}
+
+.block > .item > .centerCell > .subItem {
+    padding: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
+.block > .item > .centerCell > .subItem > .desc {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #888;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: underline;
+}
+
+.block > .item.three > .rightCell {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    text-align: center;
+    width: 50px;
+}
+
+.block > .item.three > .rightCell.highL {
+    top: 6px;
+}
+
+.block > .item.three > .rightCell.button {
+    font-size: 15px;
+}
+
+.block_1 > .item:first-child {
+    border-left: 0px solid #ddd;
+}
+
+.block_1 > .item {
+    background-color: #fff;
+    float: left;
+    width: 33.33%;
+    height: 100px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    padding: 12px 2px;
+}
+
+.rightAdd {
+    border-radius: 50%;
+    bottom: 100px;
+    font-size: 24px;
+    height: 50px;
+    opacity: 0.9;
+    overflow: hidden;
+    padding: 13px;
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    box-shadow: 0 0 5px #444;
+}
+
+.block > .item.three > .rightNoText {
+    margin: 5px 5px 5px 120px;
+    padding: 10px;
+    text-align: center;
+    width: 50px;
+}
+
+select {
+    border: 1px solid #ccc;
+    height: 25px;
+}
+
+label > input {
+    margin-right: 4px;
+}
+
+.block > .item.two > .centerCell > .checkType {
+    margin-right: 10px;
+}
+
+.block > .item.two > .centerCell > .checkType > input {
+    margin: 10px 4px 10px 0;
+}
+
+.nextStepCon {
+    text-align: right;
+    padding: 10px;
+}
+
+/*支付记录*/
+.payLogItem:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.payLogItem {
+    position: relative;
+    border-top: 1px dashed #ddd;
+    /*margin-right: 10px;*/
+    padding: 4px;
+
+}
+
+.payLogItem:first-child > * {
+    margin-top: 0;
+}
+
+.payLogItem > .fl {
+    padding: 5px;
+}
+
+/* 响应式布局 */
+.pcCon {
+    display: none;
+}
+
+.mobileCon {
+    display: block;
+}
+
+.orderStatusList > .item {
+    margin-right: 2px;
+    margin-bottom: 8px;
+}
+
+.orderStatusList > .item > .name {
+    padding: 2px 8px;
+}
+
+.orderStatusList > .item > .iconfont {
+    padding-top: 8px;
+}
+
+.selectItem {
+    border: 3px solid #bbb;
+    border-radius: 50%;
+    color: #aaa;
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.selectItem.zhitiIcon {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+}
+
+.selectItem.selected {
+    border: 4px solid orangered;
+    color: orangered;
+}
+
+.list_base_con {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.list_base_con > .list_base_item:first-child {
+    border-top: 0;
+}
+
+.list_base_con > .list_base_item {
+    border-top: 1px solid #ddd;
+    padding: 10px 16px;
+    position: relative;
+
+}
+
+.list_base_con > .list_base_item > .icon {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+.list_base_con > .list_base_item > .notifi {
+    border-radius: 50%;
+    padding: 0 6px;
+    position: absolute;
+    right: 6px;
+    top: 9px;
+}
+
+.list_base_con > .list_base_item > .title {
+    margin: 0 20px;
+}
+
+.list_base_con > .list_base_item > .hasAction:BEFORE {
+    font-family: "iconfont";
+    content: "\e619";
+    position: absolute;
+    right: 4px;
+    color: #888;
+    top: 10px;
+}
+
+.list_base_con > .list_base_item > .desc {
+    position: absolute;
+    right: 24px;
+    top: 12px;
+}
+
+.listView > .loadmore {
+    padding: 16px;
+}
+
+.commentList {
+    padding: 0 10px;
+}
+
+.commentList > .item {
+    position: relative;
+    background-color: #fff;
+    padding: 6px;
+    margin-bottom: 8px;
+}
+
+.commentList > .item > img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.commentList > .item > .time {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 100px;
+    text-align: right;
+}
+
+.commentList > .item > .content {
+    margin-left: 55px;
+    padding: 4px;
+}
+
+.storeList > .item {
+    padding: 10px;
+    background-color: #fff;
+    /* border-bottom: 6px solid #eee; */
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.storeList > .item > .iconCon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 100px;
+    height: 100px;
+}
+
+.storeList > .item > .nameCon {
+    margin-left: 110px;
+    min-height: 120px;
+}
+
+.storeList > .item > .rightCon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.queryProductInput {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 3;
+    padding: 5px 56px 2px 8px;
+    background-color: #eee;
+    box-shadow: 0 0 2px #aaa;
+}
+
+.queryProductInput > input {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+
+.queryProductInput_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    font-size: 28px;
+    padding: 10px;
+}
+
+.loginCon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background-color: #eee;
+}
+
+.cancelStatus .num, .cancelStatus .high {
+    color: #888;
+}
+
+.d_content {
+    /*为了能让右下角的按钮能够不遮住内容*/
+    padding-bottom: 140px;
+}
+
+/*标题模块*/
+.title_section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.loadMore {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}

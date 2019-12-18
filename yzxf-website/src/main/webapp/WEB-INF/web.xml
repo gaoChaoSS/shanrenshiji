@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+             http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <display-name>website</display-name>
+    <description>website</description>
+    <!-- api filter -->
+    <filter>
+        <filter-name>BaseFilter</filter-name>
+        <filter-class>com.yzxf.web.JActionFilter</filter-class>
+    </filter>
+
+    <!-- 用户访问,包括商户 -->
+    <filter-mapping>
+        <filter-name>BaseFilter</filter-name>
+        <url-pattern>/action/*</url-pattern>
+    </filter-mapping>
+</web-app>

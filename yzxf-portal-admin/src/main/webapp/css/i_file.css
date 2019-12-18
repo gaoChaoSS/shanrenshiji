@@ -1,0 +1,98 @@
+.myfile {
+    position: relative;
+    overflow: hidden;
+}
+
+.myfile > .buttonCon > input[type="file"] {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.01;
+}
+
+.myfile > .buttonCon {
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+    margin-bottom: 14px;
+}
+
+.myfile.grid > .buttonCon {
+    width: 50px;
+    height: 30px;
+}
+
+.myfile > .buttonCon:hover > .button {
+    background-color: #eee;
+    color: #444;
+}
+
+.myfile > .buttonCon > input[type="file"], .myfile > .buttonCon > .button {
+    width: 78px;
+    height: 78px;
+    line-height: 60px;
+}
+
+.myfile.grid > .buttonCon > input[type="file"], .myfile.grid > .buttonCon > .button {
+    width: 48px;
+    height: 28px;
+    line-height: 20px;
+}
+
+.myfile > .item {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #aaa;
+    margin-right: 8px;
+    margin-bottom: 14px;
+    padding: 25px 3px 3px;
+    position: relative;
+}
+
+.myfile > .item > img, .myfile > .item > .status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 78px;
+    height: 78px;
+}
+
+.myfile > .item > img {
+    z-index: 1;
+}
+
+.myfile > .item > .status {
+    z-index: 2;
+    font-size: 48px;
+    text-align: center;
+    line-height: 89px;
+    background-color: #fff;
+    opacity: 0.85;
+}
+
+.myfile > .item > .del, .myfile > .item > .select {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 18px;
+    box-shadow: 0 0 3px #aaa;
+    z-index: 3;
+}
+
+.myfile > .item > .select {
+    bottom: 0;
+    top: auto;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+

@@ -1,0 +1,11 @@
+<div class="gridContent iconConList" style="width: 100%; height: 100%; overflow: auto; padding: 0px;">
+    <div class="fl iconCon icon_min" ng-repeat="item in $$items" ng-class="item.__selected?'selected':''" ng-click="selectRow(item)">
+        <div ng-if="item['icon']==null" style="width: 100%; height: 100%; padding-top: 20px; text-align: center;">
+            <i class="icon-file-text notHigh" style="font-size: 45px;"></i>
+        </div>
+        <img ng-if="item['icon']!=null" style="width: 100%;" ng-src="/s_img/icon.jpg?_id={{item.icon}}&wh=300_300"/>
+        <div class="delBtn icon-cross high" ng-click="deleteItem($index)" title="{{item.$$name}}"></div>
+        <div ng-if="selectDataType!='none'" class="selectedBtn high" ng-click="selectRow(item)" title="{{item.$$name}}" ng-class="item.__selected?'icon-checkbox-checked':'icon-checkbox-unchecked'"></div>
+    </div>
+    <div class="clearDiv"></div>
+</div>

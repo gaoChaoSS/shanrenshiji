@@ -1,0 +1,1796 @@
+/*表单样式*/
+/*大模块(多行)*/
+.form_section .sectionMain {
+    margin: 10px 0 0;
+    /*width: 100%;*/
+    background: #fff;
+    overflow: hidden;
+}
+
+/*大模块:没有边距*/
+.form_section .sectionMainNotMargin {
+    margin: 0;
+}
+
+/*大模块:普通的行*/
+.form_section .mainRow {
+    position: relative;
+    border-bottom: 1px solid #eee;
+    width: calc(100% - 5px);
+    /*margin-left: 5px;*/
+    overflow: hidden;
+    min-height: 50px;
+}
+
+/*大模块:普通的行:最后一行没有下边框*/
+.form_section .mainRow:last-child, .form_section .mainRowLast, .form_section .mainRowNotBorderBottom {
+    border-bottom: none;
+}
+
+/*大模块:普通的行:最后一行有下边距*/
+.form_section .mainRowLast {
+    margin-bottom: 10px;
+}
+
+/*大模块:图片*/
+.form_section .sectionMainImg {
+    padding: 15px 0;
+    min-height: 300px;
+}
+
+.form_section .img-animation1 {
+    position:relative;
+    height: 270px;
+    margin: 0 auto;
+    display: block;
+    width: 270px;
+}
+.img-animation1 img{
+    position:absolute;
+    top:0;
+    /*left:0;*/
+    width:270px;
+    height:270px;
+    z-index:1;
+}
+
+/*商品图片-*/
+.img-Carousel1-right{
+    animation:carousel-right 0.5s infinite;
+    -webkit-animation:carousel-right 0.5s infinite;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1
+}
+@keyframes carousel-right /*Safari and Chrome*/
+{
+    0%{left:600px;opacity: 0;transform:skewX(100deg)}
+    100% {left:0;transform:skewX(180deg)}
+}
+/*商品图片*/
+.img-Carousel1-left{
+    animation:carousel-left 0.5s infinite;
+    -webkit-animation:carousel-left 0.5s infinite;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1
+}
+@keyframes carousel-left /*Safari and Chrome*/
+{
+    0%{right:600px;opacity: 0;transform:skewX(80deg)}
+    100% {right:0;}
+}
+
+/*大模块:占据一行的子标题的行*/
+.form_section .mainRowTitle {
+    width: calc(98% - 10px);
+    margin-left: calc(2% + 10px);
+    height: 40px;
+    line-height: 40px;
+}
+
+.form_section .mainRowTitleStore {
+    width: calc(98% - 10px);
+    margin-left: calc(2% + 10px);
+    height: 40px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+/*大模块:选择框时的行*/
+.form_section .rowInputCheckMain {
+    overflow: hidden;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/*大模块的行:选择框时的行:选择框模块*/
+.form_section .rowInputCheck {
+    margin-left: 50px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+
+/*大模块的行:选择框时的行:第一个选择框模块:没有边框*/
+.form_section .rowInputCheck:first-child {
+    margin-left: 0;
+}
+
+/*大模块的行:选择框时的行:选择框模块:选择框*/
+.form_section .rowInputCheck > span {
+    color: #ff9d06;
+    margin-right: 10px;
+}
+
+/*行:行的输入框*/
+.form_section .rowInput {
+    line-height: 50px;
+    margin-left: 135px;
+    margin-right: 50px;
+}
+
+/*行:行的子标题*/
+.form_section .rowTitle {
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+    /*color: #777;*/
+    position: absolute;
+}
+
+.rowTitleBtn img {
+    width: 18px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+
+/*行:行的子标题:短*/
+.form_section .rowTitleShort {
+    width: calc(100% - 70px);
+}
+
+/*行:输入框:无边框*/
+.form_section .rowInput {
+    position: relative;
+    width: calc(100% - 150px);
+    /*color: #aaa;*/
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+/*行:输入框:短,无边框*/
+.form_section .rowInputShort {
+    width: calc(100% - 205px);
+}
+
+.form_section .rowBox {
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 10px;
+    text-align: center;
+    color: #aaa;
+    float: left;
+}
+
+/*行:输入框:有边框*/
+.form_section .inputBorder {
+    width: 50%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/*行:输入框:有边框禁用状态*/
+/*.form_section .inputBorder[disabled='disabled'] {*/
+/*border: none;*/
+/*border-radius: 0;*/
+/*border-bottom: 1px solid #ccc;*/
+/*}*/
+
+/*行:多行文本*/
+.form_section .rowTextarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.form_section .rowTextarea2 {
+    height: 150px;
+    resize: none;
+    outline: none;
+    border-radius: 0;
+    margin-left: 100px;
+    position: relative;
+    width: calc(100% - 105px);
+    margin-top: 7px;
+}
+
+/*行:右侧按钮,提示文本*/
+.form_section .mainRowRight {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    line-height: 50px;
+    color: #999;
+}
+
+/*行:左侧,提示文本*/
+.form_section .mainRowLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+/*行:右侧提示文本*/
+.form_section .mainRowRightErrorText {
+    right: 40px;
+}
+
+/*行:右侧:发送短信*/
+.form_section .sendMessage {
+    top: 13px;
+    color: #999;
+    line-height: 17px;
+    font-size: 11px;
+    border-radius: 3px;
+    background: #f2f2f2;
+    padding: 3px 5px;
+    right: 5px;
+}
+
+/*行:右侧绿色按钮*/
+.form_section .mainRowRightGreenBtn {
+    border: 1px solid #80E585;
+    border-radius: 3px;
+    color: #aaa;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 7px;
+    padding: 0 5px;
+}
+
+/*行:选择框的行*/
+.form_section .mainRowSelect {
+    float: right;
+    color: #aaa;
+    text-indent: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*行:下拉框的行*/
+.form_section .mainRowSelectOption {
+    width: 70%;
+    line-height: 50px;
+}
+
+/*行:下拉框的行:已选择的下拉框勾选样式*/
+.form_section .mainRowSelected {
+    margin-left: 20px;
+    color: green;
+    font-size: 20px;
+}
+
+/*提交按钮(默认红色)*/
+.form_section .submitBtn {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #138bbe;
+    width: 80%;
+    height: 45px;
+    margin: 20px auto;
+    font-size: 18px;
+    color: #fff;
+}
+
+/*提交按钮:蓝色*/
+.form_section .submitBtnBlue {
+    background: #138bbe;
+    color: #fff;
+}
+
+/*提交按钮:禁用状态*/
+.form_section .submitBtn[disabled='disabled'] {
+    color: #888;
+    background: -ms-linear-gradient(top, #F2F2F2, #DFDFDF); /* IE 10 */
+    background: -moz-linear-gradient(top, #F2F2F2, #DFDFDF); /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2F2F2), to(#DFDFDF)); /*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2F2F2), to(#DFDFDF)); /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #F2F2F2, #DFDFDF); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #F2F2F2, #DFDFDF);
+}
+
+.form_section .submitBtn-small{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: auto;
+    font-size: 12px;
+    padding: 5px;
+    background:#138bbe;
+    color:#fff;
+    border-radius:5px;
+}
+.form_section .submitBtn-small[disabled='disabled'] {
+    background:#aaa;
+}
+
+/*提交按钮:无边距*/
+.form_section .submitBtnNotMargin {
+    margin: 0 auto;
+}
+
+/*提交按钮:占据一行空白提交按钮*/
+.form_section .submitBtnTextCenter {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*底部(找回密码,记住密码)*/
+.form_section .mainBottom {
+    /*width:90%;*/
+    padding: 0 20px;
+    margin: 30px auto;
+}
+
+/*左对齐*/
+.form_section .floatLeft {
+    font-size: 14px;
+    float: left;
+}
+
+/*右对齐*/
+.form_section .floatRight {
+    float: right;
+}
+
+/*95%的宽度*/
+.form_section .rowWidth95 {
+    width: 95%;
+}
+
+/*70%的宽度*/
+.form_section .rowWidth70 {
+    width: calc(70% - 10px);
+}
+
+/*记住密码文本*/
+.form_section .mainBottom .floatRight .rememberPwdLabel {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/*底部fiex定位按钮的模块*/
+.form_section .fixedBottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+}
+
+/*底部fiex定位按钮*/
+.form_section .fixedBottomBtn {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*大模块:遮罩*/
+.form_section .hideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 4;
+}
+
+/*大模块:登陆错误面板*/
+.form_section .errorMain {
+    width: 70%;
+    height: 100px;
+    background: #F9F9F9;
+    border-radius: 10px;
+    margin: 50% auto 0;
+}
+
+/*大模块:会员协议面板*/
+.form_section .memberMain {
+    width: 80%;
+    height: 400px;
+    margin: 20% auto 0;
+    position: relative;
+}
+
+/*大模块:更多分享面板*/
+.form_section .otherMain {
+    height: 145px;
+}
+
+/*登陆错误模块:行*/
+.form_section .errorMain .errorMainRow {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*更多分享模块:行*/
+.form_section .otherMain .otherMainRow {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.otherMainRow > div {
+    float: left;
+    font-size: 28px;
+    width: 25%;
+    line-height: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+/*登陆错误模块:错误提示信息*/
+.form_section .errorMain .errorMainRow:first-child {
+    border-bottom: 1px solid #ddd;
+}
+
+/*登陆错误模块:确认按钮*/
+.form_section .errorMain .errorMainRow div:first-child {
+    border-right: 1px solid #ddd;
+}
+
+/*登陆错误模块:按钮*/
+.form_section .errorMain .errorMainRow div {
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*大模块:我的钱包*/
+.form_section .sectionWallet {
+    display: flex;
+    padding: 10px 0;
+    position: absolute;
+    max-width: 600px;
+    width: 100%;
+    top: 164px;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 80px;
+}
+
+.form_section .sectionWallet2 {
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+    top: 164px;
+    height: 80px;
+}
+
+/*我的钱包:左右两部分*/
+.form_section .sectionWalletRow {
+    box-sizing: border-box;
+    display: inline-block;
+    flex: 1;
+    height: 70px;
+}
+
+.borderStyle {
+    border: 1px solid #fff;
+    opacity: 0.5;
+    margin-left: 8px;
+    height: 80%;
+    margin-top: 5px;
+}
+
+/*我的钱包:最后一个无左边框*/
+.form_section .sectionWalletRow:last-child {
+    border: none;
+}
+
+/*我的钱包:左右两部分:每一行*/
+.form_section .sectionWalletRow > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    line-height: 35px;
+}
+
+/*我的钱包:左右两部分:每一行:每一个文本*/
+.form_section .sectionWalletRow > div > span {
+    text-align: center;
+    padding: 0 5px;
+}
+
+/*小模块:多个按钮(充值金额按钮)*/
+.form_section .mainRowBtnList {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/*收货地址页面:收货删除和修改按钮*/
+.form_section .addressModifyBtn {
+    width: 15%;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/*小模块:每一个按钮*/
+.form_section .mainRowBtnList > button {
+    float: left;
+    display: inline-block;
+    margin: 5px 5%;
+    width: 22%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #FF9900;
+    border-radius: 3px;
+}
+
+/*商品类型选择菜单*/
+.form_section .hideCommodityMenu {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    height: 60%;
+    background: #fff;
+    overflow: auto;
+}
+
+/*黑色半透明遮罩*/
+.form_section .hideTransparent {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: calc(40% - 50px);
+}
+
+/*商品类型选择按钮的容器*/
+.form_section .commodityBtnList {
+    padding-bottom: 10px;
+}
+
+/*商品类型选择按钮*/
+.form_section .commodityBtnListBtn {
+    float: left;
+    margin: 5px 10px;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 35px;
+    background: #eee;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form_section .commodityBtnListBtn[disabled="disabled"] {
+    color: #aaa;
+    background-color: #f0f0f0;
+}
+
+/*购买按钮*/
+.form_section .hideCommodityBtn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form_section .hideCommodityBtn[disabled="disabled"] {
+    background: #ccc;
+    color: #eee;
+    /*background: -ms-linear-gradient(top, #F2F2F2, #DFDFDF); !* IE 10 *!*/
+    /*background: -moz-linear-gradient(top, #F2F2F2, #DFDFDF); !*火狐*!*/
+    /*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2F2F2), to(#DFDFDF)); !*谷歌*!*/
+    /*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2F2F2), to(#DFDFDF)); !* Safari 4-5, Chrome 1-9*!*/
+    /*background: -webkit-linear-gradient(top, #F2F2F2, #DFDFDF); !*Safari5.1 Chrome 10+*!*/
+    /*background: -o-linear-gradient(top, #F2F2F2, #DFDFDF);*/
+}
+
+/*商品类型选择按钮:未选择按钮*/
+.form_section .itemNormal {
+    background-color: #eee;
+    color: #666;
+}
+
+/*商品类型选择按钮:选择按钮*/
+.form_section .itemNormal.selected {
+    background-color: #138bbe;
+    color: #fff !important;
+}
+
+/*商品页面:购买数量*/
+.form_section .commodityMenuRight {
+    float: right;
+    margin-right: 10px;
+}
+
+/*购买数量按钮*/
+.form_section .commodityMenuRight > div {
+    float: left;
+    margin: 10px 1px;
+    height: 25px;
+    line-height: 25px;
+    background: #F2F2F2;
+    color: #888;
+    text-align: center;
+}
+
+/*加减按钮*/
+.form_section .commodityBtn {
+    width: 25px;
+    font-size: 20px;
+}
+
+/*显示数字*/
+.form_section .resultsNum {
+    width: 60px;
+}
+
+/*养老金*/
+.form_section .pensionMain {
+    width: 100%;
+    height: 220px;
+    background: url('/yzxfMember_page/img/yanglaojinLogo.png') no-repeat center center;
+    background-size: auto 85%;
+    overflow: hidden;
+}
+
+/*方形按钮*/
+.form_section .squareBtn {
+    display: inline-block;
+    background: #eee;
+    padding: 5px 10px
+}
+
+/*!*时间选择按钮*!*/
+/*.form_section .dateSelectBtn{*/
+/*position:relative;*/
+/*display:inline-block;*/
+/*margin:0 5px;*/
+/*}*/
+/*!*时间选择:灰色框*!*/
+/*.form_section .dateSelectFrame{*/
+/*display:inline-block;*/
+/*padding:0 15px;*/
+/*height:40px;*/
+/*line-height:40px;*/
+/*background:#eee;*/
+/*text-align:center;*/
+/*}*/
+/*!*时间选择菜单*!*/
+/*.form_section .dateSelectMenu{*/
+/*position:absolute;*/
+/*top:0;*/
+/*left:0;*/
+/*background: #fafafa;*/
+/*box-shadow:0 0 10px 1px #9d9d9d;*/
+/*border-radius:5px;*/
+/*z-index: 1;*/
+/*max-height:200px;*/
+/*overflow:auto;*/
+/*}*/
+/*!*时间选择菜单:行*!*/
+/*.form_section .dateSelectMenu>div{*/
+/*padding:0 15px;*/
+/*height:40px;*/
+/*line-height:40px;*/
+/*!*background: #fafafa;*!*/
+/*border-bottom:1px solid #ddd;*/
+/*text-align:center;*/
+/*}*/
+/*.form_section .dateSelectMenu>div:first-child{*/
+/*border-top-left-radius: 5px;*/
+/*border-top-right-radius: 5px;*/
+/*}*/
+/*.form_section .dateSelectMenu>div:last-child{*/
+/*border-bottom: none;*/
+/*border-bottom-left-radius: 5px;*/
+/*border-bottom-right-radius: 5px;*/
+/*}*/
+/*.form_section .width45{width:45px;}*/
+/*!*已选择的时间:行*!*/
+/*.form_section .dateSelectRow{*/
+/*background: #48aafa;*/
+/*color:white;*/
+/*box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1) inset;*/
+/*}*/
+
+/*红色清除按钮*/
+.form_section .redClear {
+    position: absolute;
+    top: 15px;
+    right: 20%;
+    color: #FE1F44;
+    font-size: 25px;
+}
+
+/*选择城市*/
+.form_section .sectionLocation {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+}
+
+.form_section .sectionLocation2,.form_section .sectionLocation3{
+    height: calc(100% - 50px);
+    top: 100px;
+}
+
+/*选择城市:列*/
+.form_section .colsLocation {
+    flex: 1;
+    height: calc(100% - 45px);
+    overflow: auto;
+    overflow-y: scroll;
+}
+
+/*选择城市:行(外层)*/
+.form_section .rowLocation {
+    height: 50px;
+    line-height: 50px;
+    padding: 5px 0;
+}
+
+/*选择城市:行(内层)*/
+.form_section .rowLocation > div {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*选择城市:第一列:已选择行样式*/
+.form_section .locationSelected {
+    border-left: 3px solid #268BBF;
+    color: #268BBF;
+    text-indent: -3px;
+}
+
+/*养老金消费记录*/
+.form_section .consumptionMain {
+    margin-bottom: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+/*养老金消费记录:行*/
+.form_section .consumptionRow {
+    width: 100%;
+    overflow: hidden;
+}
+
+.form_section .consumptionRow > span {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*养老金消费记录:行:标题*/
+.form_section .consumptionRowTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666;
+    width: calc(100% - 200px);
+    padding-left: 10px;
+}
+
+.form_section .consumptionRowRight {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 10px;
+    color: #aaa;
+}
+
+.form_section .consumptionRowLeft {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+/*个人信息*/
+.form_section .sectionMain2 {
+    position: relative;
+    width: 100%;
+    height: 150px;
+
+}
+
+.form_section .sectionMainBk1 {
+    background: url('/yzxfMember_page/img/bdkImg.png') no-repeat center center;
+    background-size: 100%;
+}
+
+.form_section .mainRow2 {
+    display: flex;
+    position: relative;
+    width: calc(100% - 80px);
+    left: 90px;
+    margin-top: 20px;
+}
+
+.form_section .mainRow2 > div {
+    flex: 1;
+    text-align: center;
+}
+
+.form_section .headImg {
+    position: absolute;
+    display: block;
+    left: 5%;
+    top: 50px;
+    width: 80px;
+    height: 80px;
+    background: #ccc;
+    border: 2px solid #fff;
+    /*box-shadow: 0 0 5px 1px #ccc;*/
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.form_section .iconImg {
+    width: 20px;
+    position: absolute;
+}
+
+.form_section .iconImg2 {
+    position: relative;
+    display: block;
+    height: 80%;
+    width: 80%;
+    margin: 50px auto 0;
+}
+
+/*红色圆点*/
+.form_section .iconImg3 {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: red;
+    border-radius: 50%;
+    top: -3px;
+    right: -3px;
+}
+
+/*正方圆角框*/
+.form_section .iconImg4 {
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    float: left;
+    border: 1px solid #eee;
+}
+
+/*红色关闭按钮*/
+.form_section .iconImg5 {
+    position: absolute;
+    left: 55px;
+    font-size: 30PX;
+    color: #ff626b;
+    background: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    text-indent: -2px;
+}
+
+.form_section .iconImg6 {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 20px;
+    padding: 1px 5px 5px;
+}
+
+.form_section .iconImg7 {
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid #eee;
+    margin: 10px auto;
+    display: block;
+}
+
+/*弹出窗口1*/
+.form_section .windowPanel1 {
+    position: relative;
+    width: 70%;
+    /*height: 70%;*/
+    background: #eee;
+    margin: 10% auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form_section .headImg2 {
+    position: absolute;
+    display: block;
+    left: 30px;
+    top: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form_section .mainRow3 {
+    position: relative;
+    top: 30px;
+    left: 130px;
+}
+
+.form_section .mainRowEvent {
+    position: relative;
+    width: calc(100% - 5px);
+    margin-left: 5px;
+    overflow: hidden;
+
+}
+
+.form_section .rowTitleEvent {
+    line-height: 35px;
+    padding-left: 5px;
+    float: left;
+    font-size: 15px;
+}
+
+.form_section .rowInputEvent {
+    width: calc(100% - 120px);
+    float: left;
+    line-height: 35px;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #666;
+}
+
+.form_section .submitBtnEvent {
+    display: block;
+    border-radius: 30px;
+    width: 45%;
+    height: 35px;
+    margin: 10px auto;
+    font-size: 15px;
+    color: #fff;
+}
+
+.form_section .triangleEventSmall {
+    border-left: 26px solid transparent;
+    border-top: 28px solid #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form_section .triangleEventBig {
+    border-left: 82px solid transparent;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form_section .triangleEventBigCheck {
+    border-top: 84px solid #aaa;
+}
+
+.form_section .triangleEventText {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 3;
+    color: #fff;
+    transform: rotate(47deg);
+}
+
+.form_section .eventDiv {
+    position: relative;
+    padding: 10px 0;
+}
+
+.form_section .sectionMain3 {
+    display: flex;
+    align-items: stretch;
+    margin: 5px 0;
+    background: #fff;
+}
+
+.form_section .hide1 {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #eee;
+    z-index: -1;
+}
+
+.enterPsw {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 40% auto 0;
+    text-align: center;
+    max-width: 450px;
+}
+
+.selectDiv {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.selectDiv div {
+    width: 50%;
+    border: 1px solid #eee;
+    float: left;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.enterInput {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.enterInput input {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border: 1px solid #888;
+    border-left: none;
+    border-radius: 0;
+    font-size: 22px;
+    padding-left: 13px;
+    padding-right: 13px;
+    text-security:disc;
+    -webkit-text-security:disc;
+}
+
+.enterInput input:first-child {
+    border-left: 1px solid #888;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.enterInput input:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.enterInputDes {
+    margin-top: 20px;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.winCon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 21;
+    overflow: auto;
+}
+/*营业星期*/
+.selectWeek{
+    position:relative;
+    width: 200px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 10px;
+}
+.selectWeek .contentTitle2{
+    height: 40px;
+    line-height: 40px;
+    background: #138bbe;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 10px;
+}
+.selectWeek .contentText1{
+    position:relative;
+}
+.selectWeek .contentText1 *{
+    height:30px;
+    line-height:30px;
+    padding-left:30px;
+}
+.selectWeek .contentText1>div:last-child{
+    position:absolute;
+    top:0;
+    right:10px;
+    padding:0;
+    color:#138bbe;
+}
+.selectWeek .close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 30px;
+    transform: rotate(45deg);
+    padding: 4px 0;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.selectWeek .contentBtn{
+    /*background: #1480B7;*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow:hidden;
+    border-top: 1px solid #fff;
+}
+.selectWeek .contentBtn>div{
+    float:left;
+    color:#fff;
+    width:50%;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+}
+
+.btn2{
+    width: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.btn2>div{
+    float:left;
+    width:50%;
+    text-align:center;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*充值记录*/
+.sectionMain4{
+    position:relative;
+    overflow:hidden;
+    background:#fff;
+    border-bottom:1px solid #ccc;
+    padding:10px 0;
+}
+.sectionMain4 div:last-child{
+    border:none;
+}
+.sectionMain4>img{
+    position:absolute;
+    top:20px;
+    left:25%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.recordTime{
+    position:absolute;
+    left:5px;
+}
+.recordText{
+    margin-left: 45%;
+    width: calc(100% - 45%);
+}
+.sectionMain4 div{
+    overflow:hidden;
+}
+.sectionMain4 span,.recordTime div{
+    height:40px;
+    line-height:40px;
+}
+
+.form_section .iconImg8{
+    font-size: 70px;
+    margin: 0 auto;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    color: #fff;
+    transition:0.5s all;
+}
+.form_section .btn3{
+    text-align: center;
+    color: #666;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+.form_section .btn4{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.form_section .row1{
+    height: 50px;
+    line-height: 50px;
+    margin: 50px 0 0 10px;
+}
+
+.form_section .row1 > span{
+    font-size:20px;
+}
+
+.form_section .btn5{
+    line-height: 60px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+
+.form_section .winCon-full{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #eee;
+    z-index: 1;
+}
+
+.img-btn1{
+    position: absolute;
+    line-height: 300px;
+    top: 0;
+    font-size: 40px!important;
+    color: #aaa;
+}
+
+.logo1{
+    display:block;
+    margin: -200px auto;
+    width: 30%;
+    animation:upAnimation 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode : forwards
+}
+@keyframes upAnimation {
+    0%{display:block;margin: -200px auto;}
+    100%{display:block;margin: 30px auto;}
+}
+
+.mod-ver{
+    position:absolute;
+    bottom:40px;
+    text-align:center;
+    width:100%;
+    color:#888;
+}
+
+/*购物车 选择按钮*/
+.form_section .mod-select1{
+    position:absolute;
+    top:0;
+    left:0;
+    width:30px;
+    height:100px;
+}
+.form_section .btn-circle1{
+    border:2px solid #ccc;
+    width:20px;
+    height:20px;
+    line-height: 20px;
+    text-align:center;
+    border-radius:50%;
+    color:#888;
+    transition:0.5s all;
+    margin: 35px 0 0 4px;
+}
+.form_section .btn-circle1-select{
+    border: 2px solid #138bbe;
+    background: #138bbe;
+    color: #fff;
+    font-weight: 900;
+    line-height: 16px;
+    font-size: 12px;
+}
+.form_section .img-product1{
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+}
+.form_section .product-top1{
+    line-height: 40px;
+    background: #F8F8F8;
+    border-top: 1px solid #eee;
+}
+/*结算*/
+.form_section .mod-bottom1{
+    position:fixed;
+    bottom:48px;
+    left:0;
+    border:1px solid #eee;
+    border-left:none;
+    border-right:none;
+    width:100%;
+    height:50px;
+    overflow:hidden;
+    background:#fff;
+    z-index:1;
+}
+.form_section .bottom1-select{
+    float:left;
+    padding-left:5px;
+    line-height:48px;
+}
+.form_section .bottom1-select>div:first-child{
+    margin-top:12px;
+}
+.form_section .bottom1-select>span{
+    color:#888;
+    margin-left:5px;
+}
+.form_section .bottom1-money{
+    position:absolute;
+    left:80px;
+    top:0;
+    height:50px;
+    /*padding:5px 0;*/
+}
+.form_section .bottom1-money>div{
+    line-height:50px;
+}
+
+.form_section .bottom1-btn{
+    float:right;
+    background:#138bbe;
+    color:#fff;
+    width:25%;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    font-size:18px;
+}
+
+/*图标行排列*/
+.mod-rowIcon{
+    overflow:hidden;
+    width:60%;
+    float:left;
+}
+.mod-rowIcon>div{
+    width:33.33%;
+    float:left;
+    height:50px;
+}
+.mod-rowIcon>div>div{
+    text-align: center;
+    line-height: 1;
+    margin: 7px 0;
+    color: #666;
+}
+
+.page-top1{
+    position:relative;
+    background:#138bbe;
+    height:100px;
+}
+.page-top1-right{
+    position:absolute;
+    top:10px;
+    right:4%;
+    font-size:25px!important;
+    color:#fff;
+}
+.page-narrow1{
+    width:90%;
+    margin:-50px auto 0;
+}
+.mod-up1{
+    position:relative;
+    height:90px;
+    box-shadow:0 0 20px 1px rgba(0, 0, 0, 0.2);
+    background:#fff;
+    overflow:hidden;
+}
+.mod-circleImg1{
+    width: 50px;
+    height: 50px;
+    margin: 20px 5px;
+    overflow:hidden;
+    border-radius:50%;
+    box-shadow: 0 1px 3px 1px #ccc;
+    border: 1px solid #fff;
+}
+.mod-up1-text{
+    position:absolute;
+    top:0;
+    left:50px;
+    line-height:50px;
+}
+.mod-up2-text{
+    position:absolute;
+    top:0;
+    left:50px;
+    line-height:140px;
+}
+.mod-up1-right{
+    position:absolute;
+    top:10px;
+    right:-10px;
+    width:100px;
+    height:25px;
+    line-height:25px;
+    padding:0 0 0 0px;
+    border-radius:15px;
+    color:#fff;
+    background:#138bbe;
+}
+.mod-up2-right{
+     position:absolute;
+     top:60px;
+     right:-15px;
+     width: 140px;
+     height:25px;
+     line-height:25px;
+     padding:0 0 0 0px;
+     border-radius:15px;
+     color:#fff;
+     background:#138bbe;
+ }
+.mod-up1-right>span{
+    color:#fff;
+    font-size:12px;
+}
+.mod-up2-right>span{
+    color:#fff;
+    font-size:12px;
+}
+
+.mod-cols1{
+    background:#fff;
+    overflow:hidden;
+    padding:10px 0;
+}
+.mod-cols1>div{
+    position:relative;
+    float:left;
+    width:33.33%;
+    border-right:1px solid #eee;
+}
+.mod-cols1>div:last-child{
+    border-right:none;
+}
+.mod-cols1>div>div:first-child{
+    height:30px;
+    font-size:30px;
+    line-height:1;
+}
+.mod-cols1>div>div{
+    text-align:center;
+}
+.icon-right-top1{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+/*顶部导航菜单*/
+.topMenu {
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+/*顶部导航菜单选项按钮*/
+.topMenu > div {
+    position: relative;
+    display: inline-block;
+    flex: 0 0 25%;
+    margin: 10px 0;
+}
+
+.topMenu5 > div{
+    flex: 0 0 20%;
+}
+
+.topMenu > div > div {
+    text-align: center;
+}
+
+/*顶部导航菜单选项按钮图标*/
+.topMenu > div > div:first-child {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    text-shadow: 0 1px 3px #ccc;
+}
+
+.topMenu > div > div:last-child {
+    font-size: 12px;
+}
+
+.topMenu-tap,.topMenu-tap2{
+    position: absolute;
+    top: -5px;
+    right: 20%;
+    background: rgba(19, 139, 190, 0.7);
+    color: #fff;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+}
+.topMenu-tap2{
+    background: #fff;
+    border: 1px solid #138bbe;
+    color: #138bbe;
+}
+
+.mod-title2{
+    overflow:hidden;
+    background:#fff;
+    border-bottom:1px solid #eee;
+    padding:0 10px;
+}
+.mod-title2,.mod-title2>div{
+    height:40px;
+    line-height:40px;
+    color:#888;
+}
+.mod-title2>div:first-child{
+    font-size:16px;
+    color:#666;
+}
+
+/*圆形加载条*/
+.circleProgress_wrapper{
+    width: 250px;
+    height: 250px;
+    margin: 50px auto;
+    position: relative;
+    border:1px solid rgba(255, 255, 255, 0);
+}
+.wrapper{
+    width: 50%;
+    height: 250px;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+}
+.right{
+    right:0;
+}
+.left{
+    left:0;
+}
+.circleProgress{
+    width: 250px;
+    height: 250px;
+    border:10px solid rgb(232, 232, 12);
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    -webkit-transform: rotate(45deg);
+}
+.rightcircle{
+    border-top:10px solid green;
+    border-right:10px solid green;
+    right:0;
+    -webkit-animation: circleProgressLoad_right 5s linear infinite;
+}
+.leftcircle{
+    border-bottom:10px solid green;
+    border-left:10px solid green;
+    left:0;
+    -webkit-animation: circleProgressLoad_left 5s linear infinite;
+}
+@-webkit-keyframes circleProgressLoad_right{
+    0%{
+        border-top:10px solid #ED1A1A;
+        border-right:10px solid #ED1A1A;
+        -webkit-transform: rotate(45deg);
+    }
+    50%{
+        border-top:10px solid rgb(232, 232, 12);
+        border-right:10px solid rgb(232, 232, 12);
+        border-left:10px solid rgb(81, 197, 81);
+        border-bottom:10px solid rgb(81, 197, 81);
+        -webkit-transform: rotate(225deg);
+    }
+    100%{
+        border-left:10px solid green;
+        border-bottom:10px solid green;
+        -webkit-transform: rotate(225deg);
+    }
+}
+@-webkit-keyframes circleProgressLoad_left{
+    0%{
+        border-bottom:10px solid #ED1A1A;
+        border-left:10px solid #ED1A1A;
+        -webkit-transform: rotate(45deg);
+    }
+    50%{
+        border-bottom:10px solid rgb(232, 232, 12);
+        border-left:10px solid rgb(232, 232, 12);
+        border-top:10px solid rgb(81, 197, 81);
+        border-right:10px solid rgb(81, 197, 81);
+        -webkit-transform: rotate(45deg);
+    }
+    100%{
+        border-top:10px solid green;
+        border-right:10px solid green;
+        border-bottom:10px solid green;
+        border-left:10px solid green;
+        -webkit-transform: rotate(225deg);
+    }
+}
+
+.circleProgress_text{
+    line-height: 250px;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.form_section .input-tap1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    color:#ff2222;
+}
+
+.search1,.search1 *{
+    height:40px;
+    line-height:40px;
+    margin-bottom:10px;
+    font-size: 12px;
+}
+.search1 input[type="text"]{
+    width:calc(100% - 140px);
+}
+.search1 button,.search1 input[type="submit"]{
+    width: 60px;
+    margin: 0 1px;
+    padding: 0;
+    background: #138bbe;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.search1 .disabledBtn1{
+    background:#aaa;
+}
+
+.searchItem{
+    padding:5px 10px;
+    border-bottom:1px solid #ccc;
+    background:#fff;
+}
+.searchItem>div:first-child{
+    height:30px;
+    line-height:30px;
+    color:#333;
+    font-size: 16px;
+}
+.searchItem>div:last-child{
+    height:20px;
+    line-height:20px;
+    color:#999;
+    font-size: 12px;
+}
+
+
+.shareCon{
+    position:relative;
+    background: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 1px #ccc;
+    padding: 10px;
+}
+.share-text{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    color: #888;
+    padding: 10px;
+    width: 100%;
+}
+
+.storeCon{
+    background: #fff;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 10px;
+    border-radius: 5px;
+}
+.storeCon-main{
+    overflow:hidden;
+    /*border: 1px solid #ccc;*/
+}
+.storeCon-main .storeCon-title{
+    height: 30px;
+    line-height: 40px;
+}
+.storeCon-main>img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 1px #ccc;
+}
+.storeCon-main .storeCon-info{
+    float:left;
+    overflow:hidden;
+    width:calc(100% - 100px)
+}
+.storeCon-main .storeCon-info>div{
+    background: #eee;
+    border-radius: 5px;
+    color: #888;
+    padding: 2px 10px;
+    margin: 5px 5px 5px 0;
+    float: left;
+    box-shadow:0 1px 3px #ccc;
+}
+.storeCon-main .storeCon-tag>.tag-canUse{
+    background: #ff8383;
+    color: #fff;
+}
+.storeCon .storeCon-address{
+    line-height: 18px;
+    padding: 0 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin: 5px 0;
+}
+.storeCon .storeCon-date{
+    text-align: right;
+    padding-right: 10px;
+    color: #aaa;
+    overflow:hidden;
+    height: 30px;
+}

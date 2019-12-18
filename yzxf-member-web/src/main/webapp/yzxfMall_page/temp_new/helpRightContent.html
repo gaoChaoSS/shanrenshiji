@@ -1,0 +1,9 @@
+<div class="helpContentTitle flex1">
+    {{ulList[navUl].li[navLi].title}}
+</div>
+<div class="helpContentText">
+    <div class="contentPText" ng-repeat="content in helpTxt">
+        <div class="contentT" ng-bind="content.Title"></div>
+        <div class="contentC" ng-bind="content.content"></div>
+    </div>
+</div>

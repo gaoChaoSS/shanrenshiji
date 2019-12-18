@@ -1,0 +1,36 @@
+<div class="grid">
+    <div class="contentRow" ng-style="{width:60+(entityMData.length)*110}">
+        <div class="cell fl header" style="width:60px;"></div>
+        <div class="cell fl header" style="width:110px;" ng-repeat="item in entityMData" ng-if="item._id!='__sync'"
+             ng-bind="item.title"></div>
+        <div class="cell fl header" style="width:110px;"></div>
+    </div>
+    <div class="contentRow sync syncLocal" ng-style="{width:60+(entityMData.length)*110}">
+        <div class="cell fl notHigh" style="width:60px;">本地:</div>
+        <div class="cell fl textNowrap" style="width:110px;" ng-repeat="item in entityMData" ng-if="item._id!='__sync'"
+             ng-bind="data[item.name]" title="{{data[item.name]}}"></div>
+        <div class="cell fl" style="width:110px;text-align: center">
+            <button class="button">上传</button>
+        </div>
+    </div>
+    <div class="contentRow sync " ng-style="{width:60+(entityMData.length)*110}"
+         ng-if="syncData.local!=null&&syncData.remote!=null">
+        <div class="cell fl notHigh" style="width:60px;">合并:</div>
+        <div class="cell fl textNowrap" style="width:110px;" ng-repeat="item in entityMData" ng-if="item._id!='__sync'"
+             ng-bind="mergeData[item.name]" title="{{mergeData[item.name]}}"></div>
+        <div class="cell fl" style="width:110px;text-align: center">
+            <button class="button">应用</button>
+        </div>
+    </div>
+    <div class="contentRow sync syncRemote" ng-style="{width:60+(entityMData.length)*110}">
+        <div class="cell fl notHigh" style="width:60px;">远程:</div>
+        <div class="cell fl notHigh" ng-if="syncData.remote==null" ng-style="{width:(entityMData.length)*110}">无数据...
+        </div>
+        <div class="cell fl textNowrap" style="width:110px;"
+             ng-repeat="item in entityMData" ng-if="syncData.remote!=null&&item._id!='__sync'"
+             ng-bind="remoteData[item.name]" title="{{remoteData[item.name]}}"></div>
+        <div class="cell fl" ng-if="syncData.remote!=null" style="width:110px;text-align: center">
+            <button class="button">更新本地</button>
+        </div>
+    </div>
+</div>

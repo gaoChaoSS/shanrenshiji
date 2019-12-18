@@ -1,0 +1,27 @@
+<div class="myfile" ng-class="showType">
+    <div class="buttonCon fl" ng-if="isEdit">
+        <button class="button highM">选择...</button>
+        <input type="file"
+               name="file"
+               multiple="{{isMultiple?'':'multiple'}}"
+               onchange="angular.element(this).scope().uploadFile(this)"
+               style="filter: alpha(opacity = 1);"/>
+    </div>
+    <div class="button fl" style="margin-left:10px; height: 28px;line-height: 18px;" ng-if="showType=='grid'">浏览...
+    </div>
+    <div ng-if="fileOptions==null||fileOptions.length==0" class="notHigh" style="pading:10px;">无数据!</div>
+    <div class="item fl" title="{{item.name}}" ng-show="showType!='grid'" ng-repeat="item in fileOptions"
+         ng-click="selectItem(item)">
+        <div class="textNowrap" ng-bind="item.name"></div>
+        <div ng-bind="item.sizeStr"></div>
+        <img ng-if="item.isImg" ng-src="{{item.$$url}}"/>
+        <div class="status iconfont"
+             ng-if="item.complate"
+             ng-class="item.success?'green icon-jianchacheck35':'high icon-addcollapse'"></div>
+        <div class="del iconfont icon-addcollapse highT" ng-click="delItem($index);$event.stopPropagation();"
+             ng-if="isEdit"></div>
+        <div class="select iconfont green"
+             ng-class="selectIdMap[item.fileId]?'icon-jianchacheck35':''"
+             ng-if="selectDataType!='none'&&selectIdMap[item.fileId]"></div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<input class="num" type="date" ng-model="filter.$$startTime" style="width:150px;"
+       ng-click="goPage('/pop/dateSelect/type/startTime/value/'+filter.startTime)"/>
+至
+<input class="num" type="date" ng-model="filter.$$endTime" style="width:150px;"
+       ng-click="goPage('/pop/dateSelect/type/endTime/value/'+filter.endTime)"/>
+<button class="button" type="button" style="padding:5px;" ng-repeat="item in filterTimeButtons"
+        ng-click="setTimeByType(item)" ng-class="filter.selectTimeBtnId==item._id?'highL':'highN'"
+        ng-bind="item.name">
+</button>

@@ -1,0 +1,68 @@
+.workflow {
+    background: #333 url('../img/workflow_bg.png');
+    color: #fff;
+    position: relative;
+}
+
+.nodeToolBtn {
+    color: royalblue !important;
+}
+
+.workflow > .toolbar {
+    top: 10px;
+    left: 5px;
+    width: 65px;
+    background-color: #eee;
+    box-shadow: 0 0 3px #444;
+    position: absolute;
+    color: #333;
+    padding-bottom: 6px;
+
+}
+
+.workflow > .toolbar.min {
+    width: 35px;
+}
+
+.workflow > .toolbar > .title {
+    background-color: #aaa;
+    padding: 6px;
+    margin-bottom: 4px;
+    cursor: move;
+    overflow: hidden;
+}
+
+.workflow > .toolbar > .item {
+    border-radius: 3px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    margin: 0 4px;
+}
+
+.workflow > .toolbar > .item.hr {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #fff;
+    margin: 4px 6px 3px;
+}
+
+.workflow > .toolbar > .item > .icon {
+    padding: 0 2px 0 6px;
+    line-height: 28px;
+    float: left;
+}
+
+.workflow > .toolbar > .item > .text {
+    height: 28px;
+    line-height: 28px;
+    float: left;
+
+}
+
+.workflow > .toolbar.min > .item > .text {
+    display: none;
+}
+
+.workflow > .toolbar > .item.con:hover {
+    background-color: #ddd;
+    border: 1px solid #333;
+}

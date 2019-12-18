@@ -1,0 +1,91 @@
+<div class="grid">
+    <div layout>
+        <!--顶部区域-->
+        <div data-type="top" size="35" style="padding: 2px">
+            <button ng-repeat="item in topBtns" class="button" ng-class="item.icon" ng-click="item.click()"
+                    ng-bind="item.name">
+            </button>
+            <form ng-if="!hideSearch" class="fl search" ng-submit="query();">
+                <input ng-model="filter.keywordValue" placeholder="输入关键字" auto-complate="true" model="{{model}}"
+                       entity="{{entity}}" menu-click="query();" filter="filter"
+                       keywords="{{filter.keywords}}"/>
+                <button class="icon-search" type="submit"></button>
+            </form>
+            <div class="fl">
+                <button ng-if="!hideQueryBtn" class="button" ng-click="resetFilter();query();">查询所有</button>
+                <button ng-if="!hideQueryBtnMore" class="button" ng-click="resetFilter();query();">高级查询</button>
+            </div>
+            <div class="fl">
+                <button ng-if="showEditBtn" class="icon-pencil button" ng-class="isEdit?'highT':''"
+                        ng-click="updateEditMode()">编辑模式
+                </button>
+            </div>
+            <div class="fl">
+                <button class="icon-refresh iconfont button" ng-click="genMDataAndQuery(null,true)">
+                    刷新
+                </button>
+            </div>
+
+            <!--<div class="fl" style="padding: 1px 4px">-->
+            <!--<select style="height: 24px;" ng-show="showShowTypeBtn" ng-model="contentTemp"-->
+            <!--ng-options="a.value as a.name for a in conTempList"></select>-->
+            <!--</div>-->
+        </div>
+
+        <!-- 底部区域  -->
+        <div data-type="bottom" size="35" style="padding: 2px;">
+            <div class="fl" ng-if="isEdit">
+                <button class="button icon-plus green" ng-click="showSaveForm();" title="完整添加">添加</button>
+                <button class="button icon-cross high" ng-click="deleteMore()" title="多条删除">删除</button>
+            </div>
+            <div class="fl">
+                <button class="button" ng-repeat="item in bottomActions" ng-click="clickBottomAction(item)"
+                        ng-bind="item.name">
+                </button>
+            </div>
+            <!-- 分页 -->
+            <div class="pageCon fr" ng-include="'/temp/inc_grid_page.html'"></div>
+        </div>
+
+        <div ng-if="contentTemp=='/temp/inc_grid.html'&&selectDataType=='more'"
+             class="selectAll header checkbox">
+            <div ng-class="__selectAll?'icon-checkbox-checked':'icon-checkbox-unchecked'"
+                 ng-click="selectAll()"></div>
+            <div class=""></div>
+            <div class="icon-table2" ng-class="selectedRowCount<headerRow.length?'green bold':''"
+                 ng-click="selectHeaderRow()"
+                 title="{{selectedRowCount<headerRow.length?'部分栏位被隐藏':'设定显示栏位'}}"></div>
+        </div>
+        <div ng-if="contentTemp=='/temp/inc_grid.html'&&selectDataType!='more'" class="selectAll checkbox header"></div>
+        <div ng-if="contentTemp=='/temp/inc_grid.html'" class="headerRow"
+             ng-style="{width:contentWidth,left:headerLeft}">
+            <div class="header lb" ng-repeat="field in headerRow|filter:{$$selected: true}"
+                 ng-style="{width:field.__width}"
+                 ng-click="orderByHeader(field)" ng-class="field.name==filter.orderBy?field.__orderbyClass:''"
+                 ng-bind="field.$$name">
+            </div>
+            <!--<div class="header end">&nbsp;</div>-->
+        </div>
+        <div ng-if="contentTemp=='/temp/inc_grid.html'" class="checkboxCon">
+            <div class="cell checkbox">
+                <div class="icon-plus" ng-class="fristRowAction=='add'&&isEdit?'green':'notHigh'"
+                     ng-click="firstRow('add')"
+                     title="快速添加"></div>
+                <div class="icon-filter" ng-class="fristRowAction=='query'||!isEdit?'green':'notHigh'" title="过滤数据"
+                     ng-click="firstRow('query')"></div>
+                <div class="icon-addcollapse iconfont high" ng-click="clearQuickAddData();"></div>
+            </div>
+            <div ng-if="selectDataType!='none'" class="cell checkbox" style="padding:0;" ng-repeat="item in data.items">
+                <div ng-class="item.__selected?'icon-checkbox-checked':'icon-checkbox-unchecked'" title="选择该条数据"
+                     ng-click="selectRow(item)"></div>
+                <div class="icon-list" title="查看单条记录" ng-click="showEditForm(item, $index)"></div>
+                <div class="icon-addcollapse iconfont" ng-class="isEdit?'high':'notHigh'" title="删除该条数据"
+                     ng-click="deleteItem($index)"></div>
+            </div>
+        </div>
+        <div data-type="center" style="overflow: hidden;background-color: #eee">
+            <div ng-include="contentTemp"
+                 style="height: 100%; width: 100%;padding-left: 100px;padding-top: 28px;"></div>
+        </div>
+    </div>
+</div>

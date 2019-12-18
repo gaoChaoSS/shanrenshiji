@@ -1,0 +1,26 @@
+<form class="pageMain">
+    <div class="sectionPage" ng-show="dataPage.totalNum>0">
+        <div style="margin: 0 auto;">
+            <div class="btn3" ng-click="pageNext(-1)" ng-show="dataPage.pageNo>1">上一页</div>
+            <div class="btn3 fl marginLR5" ng-bind="1" ng-click="pageNumber(1)"  ng-show="dataPage.pageNo>4"></div>
+            <div ng-show="dataPage.pageNo>5" class="fl lineH30px">...</div>
+
+            <div class="btn3" ng-repeat="i in dataPage.$$pageList" ng-bind="i" ng-show="dataPage.totalPage>1"
+                 ng-click="pageNumber(i)"
+                 ng-class="dataPage.pageNo==i?'hoverBorder':''"></div>
+
+            <div ng-show="dataPage.pageNo<dataPage.totalPage-5" class="lineH30px">...</div>
+            <div class="btn3" ng-bind="dataPage.totalPage"
+                 ng-click="setPageNo(dataPage.totalPage);"
+                 ng-show="dataPage.pageNo<dataPage.totalPage-4"></div>
+            <div class="btn3" ng-click="pageNext(1)" ng-show="dataPage.pageNo<dataPage.totalPage">
+                下一页
+            </div>
+            <div class="pageGo"
+                 ng-show="dataPage.totalPage>1">
+                <input type="text" placeholder="跳转" ng-model="pageGo">
+                <button class="iconfont icon-right-1-copy" ng-click="pageGoFun(pageGo)"></button>
+            </div>
+        </div>
+    </div>
+</form>

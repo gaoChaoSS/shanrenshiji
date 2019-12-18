@@ -1,0 +1,72 @@
+.topPageCon {
+    max-width: 500px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 50px 10px #aaa;
+    height: 700px;
+    position:relative;
+    overflow:auto;
+    overflow-y:hidden;
+}
+
+.topPageCon.index, .topPageCon.hideTop {
+    margin-top: 30px;
+}
+
+.tab-bottom {
+    bottom: auto;
+    top: 672px;
+    width: 498px;
+    margin: auto;
+    position: absolute;
+}
+
+.topPageCon > .form_section > .loginBk {
+    background: url('/yzxfSeller_page/img/loginBK.png') no-repeat center center;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    width: 498px;
+    left: auto;
+    bottom: auto;
+    height: 698px;
+}
+
+.topPageCon >.form_section .hideMenu{
+    position: absolute;
+    width: 498px;
+    left: auto;
+    height: 699px;
+    top: 0;
+}
+
+.topPageCon .index_page_globalDiv {
+    position: static;
+}
+
+.topPageCon .form_section .hideCommodityBtn{
+    position:absolute;
+    bottom:0;
+}
+/*地址选择*/
+.topPageCon .form_section .sectionLocation {
+    width: 498px;
+    height: 698px;
+    position:static;
+}
+
+.topPageCon .overflowPC{
+    width: 498px;
+    height: 698px;
+    overflow:auto;
+    padding-bottom:200px;
+}
+
+.loadingBk{
+    margin-top: 0 !important;
+}
+
+.topPageCon .form_section .mod-bottom1{
+    position:absolute;
+    bottom:55px;
+}

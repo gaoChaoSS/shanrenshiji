@@ -1,0 +1,81 @@
+<form style="position: absolute; left: 0; right: 0; top: 0; bottom: 40px; overflow: auto;padding:0 5px;"
+      ng-submit="queryCurrentList();">
+    <div class="sectionTitle">
+        <div class="fl rowTitle1" ng-bind="entityTitle"></div>
+        <div class="fr">
+            <button class="btn1 bgOrange" type="button" ng-click="resetFilter();">重置</button>
+            <button class="btn1 bgBlue" type="submit">查询</button>
+        </div>
+    </div>
+
+    <div class="sectionQuery flex2" ng-include="tempGridFilter">
+
+    </div>
+
+    <div class="sectionAction">
+        <div ng-click="showDataInfo()" ng-show="windowInfo!=null">查看</div>
+        <div ng-click="item.action()" ng-bind="item.name" class="marginLeft20" ng-repeat="item in actionList">
+        </div>
+    </div>
+
+    <div class="sectionTable" ng-include="tempGridList">
+    </div>
+    <div class="isNullBox" ng-show="dataPage==null || dataPage.totalNum==0">
+        <div class="iconfont icon-meiyouneirong isNullIcon"></div>
+        <div class="font25px colorGrayccc">没有数据</div>
+    </div>
+    <div class="sectionPage" ng-class="cwCheck?'':'sectionPage2'" ng-show="dataPage.totalNum>0">
+        <div class="sectionPageNum">
+            共 <span ng-bind="dataPage.totalNum" class="sectionPageNumText"></span> 条记录...
+            <span ng-show="model=='account' && entity=='trade' ">总计 <span ng-bind="tradeSum==null?'0':tradeSum.toFixed(2)" class="sectionPageNumText"></span> ¥</span>
+        </div>
+        <div class="sectionPageNum">
+            <div style="margin-left: 250px;" class="btn1 bgBlue" ng-click="createTradeExcel();" ng-show="createTradeExcel">点击导出当前数据</div>
+        </div>
+        <div class="sectionPageNum" style="margin-left: 120px;" ng-show="model=='count' && entity=='memberCount'">
+            共 <span ng-bind="memberNum" class="sectionPageNumText"></span> 位会员...
+        </div>
+        <!--<div class="sectionPageNum" style="margin-left: 120px;" ng-if="model=='card' && entity=='cardCount'">-->
+            <!--共 <span ng-bind="activeNumAll" class="sectionPageNumText"></span> 张会员卡...-->
+        <!--</div>-->
+        <div class="sectionPageNum" style="margin-left: 120px;" ng-if="model=='account' && (entity=='sellerIncome'||entity=='factorIncome'||entity=='agentIncome')">
+            总收益额: <span ng-bind="getMoney(monthMoneySum)" class="sectionPageNumText"></span>
+        </div>
+        <div class="sectionPageNum" style="margin: -6px 0 0 120px;" ng-if="model=='insure' && entity=='pensionLog'">
+            <div>总投保额: <span ng-bind="getMoney(totalUse)" class="sectionPageNumText"></span></div>
+            <div>总未投保额: <span ng-bind="getMoney(totalNot)" class="sectionPageNumText"></span></div>
+        </div>
+        <div class="btn3" ng-click="pageNext(-1);queryCurrentList();" ng-show="dataPage.pageNo>1">上一页</div>
+        <div ng-show="dataPage.pageNo>4">
+            <div class="btn3 fl marginLR5" ng-bind="1" ng-click="pageNumber(1)"></div>
+            <div class="fl lineH30px">...</div>
+        </div>
+        <div class="btn3" ng-repeat="i in dataPage.$$pageList" ng-bind="i" ng-show="dataPage.totalPage>1"
+             ng-click="filter.pageNo=i;queryCurrentList();"
+             ng-class="dataPage.pageNo==i?'bgBlue tWhite':''"></div>
+
+        <div ng-show="dataPage.pageNo<dataPage.totalPage-4">
+            <div class="fl lineH30px">...</div>
+            <div class="btn3 fl marginLR5" ng-bind="dataPage.totalPage"
+                 ng-click="filter.pageNo=dataPage.totalPage;queryCurrentList();"></div>
+        </div>
+        <div class="btn3" ng-click="pageNext(1);queryCurrentList();" ng-show="dataPage.pageNo<dataPage.totalPage">
+            下一页
+        </div>
+        <div class="pageGo"
+             ng-show="dataPage.totalPage>1">
+            <input type="text" placeholder="跳转" ng-model="pageGo">
+            <button class="iconfont icon-right-1-copy" ng-click="pageGoFun(pageGo);queryCurrentList()"></button>
+        </div>
+    </div>
+</form>
+<div class="winCon" ng-show="showPopWin">
+    <div class="content" ng-class="winCheck?'content2':'content1'">
+        <div class="contentTitle" ng-bind="popWinTitle"></div>
+        <div class="close1" ng-click="closePopWin()">
+            <div class="close1-icon iconfont icon-plus"></div>
+        </div>
+        <div class="close1 iconfont icon-daifahuo" style="right:40px;" ng-click="winCheck=!winCheck"></div>
+        <div class="include" ng-include="popWindowTemp"></div>
+    </div>
+</div>

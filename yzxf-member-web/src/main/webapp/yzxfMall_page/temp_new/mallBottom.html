@@ -1,0 +1,84 @@
+<!--底部大图标-->
+<div class="bottom_iconDiv" style="clear: left;">
+    <div class="bodyWidth marginZAuto flex1" style="height: 160px;clear: left">
+        <!--logo1-->
+        <div class="floatL bottom_icon">
+            <img class="floatL" src="/yzxfMall_page/img/zhiliang.png" alt="">
+            <div class="bottom_icon_text floatL">100%质量保证</div>
+        </div>
+        <div class="floatL bottom_icon">
+            <img class="floatL" src="/yzxfMall_page/img/baoyou.png" alt="">
+            <div class="bottom_icon_text floatL">全国包邮 低价保障</div>
+        </div>
+        <div class="floatL bottom_icon">
+            <img class="floatL" src="/yzxfMall_page/img/shan.png" alt="">
+            <div class="bottom_icon_text floatL">24小时快速送货</div>
+        </div>
+        <div class="floatL bottom_icon">
+            <img class="floatL" src="/yzxfMall_page/img/gou.png" alt="">
+            <div class="bottom_icon_text floatL">各类商品应有尽有</div>
+        </div>
+    </div>
+</div>
+<!--底部多链接DIV-->
+<div class="bottom_hrefDiv">
+    <div class="bodyWidth marginZAuto flex1" style="padding:20px 0;clear: left">
+        <div class="bottom_href borderLeftGraay" ng-repeat="menu in menuList">
+            <div class="bottom_href_title" ng-bind="menu.name"></div>
+            <div ng-repeat="menu2 in menu.items" ng-bind="menu2.name" ng-click="selectedHelp(menu2)"></div>
+        </div>
+
+        <!--<div class="bottom_href borderLeftGraay">-->
+            <!--<div class="bottom_href_title">消费者</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/0/li/0')">注册流程</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/0/li/1')">赚养老金流程</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/0/li/2')">支付方式</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/0/li/3')">找回密码</div>-->
+        <!--</div>-->
+        <!--<div class="bottom_href borderLeftGraay">-->
+            <!--<div class="bottom_href_title">商家</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/1/li/0')">入驻流程</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/1/li/1')">入驻优势</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/1/li/2')">入驻要求</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/1/li/3')">操作说明</div>-->
+        <!--</div>-->
+        <!--<div class="bottom_href borderLeftGraay">-->
+            <!--<div class="bottom_href_title">厂家</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/2/li/0')">入驻流程</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/2/li/1')">入驻优势</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/2/li/2')">入驻要求</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/2/li/3')">操作说明</div>-->
+        <!--</div>-->
+        <!--<div class="bottom_href borderLeftGraay">-->
+            <!--<div class="bottom_href_title">售后服务</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/3/li/0')">品质保证</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/3/li/1')">退货政策</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/3/li/2')">退货流程</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/3/li/3')">办理退货</div>-->
+        <!--</div>-->
+        <!--<div class="bottom_href borderLeftGraay">-->
+            <!--<div class="bottom_href_title">联系我们</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/4/li/0')">平台介绍</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/4/li/1')">联系我们</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/4/li/2')">帮助中心</div>-->
+            <!--<div ng-click="goPage('/help/help/ul/4/li/3')">成为供应商</div>-->
+        <!--</div>-->
+        <div class="bottom_href borderLeftGraay borderRightGraay">
+            <div class="bottom_href_title">4000-888-888</div>
+            <!--<img src="/yzxfMall_page/img/2Dcode.png" alt="" style="margin-top: -5px;">-->
+        </div>
+    </div>
+</div>
+<!--信息-->
+<div class="bottom_infoDiv">
+    <!--第一行-->
+    <!--<div class="flex1" style="line-height: 60px;">-->
+        <!--<div class="floatL bottom_info_text">成都市郫都区菁蓉镇天虎动力大楼</div>-->
+        <!--<div class="floatL bottom_info_text">tel:4000-888-888</div>-->
+        <!--<div class="floatL bottom_info_text">E-mail:326495261@qq.com</div>-->
+    <!--</div>-->
+    <!--第二行-->
+    <div class="flex1 bottom_info_text" style="padding-top: 30px;">
+        @2017 四川德源盛世商贸有限公司 版权所属
+    </div>
+</div>

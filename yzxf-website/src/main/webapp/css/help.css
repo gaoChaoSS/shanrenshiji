@@ -1,0 +1,122 @@
+h1 {
+    font-size: 22px;
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 1px dashed #ddd;
+    margin: 0 15px;
+    color: #555;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 16px;
+    padding: 25px 0 0 15px;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 10px 0 0 15px;
+    font-weight: 200;
+}
+
+.helpNav {
+    float: left;
+    padding: 0;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    width: 180px;
+}
+
+.helpNav li {
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-top: 1px solid #f5f5f5;
+    text-align: left;
+    padding: 0 0 0 18px;
+}
+
+.helpNav li:hover {
+    background-color: #65C5F1 !important;
+    color: #fff;
+}
+
+.helpBannerTitle {
+    height: 40px;
+    line-height: 40px;
+    background-color: #65C5F1;
+    color: #fff;
+}
+
+.helpBannerSelected {
+    color: #65C5F1;
+    border-left: 2px solid #1083B8;
+}
+
+.helpCon {
+    float: right;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    width: 885px;
+    text-align: center;
+    min-height: 300px;
+    padding: 25px 0 30px 0;
+    margin-bottom: 30px;
+}
+
+.helpCon p {
+    color: #555;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.helpConTitle {
+    color: #007EC7;
+    font-size: 20px;
+}
+
+.weChat {
+    display: none;
+    min-height: 400px;
+}
+
+.weChat img {
+    width: 150px;
+}
+
+.weChatLeft {
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.weChatRight {
+    float: right;
+    width: 50%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.weChat p {
+    color: #555;
+    font-size: 14px;
+    width: 370px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.yangLaoXiaoFei {
+    display: none;
+    padding: 0 20px 30px 20px;
+}
+
+.footerCon div {
+    color: #656565 !important;
+    background-color: #fff !important;
+}

@@ -1,0 +1,89 @@
+.helpPageLeftNavDiv{
+    width: 20%;
+    /*height: 90%;*/
+    margin-top: 40px;
+}
+.helpNavRowDiv{
+    width: 100%;
+    border: 1px solid #DFDFDF;
+    border-bottom: none;
+    line-height: 50px;
+    font-size: 18px;
+}
+.helpNavRowDiv:last-child{
+    border: 1px solid #DFDFDF;
+}
+.helpNavRowDiv>span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.helpNavRowDivLast{
+    width: 100%;
+    height: 20%;
+    border: 1px solid #DFDFDF;
+    line-height: 50px;
+    font-size: 18px;
+}
+.helpNavRowDivLast>span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.helpNavRowDivLast>ul{
+    list-style: none;
+    counter-reset:count;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 40px;
+}
+.helpNavRowDiv>ul{
+    list-style: none;
+    counter-reset:count;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 40px;
+}
+.helpNavRowDiv>ul>li{
+    cursor:pointer;
+}
+.helpNavLi:before{
+    content: '◇';
+    margin-right: 10px;
+    font-size: 12px;
+    color: #FE5495;
+}
+.helpNavLiClick:before{
+    content: '◆';
+}
+.helpNavLiClick{
+    color: #FE5495;
+}
+.iconLingxing{
+    font-size: 13px;
+}
+.helpPageRightContent{
+    width: 78%;
+    height: 90.4%;
+    margin-top: 40px;
+    margin-left: 1%;
+    border: 1px solid #DFDFDF;
+}
+.helpContentTitle{
+    line-height: 80px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 25px;
+    border-bottom: 1px dashed #b3b3b3;
+}
+.helpContentText{
+    padding: 5%;
+    margin: 0 auto;
+}
+.contentT{
+    font-size: 14px;
+    margin: 10px 0;
+    text-indent:28px;
+    line-height: 20px;
+}

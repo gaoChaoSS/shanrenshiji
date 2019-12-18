@@ -1,0 +1,227 @@
+.grid {
+    width: 100%;
+    height: 100%;
+}
+
+.grid > .layout > .top, .grid > div.layout > .bottom {
+    background-color: #ddd;
+    z-index: 3;
+}
+
+.gridContent .cell.num {
+    padding-right: 8px;
+}
+
+.gridContent .cell.num {
+    padding-right: 8px;
+}
+
+.gridContent .cell.iconfont {
+    text-align: center;
+    padding-top: 4px;
+}
+
+.gridContent .cell.icon-jianchacheck35:BEFORE, .gridContent .cell.icon-addcollapse:BEFORE {
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 3px;
+    display: block;
+    width: 20px;
+    margin: 0 auto;
+}
+
+.gridContent .cell.icon-jianchacheck35 {
+    color: green;
+    line-height: 13px;
+}
+
+.gridContent .cell.icon-addcollapse {
+    color: #aaa;
+    line-height: 13px;
+}
+
+.gridContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+}
+
+.linkEntity > div, .linkEntityMore > div, .fileMore > div, .file > div {
+    color: blue;
+}
+
+.grid .header.end, .gridContent .end {
+    width: 80px;
+    text-align: center;
+}
+
+.grid > .layout > .selectAll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 35px 0 0 0;
+    z-index: 2;
+}
+
+.grid > .layout > .selectAll.header.checkbox, .grid > .layout > .checkboxCon > .checkbox {
+    width: 100px;
+    overflow: hidden;
+    padding: 0;
+    background-color: #eee;
+    border-right: 0;
+}
+
+.grid > .layout > .selectAll.header.checkbox {
+    width: 101px;
+    border-right: 1px solid #ccc;
+}
+
+.checkbox > div.icon-addcollapse {
+    font-size: 18px;
+}
+
+.grid > .layout > .selectAll.header.checkbox > div, .grid > .layout > .checkboxCon > .checkbox > div {
+    width: 33.33%;
+    float: left;
+    border-left: 1px solid #ccc;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.grid > .layout > .selectAll.header.checkbox > div:first-child, .grid > .layout > .checkboxCon > .checkbox > div:first-child {
+    border-left: 0;
+}
+
+.grid > .layout > .checkboxCon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 63px;
+    z-index: 1;
+}
+
+.grid .headerRow {
+    position: absolute;
+    margin-top: 35px;
+    z-index: 1;
+    overflow: hidden;
+    margin-left: 101px;
+}
+
+.grid .header {
+    background-color: #eee;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 100px;
+    float: left;
+    text-align: center;
+    height: 28px;
+    color: #000;
+    line-height: 28px;
+}
+
+.grid .cell {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0 2px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+}
+
+.contentRow > .cell.selected, .contentRow > .cell:hover {
+    background-color: #eee;
+}
+
+.contentRow.sync > .cell:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.contentRow.addRow > .cell {
+    background-color: #eee;
+}
+
+.contentRow > .cell > .name, .contentRow > .cell > .title {
+    font-weight: bold;
+}
+
+.contentRow > .cell > .int, .contentRow > .cell > .long, .contentRow > .cell > .double {
+    color: blue;
+    text-align: right;
+}
+
+.contentRow > .cell > .time, .contentRow > .cell > .date, .contentRow > .cell > .dateTime {
+    text-align: left !important;
+}
+
+.contentRow > .cell > .password {
+    text-align: center;
+}
+
+.contentRow > .cell > .password:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.contentRow > .cell > input, .contentRow > .cell > select {
+    width: 100%;
+    border-radius: 4px;
+    color: green;
+}
+
+.contentRow.addRow > .cell.boolean {
+    text-align: center;
+}
+
+.contentRow.addRow > .cell.boolean > i {
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 4px;
+}
+
+.contentRow.addRow > .cell.boolean > .icon-jianchacheck35 {
+    color: green;
+}
+
+.contentRow.addRow > .cell.boolean > .icon-addcollapse {
+    color: #888;
+}
+
+.contentRow > .cell > .textNowrap {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 2px;
+}
+
+.grid .contentRow {
+    overflow: hidden;
+}
+
+/*.grid .contentRow.syncChange {*/
+/*background-color: coral;*/
+/*}*/
+
+/*.grid .contentRow.syncLocal {*/
+/*background-color: #d1fbdd;*/
+/*}*/
+
+/*.grid .contentRow.syncRemote {*/
+/*background-color: lightskyblue;*/
+/*}*/
+
+.grid .contentRow.selected, .grid > .layout > .checkboxCon > .checkbox.icon-checkbox-checked {
+    background-color: #eee;
+}
+
+.pageCon > .button.current:HOVER, .pageCon > .button.current {
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    cursor: default;
+    color: #444;
+}

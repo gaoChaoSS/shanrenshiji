@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于Three.js的360X180度全景图预览插件|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+    <link rel="stylesheet" href="./example1.css"/>
+    <script src="./three.min.js"></script>
+    <script src="./photo-sphere-viewer.min.js"></script>
+    <script src="./example1.js"></script>
+    <!--[if IE]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="htmleaf-container">
+    <div id="content">
+
+        <div id="container"></div>
+        <br/>
+
+        <p>通过下面的按钮你可以上传自己电脑上的全景图来查看效果。代码使用FileReader API，非常简单，可以查看<code>example1.js</code>文件。 </p>
+
+        <div id="your-pano"></div>
+
+        <form method="get" action="example1.html">
+            <p style="text-align: center;">
+                <input type="file" name="pano" id="pano" style="padding: 10px;
+    background-color: #aaa;
+    border-radius: 4px;
+    color: #fff;"/>
+            </p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

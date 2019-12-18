@@ -1,0 +1,8 @@
+<div class="helpNavRowDiv" ng-repeat="ul in ulList">
+    <span><span class="iconLingxing">◆ </span><span ng-bind="ul.title"></span></span>
+    <ul>
+        <li class="helpNavLi" ng-repeat="li in ul.li" ng-bind="li.title"
+            ng-class="(navUl==ul.id && navLi==li.id)?'helpNavLiClick':''"
+            ng-click="selectPage(ul.id,li.id)"></li>
+    </ul>
+</div>

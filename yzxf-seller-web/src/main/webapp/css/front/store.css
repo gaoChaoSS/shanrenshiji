@@ -1,0 +1,391 @@
+/*商家顶部条件筛选区域*/
+.store_panel .storeSelect {
+    z-index: 9999;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    background: #fff;
+}
+
+/*条件按钮*/
+.store_panel .storeSelectBtn {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 2.5%;
+    margin-top: 5px;
+    border: 1px solid #E4E3E4;
+    border-radius: 5px;
+    background: #FAFAFA;
+    text-align: center;
+}
+
+.store_panel .storeSelectBtn > span {
+    color: #868686;
+}
+
+.store_panel .storeSeelctBtnText {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+/*条件按钮右侧图标*/
+.store_panel .storeSeelctBtnIcon {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+/*隐藏的条件菜单*/
+.store_panel .storeSelectMenu {
+    position: absolute;
+    top: 25px;
+    left: -1px;
+    width: 100%;
+    list-style: none;
+    overflow: auto;
+    height: 400px;
+    overflow-x: hidden;
+}
+
+.store_panel .storeSelectMenu li {
+    position: relative;
+    width: calc(100% + 2px);
+    height: 38px;
+    line-height: 40px;
+    text-align: center;
+    background: #FAFAFA;
+    border: 1px solid #E4E3E4;
+    border-bottom: none;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.store_panel .storeSelectMenu li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 1px solid #E4E3E4;
+}
+
+/*选中某一个筛选条件*/
+.store_panel .storeSelectMenu li .selectedIcon {
+    position: absolute;
+    right: 2%;
+    top: 10px;
+    color: #00ae00;
+    font-size: 18px;
+}
+
+/*点击条件查询出现遮罩层*/
+.store_panel .selectOpen {
+    z-index: 9998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*商家列表*/
+.store_panel .storeLists {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.store_panel .storeLists > div {
+    display: inline-block;
+}
+
+/*商家图标*/
+.store_panel .storeIcon {
+    flex: 2.6;
+}
+
+/*没有图片*/
+.store_panel .storeNotIcon {
+    width: 90%;
+    height: 90%;
+    line-height: 90%;
+    margin: 5% auto;
+    color: #bbb;
+    text-align: center;
+}
+
+/*有图片*/
+.store_panel .storeIcon img {
+    width: 100%;
+}
+
+/*商家信息*/
+.store_panel .storeInfo {
+    flex: 5.8;
+    border-right: 1px solid #eee;
+}
+
+/*商家名字一栏*/
+.store_panel .storeName {
+    margin: 0 auto;
+    width: 95%;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+/*商家名字*/
+.store_panel .storeName span:first-child {
+    font-size: 16px;
+    float: left;
+    width: calc(100% - 90px);
+}
+
+/*商家积分率*/
+.store_panel .storeName span:last-child {
+    color: #7a7a7a;
+    float: right;
+    margin-right: 10px;
+}
+
+/*商家描述,地址*/
+.store_panel .storeDescribe {
+    width: 95%;
+    margin: 0 auto;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.store_panel .storeDescribeAddress {
+    height: 40px;
+    line-height: 40px;
+}
+
+.store_panel .storeDescribe, .store_panel .storeDescribe > span {
+    color: #939393;
+}
+
+/*一键拨号*/
+.store_panel .storePhone {
+    flex: 1.6;
+    height: 60px;
+    text-align: center;
+    line-height: 50%;
+}
+
+/*一键拨号图标*/
+.store_panel .storePhoneIcon {
+    font-size: 40px;
+    color: green;
+}
+
+/*一键拨号文字*/
+.store_panel .storePhoneText {
+    font-size: 11px;
+    color: #7a7a7a;
+}
+
+/*商家店页面头部*/
+.storeInfoHead {
+    width: 100%;
+    position: relative;
+    background-image: url('/yzxfSeller_page/img/storeInfoHead.jpg');
+    background-size: 100%, 100%;
+    padding-bottom: 10px;
+}
+
+/*商家店页面头部返回按钮*/
+.storeInfoHead > .storeBack {
+    color: #fff;
+    padding-top: 5px;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+/*商家店页面商家LOGO*/
+.storeInfoHeadLogo {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.storeInfoHeadLogo > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+    border: solid #FFFFFF 1px;
+}
+
+/*商家店页面商家简介*/
+.storeInfoHeadTitle {
+    float: left;
+    width: 43%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.storeInfoHeadTitle > .storeName {
+    border-bottom: 1px solid #FFF;
+    font-size: 17px;
+    color: #fff;
+}
+
+.storeInfoHeadTitle > div {
+    font-size: 12px;
+    color: #fff;
+}
+
+.storeInfoHeadTitle > div > .storeHeadIcon {
+    color: #7db2dd;
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+}
+
+/*商家店页面右边图标*/
+.storeInfoHeadRightIcon {
+    float: right;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+
+.storeInfoHeadRightIcon > .storeIconRight {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+/*地图*/
+.storeAddressImg {
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+.storeAddressImg > img {
+    width: 100%;
+
+}
+
+.commodity {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.commodityImg img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.commodityInfo div {
+    font-size: 16px;
+}
+
+.commodityInfo p {
+    font-size: 16px;
+    float: left;
+}
+
+.commodityInfo span {
+    font-size: 16px;
+    color: red;
+    line-height: 30px;
+}
+
+.commodity a {
+    display: inherit;
+    width: 100%;
+}
+
+.btn-del1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #138bbe;;
+    color: #fff;
+    line-height: 77px;
+    text-align: center;
+    font-size: 25px!important;
+    overflow:hidden;
+    transition:0.5s all;
+}
+.btn-del2{
+    width:60px;
+}
+
+.commodityIcon {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #bbb;
+    margin: 15px 5px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.commodityIcon > img {
+    width: 100%;
+    height: 100%;
+}
+
+.commodityIcon > .del {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 0 0 4px;
+    background-color: red;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.selectFileBtn,
+.uploadInput {
+    width: 80px;
+    height: 80px;
+    margin: 15px 5px;
+    border-radius: 6px;
+}
+
+input[type="file"].uploadInput {
+    position: absolute;
+    opacity: 0.01;
+    top: 65px;
+    left: 5px;
+    z-index: 2;
+}
+
+.selectFileBtn {
+    float: left;
+    line-height: 60px;
+    text-align: center;
+}
+
+

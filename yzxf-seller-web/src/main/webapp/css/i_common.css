@@ -1,0 +1,483 @@
+body * {
+    font-family: Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    line-height: 150%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    /*自动隐藏文字,但会引起chrome的滚动失效*/
+    /*white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    */
+    cursor: default;
+    font-size: 13px;
+    color: #444;
+}
+
+.textNowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    cursor: default;
+    padding: 0px;
+    border: 0;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #eee;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: #444;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearDiv {
+    float: none;
+    clear: both;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.button, .button[disabled="disabled"]:HOVER {
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 3px;
+    margin: 1px;
+    padding: 4px;
+    line-height: 100%;
+    cursor: default;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.high {
+    color: #f54f00 !important;
+}
+
+.green {
+    color: green !important;
+}
+
+.notHigh {
+    color: #aaa !important;
+}
+
+.highN {
+    background-color: #aaa !important;
+    color: #fff !important;
+    border: 1px solid #aaa !important;
+}
+
+.highM {
+    background-color: #61acd3 !important;
+    color: #fff !important;
+    border: 1px solid #61acd3 !important;
+}
+
+.highT, .notifi, .highlight_back, .item > .icon-cross {
+    background-color: #f54f00 !important;
+    border: 1px solid #f54f00 !important;
+    color: #fff !important;
+}
+
+.button:HOVER {
+    color: #444;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.button[disabled="disabled"] {
+    border: 1px solid #ccc;
+    color: #aaa;
+}
+
+select {
+    padding: 3px;
+    height: 24px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+}
+
+select > option {
+    padding: 2px 4px;
+}
+
+input, textarea {
+    padding: 2px 6px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+input:FOCUS, textarea:FOCUS, input:hover, textarea:hover, select:hover {
+    border: 1px solid #444;
+}
+
+input.err, textarea.err, select.err {
+    background-color: #FFC8B4 !important;
+}
+
+input.ok, textarea.ok {
+    border: 1px solid green;
+}
+
+form {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    display: inline;
+}
+
+form.search {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 1px;
+    position: relative;
+}
+
+form.search.focus {
+    border: 1px solid #444;
+}
+
+form.search > input {
+    margin-right: 30px;
+    border: 0;
+    padding: 6px;
+    height: 23px;
+    line-height: 150%;
+    border-radius: 3px 0 0 3px;
+}
+
+form.search > button {
+    position: absolute;
+    border-radius: 0 3px 3px 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    border-left: 1px solid #ccc;
+}
+
+form.search > button:HOVER {
+    color: #fff;
+    background-color: #666;
+}
+
+/*malert*/
+.alertMsgText {
+    position: absolute;
+    font-size: 12px;
+    height: auto;
+    padding: 3px 20px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: 0 0 3px #000;
+    border-radius: 4px;
+    margin: 4px;
+    opacity: 0.9;
+}
+
+.num {
+    color: blue;
+    text-align: right;
+}
+
+/*弹出窗口*/
+#markLoading, #dataLoading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+    overflow: auto;
+}
+
+#markLoading {
+    top: 0;
+    bottom: 0;
+}
+
+#dataLoading {
+    box-shadow: 0 0 1px #444;
+    background-color: #444;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    top: 100px;
+    width: 100px;
+}
+
+/*menuCon*/
+.menuCon {
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    box-shadow: 0 0 2px #ccc;
+    min-height: 30px;
+    min-width: 150px;
+}
+
+.menuCon > .item {
+    padding: 6px 10px;
+    border-top: 1px solid #ccc;
+}
+
+.menuCon > .item:HOVER {
+    background-color: #444;
+    color: #fff;
+}
+
+.menuCon > .count {
+    text-align: center;
+    padding: 4px;
+    border-top: 1px solid #ccc;
+}
+
+/*tree*/
+.tree-view {
+    padding: 6px;
+}
+
+.tree-view ul {
+    padding-left: 1.5em;
+    list-style: none;
+}
+
+.tree-view li {
+    padding: 2px 0;
+}
+
+.tree-view .treeIcon {
+    color: #bbb;
+}
+
+.tree-view span.title {
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+
+.tree-view span.title.selected, .tree-view span.title.selected:HOVER {
+    background-color: #444;
+    color: #fff;
+}
+
+.tree-view span.title:HOVER {
+    border: 1px solid #444;
+    background-color: #eee;
+}
+
+.treeMenu .treeItem {
+    margin-top: 1px;
+    color: #000;
+    position: relative;
+}
+
+.treeMenu .treeItemCon {
+    padding-left: 1em;
+}
+
+.treeItem > .title.selected, .treeItem > .title:HOVER {
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+}
+
+.treeItem > .title {
+    margin: 2px 4px 2px 24px;
+    padding: 0px 6px;
+    float: left;
+    border: 1px solid #eee;
+}
+
+.treeItem > .treeIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6px;
+    color: #999;
+}
+
+/*mainform*/
+.mainForm {
+    display: block;
+}
+
+.mainForm > .row {
+    position: relative;
+    min-height: 40px;
+}
+
+.mainForm > .row > .field {
+    position: absolute;
+    width: 120px;
+    top: 0;
+    left: 0;
+    height: 30px;
+    text-align: right;
+    padding: 3px 10px;
+}
+
+.mainForm > .row > .input {
+    margin-left: 120px;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+}
+
+table td {
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+    min-width: 50px;
+}
+
+table td.selectedTd {
+    text-align: center;
+    width: 40px;
+    min-width: 40px;
+}
+
+table td.headerTd {
+    text-align: center;
+    background-color: #E2EBEF;
+}
+
+/*图片文字块，分大和小两种类型*/
+/*关于图标展示的格式*/
+.iconConList > .iconCon {
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 3px;
+    margin: 5px;
+    background-color: #eee;
+    position: relative;
+}
+
+.iconConList > .iconCon.selected {
+    border: 1px solid #f54f00;
+}
+
+.iconConList > .iconCon > .delBtn {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-radius: 0 0 0 4px;
+    right: 0;
+    top: 0;
+}
+
+.iconConList > .iconCon:HOVER > .high, .iconConList > .iconCon > .high.icon-checkbox-checked {
+    display: block;
+}
+
+.iconConList > .iconCon > .high:HOVER {
+    box-shadow: 0 0 3px #aaa;
+}
+
+.iconConList > .iconCon > .high {
+    cursor: pointer;
+    display: none;
+    height: 26px;
+    width: 26px;
+    padding: 6px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.iconConList > .iconCon > .selectedBtn {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-radius: 0 0 4px 0;
+    right: 0;
+    bottom: 0;
+}
+
+.iconConList > .icon_max {
+    width: 180px;
+}
+
+.iconConList > .icon_min {
+    width: 100px;
+    height: 100px;
+}
+
+.iconConList > .iconCon > .title {
+    text-align: center;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    padding-right: 2px;
+}
+
+i.btn {
+    font-size: 18px;
+}
+
+.btn {
+    border: 1px solid #eee;
+    padding: 3px;
+    margin: 1px;
+}
+
+.btn:hover, .btn.selected {
+    border: 1px solid #777;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.loginMark {
+    background: url('/img/111.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
+#loginCon input {
+    border-radius: 4px;
+}
+
+#loginCon form {
+    width: 400px;
+    height: 280px;
+    margin: auto;
+    padding: 40px 10px;
+    background-color: rgba(60, 60, 60, 0.3);
+    border-radius: 10px;
+}

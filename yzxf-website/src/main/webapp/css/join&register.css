@@ -1,0 +1,242 @@
+
+.title{
+    font-size: 20px;
+    color: #454545;
+    margin: 0 0 10px 0;
+}
+
+.joinCon>div{
+    color: #676767;
+    margin: 10px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.joinCon input{
+    width: 220px;
+    height: 36px;
+    padding: 0 10px;
+    float: left;
+    font-size: 15px;
+}
+
+.joinCon span{
+    display: block;
+    width: 36%;
+    float: left;
+    text-align: right;
+    height: 35px;
+    line-height: 35px;
+}
+
+.joinCon>div>div{
+    width: 60%;
+    float: right;
+    text-align: left;
+}
+
+.joinCon>img{
+    width: 80px;
+}
+
+select{
+    width: 150px;
+    height: 35px;
+    font-size: 15px;
+}
+
+button{
+    min-width: 100px;
+    height: 36px;
+    background-color: #138bbe;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    font-size: 12px;
+}
+
+.message{
+    color: #BCBBBC;
+    line-height: 40px;
+}
+
+.errorButton{
+    margin-top: 30px;
+}
+
+.prompt{
+    display: none;
+    float: left;
+    margin-left: 40px;
+    line-height: 36px;
+    font-size: 12px;
+    position: relative;
+}
+
+.prompt img{
+    width: 15px;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+}
+
+.getCode{
+    margin-left: 20px;
+    background-color: #FF8C04;
+    float: left;
+}
+
+.upLoadInput{
+    width: 100px !important;
+    height: 100px !important;
+    padding: 0 !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    cursor: pointer;
+    float: left;
+}
+
+.upLoad{
+    border: 1px dashed #999;
+    width: 100px !important;
+    height: 100px !important;
+    padding: 0 !important;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    float:left;
+    margin: 0 10px 10px 0;
+}
+
+#dropUploadCon{
+    display: none;
+}
+
+.showImg{
+    width: 100px;
+    height: 100px;
+}
+
+#time{
+    width: 10px;
+}
+.prompt{
+    color: orange;
+}
+.prompt span{
+    width: auto;
+    float: right;
+    color: orange;
+}
+.textarea{
+    height: 100px;
+    resize: none;
+    outline: none;
+    border-radius: 0;
+    position: relative;
+    width: calc(100% - 188px);
+    margin-top: 7px;
+}
+.yingyeTime{
+    height: 40px;
+    width: 100%;
+}
+.yingyeTime>div{
+    float: left;
+}
+.yingyeTime>div:nth-child(2){
+    width: 130px;
+    height: 30px;
+    margin-top: 5px;
+}
+.yingyeTime>div:nth-child(2)>span{
+    text-align: center;
+    width: 25px;
+    margin: auto 5px;
+}
+
+.yingyeTime>div>div{
+    float: left;
+}
+.jiahao{
+    width: 20px;
+    height: 20px;
+    background: #4db76c;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 8px;
+    line-height: 22px;
+    cursor:pointer;
+}
+.jianhao{
+    width: 20px;
+    height: 20px;
+    background: #ec7a7a;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin: 8px 5px;
+    cursor:pointer;
+}
+
+.checkbox{
+    padding: 10px 0;
+}
+.checkbox label,.checkbox input{
+    width: auto;
+    height: auto;
+    line-height: 16px;
+    float:none;
+    cursor:pointer;
+}
+
+.fl{
+    float:left;
+}
+
+.map{
+    width: 100%;
+    height: 300px;
+    display:none;
+    overflow: hidden;
+    margin: 15px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.imgItem{
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    display: none;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #999;
+}
+.delImg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    color:#fff;
+    background: #888;
+    font-size: 100px;
+    transition:0.5s all;
+    cursor:pointer;
+    text-align: center;
+    line-height: 100px;
+}
+.imgItem:hover .delImg{
+    opacity: 0.7;
+}

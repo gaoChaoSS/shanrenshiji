@@ -1,0 +1,21 @@
+<div class="myNavRowDiv" ng-click="goPage('/my/my')" ng-class="titleText=='my'?'colorBlue1':''"><span>我的主页</span></div>
+<div class="myNavRowDiv" ng-click="goPage('/my/order')" ng-class="titleText=='order'?'colorBlue1':''"><span>订单管理</span></div>
+<div class="myNavRowDiv" ng-click="goPage('/my/collection')" ng-class="titleText=='collection'?'colorBlue1':''"><span>我的收藏</span></div>
+<div class="myNavRowDiv" ng-click="goPage('/my/comment')" ng-class="titleText=='comment'?'colorBlue1':''"><span>我的评价</span></div>
+<div class="myNavRowDivLast">
+    <span>我的账户</span>
+    <ul>
+        <li class="myNavLi" ng-click="goPage('/my/pensionMoney')" ng-class="titleText=='pensionMoney'?'myNavLiIn':''">
+            <span class="myNavLi-round"></span>我的养老金
+        </li>
+        <li class="myNavLi" ng-click="goPage('/my/wallet')" ng-class="titleText=='wallet'?'myNavLiIn':''">
+            <span class="myNavLi-round"></span>我的钱包
+        </li>
+        <li class="myNavLi" ng-click="goPage('/my/coupon')" ng-class="titleText=='coupon'?'myNavLiIn':''">
+            <span class="myNavLi-round"></span>我的卡券
+        </li>
+        <li class="myNavLi" ng-click="goPage('/my/setting')" ng-class="titleText=='setting'?'myNavLiIn':''">
+            <span class="myNavLi-round"></span>账户设置
+        </li>
+    </ul>
+</div>

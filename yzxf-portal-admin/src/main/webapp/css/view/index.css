@@ -1,0 +1,63 @@
+.center {
+    background-color: #fff;
+}
+
+.center.index_top {
+    background-color: #eee;
+    padding: 6px 12px;
+}
+
+.center.index_top>span {
+    font-size: 18px;
+}
+
+#leftMenu>.item>.title {
+    background-color: #444;
+    color: #fff;
+    padding: 8px 12px;
+    border-bottom: 4px solid #bbb;
+}
+
+#leftMenu>.item>.title:HOVER {
+    background-color: #000;
+}
+
+#leftMenu>.item>.items>a {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 10px 8px 20px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+#leftMenu>.item>.items>a.selected:AFTER {
+    content: "\ea1c";
+    position: absolute;
+    right: 0;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "icomoon";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+    top: 10px;
+    color: #aaa;
+}
+
+#leftMenu>.item>.items>a.selected,#leftMenu>.item>.items>a:HOVER {
+    background-color: #fff;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.deviceList>.item {
+    background-color: #eee;
+    margin: 8px 4px;
+    padding: 8px;
+    border-radius: 4px;
+}

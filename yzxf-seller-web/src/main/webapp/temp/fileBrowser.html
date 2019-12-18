@@ -1,0 +1,12 @@
+
+<div class="file-browser">
+    <input type="file" name="file" class="fileInput" onchange="angular.element(this).scope().fileSelect(this)" style="width: 0.1px; height: 0.1px; visibility: hidden; position: absolute; top: -30px">
+    <div id="{{layoutId}}" layout>
+        <div ng-hide="hideDir" data-type="left" size="180">
+            <div id="{{leftTreeId}}" tree-view tree-data="demo.tree" model="file" entity="FileDir" text-field="name" value-field='_id' select-type="none"></div>
+        </div>
+        <div data-type="center">
+            <div id="{{rightGridId}}" grid></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+package tutorial;
+
+option java_package = "com.zq.kyb.core.model";
+option java_outer_classname = "ProtoMessage";
+
+message message {
+    required string _id = 1;
+    required MsgType type = 2;
+    optional string creator = 3;
+    optional int64 createTime = 4;
+    required string actionPath = 5;
+    optional string tokenStr = 6;
+    required int32 code = 7;
+    optional MsgFormat reqContentType = 8 [default = JSON];
+    optional MsgFormat respContentType = 9 [default = JSON];
+
+    optional bytes contentByteArray = 10;
+    required string content = 11;
+
+    enum MsgType {
+        TYPE_NOTIFI = 0;
+        TYPE_REQ = 1;
+    }
+    enum MsgFormat {
+        JSON = 0;
+        BYTE = 1;
+    }
+
+}
+
+//message Book {
+//    repeated Person people = 1;
+//}

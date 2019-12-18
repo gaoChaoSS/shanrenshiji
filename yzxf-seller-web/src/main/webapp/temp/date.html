@@ -1,0 +1,49 @@
+<div class="dateCon">
+    <div class="dayList" ng-mousedown="$event.stopPropagation();">
+        <div style="text-align: center" ng-if="type=='dateTime'||type=='date'">
+            <div class="fl cell" ng-click="changeDate('year',currentYear-1);">&lt;&lt;</div>
+            <div class="fl cell" ng-click="changeDate('month',currentMonth-1);">&lt;</div>
+            <div class="fl cell3">
+                <div class="fl citem" ng-click="changeShowType('year');"
+                     ng-bind="currentYear+'年'"></div>
+                <div class="fl citem" style="width:50%;padding:6px 0;" ng-click="changeShowType('month');"
+                     ng-bind="(currentMonth+1)+'月'"></div>
+            </div>
+            <div class="fl cell" ng-click="changeDate('month',currentMonth+1);">&gt;</div>
+            <div class="fl cell" ng-click="changeDate('year',currentYear+1);">&gt;&gt;</div>
+            <div class="clearDiv"></div>
+        </div>
+        <div style="background-color: #eee;" ng-if="showType=='year'&&(type=='dateTime'||type=='date')">
+            <div class="fl cell year" ng-repeat="item in years" ng-bind="item" ng-class="item==currentYear?'num':''"
+                 ng-click="changeDate('year',item)"></div>
+            <div class="clearDiv"></div>
+        </div>
+        <div style="background-color: #eee;" ng-if="showType=='month'&&(type=='dateTime'||type=='date')">
+            <div class="fl cell month" ng-repeat="item in monthTitleNames" ng-bind="item+'月'"
+                 ng-class="item==currentMonth?'num':''"
+                 ng-click="changeDate('month',item-1)"></div>
+            <div class="clearDiv"></div>
+        </div>
+        <div class="fl item cell header" ng-repeat="item in weekTitleNames" ng-if="type=='dateTime'||type=='date'"
+             ng-bind="item"></div>
+        <div class="clearDiv"></div>
+        <div class="fl item cell" ng-repeat="item in dateList" ng-class="item.className"
+             ng-click="selectValue(item);$event.stopPropagation();" ng-if="type=='dateTime'||type=='date'"
+             ng-bind="item.dayStr"></div>
+        <div class="clearDiv"></div>
+        <div style="padding:6px;border-top:1px solid #ccc;text-align: center;">
+            <span class="notHigh" ng-show="type=='dateTime'||type=='time'"> 选择时间:
+            <select class="" ng-model="currentHours"
+                    ng-class="currentHoursError?'err':''"
+                    ng-options="item for item in HoursList"></select>
+            :
+            <select class="" ng-model="currentMinutes"
+                    ng-class="currentMinutesError?'err':''"
+                    ng-options="item for item in MinutesList"></select>
+            </span>
+            <button class="button highT" type="button" ng-click="selectTimeValue();$event.stopPropagation();">确定
+            </button>
+            <button class="button highN" type="button" ng-click="clearValue();$event.stopPropagation();">清除</button>
+        </div>
+    </div>
+</div>

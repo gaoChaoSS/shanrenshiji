@@ -1,0 +1,149 @@
+<form name="{{id}}" class="myform" ng-submit="saveData()">
+    <div class="buttonCon top" ng-show="!hideTopCon">
+        <button class="button iconfont icon-refresh" type="button" ng-click="genMDataAndQuery(null, true, fixMData)"
+                ng-disabled="data.$$add"
+                title="刷新数据"></button>
+        <button class="button iconfont icon-edit" type="button" ng-class="isEdit?'highM':''" title="编辑数据"
+                ng-click="isEdit=!isEdit"></button>
+    </div>
+    <div class="rowList" ng-style="{top:hideTopCon?0:30,bottom:hideDownCon||!isEdit?0:30}">
+        <div class="row" ng-repeat="item in headerRow">
+            <div class="title" title="{{item.$$title}}" ng-bind="item.$$title"></div>
+            <div class="inputCon">
+                <div class="value"
+                     ng-if="(!isEdit||item.readOnly)&&!item.$$isEntityObj&&!item.$$isFileObj&&item.inputType!='htmlEdit'"
+                     ng-class="showClass(item)"
+                     ng-bind="data['$$'+item.name]?data['$$'+item.name]:data[item.name]"></div>
+                <button class="button"
+                        ng-if="(!isEdit||item.readOnly)&&item.inputType=='htmlEdit'"
+                        ng-click="showHtmlEdit(item);"
+                        ng-bind="data['$$'+item.name]?data['$$'+item.name]:data[item.name]"></button>
+
+                <!-- ***关于编辑*** -->
+                <!-- input -->
+                <input ng-if="isEdit&&!item.readOnly&&item.inputType=='input'"
+                       placeholder="{{'输入'+item.title}}"
+                       ng-maxlength="item.maxLength"
+                       type="{{item.$$numberInput?'number':'text'}}"
+                       ng-minlength="item.minLength"
+                       ng-model="data[item.name]" ng-class="showClass(item)"
+                       maxlength="{{item.maxLength}}"
+                       ng-blur="blurInput(item)"
+                       ng-focus="focusInput(item)"
+                       minlength="{{item.minLength}}"
+                       ng-required="item.minLength>0"/> <!-- input -->
+                <!-- password -->
+                <input ng-if="isEdit&&data.$$add&&!item.readOnly&&item.inputType=='password'"
+                       type="password"
+                       placeholder="{{'输入'+item.title}}"
+                       ng-blur="$$fouce=null"
+                       ng-focus="$$fouce=item.name"
+                       ng-model="data[item.name]"
+                       ng-class="showClass(item)"
+                       ng-required="item.minLength>0"/>
+                <button class="button" ng-if="isEdit&&!data.$$add&&!item.readOnly&&item.inputType=='password'"
+                        type="button" ng-click="resetPassword(item.name);">重置...
+                </button>
+                <span class="notHigh"
+                      ng-if="isEdit&&!data.$$add&&!item.readOnly&&item.inputType=='password'&&data['$$pass_'+item.name]!=null">
+                    密码重置为: <span class="high" style="font-size: 25px;" ng-bind="data['$$pass_'+item.name]"></span>
+                </span>
+
+                <!-- file -->
+                <div myfile
+                     id="file_{{entity}}_{{item.name}}"
+                     ng-if="(item.inputType=='file'||item.inputType=='fileMore')"
+                     model="{{model}}"
+                     entity="{{entity}}"
+                     entity-field="{{item.name}}"
+                     entity-id="{{data._id}}"
+                     input-type="{{item.inputType}}"
+                     show-type="form"
+                     is-edit="isEdit"
+                     file-id="data[item.name]"></div>
+                <!-- boolean -->
+                <button ng-if="isEdit&&!item.readOnly&&item.inputType=='boolean'"
+                        class="button boolean"
+                        type="button"
+                        ng-blur="$$fouce=null"
+                        ng-focus="$$fouce=item.name"
+                        ng-click="data[item.name]=!data[item.name]"
+                        ng-class="showClass(item)"></button>
+                <!-- textarea -->
+                <textarea ng-if="isEdit&&!item.readOnly&&item.inputType=='textarea'"
+                          placeholder="{{'输入'+item.title}}"
+                          ng-maxlength="item.maxLength"
+                          ng-model="data[item.name]"
+                          ng-class="showClass(item)"
+                          ng-blur="$$fouce=null"
+                          ng-focus="$$fouce=item.name"
+                          maxlength="{{item.maxLength}}"
+                          ng-required="item.isNotNull"></textarea>
+                <!-- date -->
+                <input ng-if="isEdit&&!item.readOnly&&item.$$dateInput"
+                       placeholder="{{'选择'+item.title}}"
+                       ng-model="data['$$'+item.name]"
+                       ng-mousedown="$event.stopPropagation()"
+                       ng-blur="$$fouce=null"
+                       ng-focus="$$fouce=item.name"
+                       ng-class="showClass(item)"
+                       ng-required="item.minLength>0"
+                       ng-click="showDate(item)"
+                       ng-readonly="true"/>
+                <div date id="{{'date_'+entity+'_'+item.name}}"
+                     name="{{item.name}}"
+                     ng-if="isEdit&&!item.readOnly&&item.$$dateInput&&$$showDate==item.name"
+                     type="{{item.inputType}}"
+                     value="{{data['$$'+item.name]}}"
+                     style="top:30px;left:0px;right: auto;bottom:auto;"></div>
+                <!-- select -->
+                <select ng-if="isEdit&&!item.readOnly&&item.inputType=='select'"
+                        ng-model="data[item.name]"
+                        ng-blur="$$fouce=null"
+                        ng-focus="$$fouce=item.name"
+                        ng-required="item.minLength>0"
+                        ng-class="showClass(item)"
+                        ng-options="option._id as option.name for option in item.$$inputTypeList"></select>
+                <!--htmlEdit-->
+                <button class="button" ng-if="isEdit&&!item.readOnly&&item.inputType=='htmlEdit'"
+                        ng-click="showHtmlEdit(item)">
+                    编辑...
+                </button>
+                <!--linkEntity-->
+                <button
+                        ng-if="isEdit&&!item.readOnly&&item.inputType.startsWith('linkEntity')"
+                        type="button"
+                        class="button"
+                        ng-click="showSelectEntityWin(item)">选择...
+                </button>
+                <div class="value" ng-if="item.inputType=='linkEntity'" ng-class="showClass(item)"
+                     ng-bind="data['$$'+item.name].name"></div>
+                <div class="value linkItem" ng-if="item.inputType=='linkEntityMore'"
+                     ng-repeat="linkItem in data['$$'+item.name].items"
+                     style="padding:4px 8px;margin:2px;background-color: #eee;border-radius: 3px;position: relative">
+                    <div ng-bind="linkItem.$$name"></div>
+                    <div class="highT delLinkItem iconfont icon-addcollapse" ng-if="isEdit&&!item.readOnly"
+                         ng-click="delLinkItem(item,$index)"></div>
+                </div>
+
+                <div ng-if="isEdit&&item.$$showDesc&&(item.inputType=='input'||item.inputType=='textarea')&&!item.$$numberInput">
+                    <sapn class="notHigh" ng-show="item.minLength>1">最少输入:
+                        <span class="high" ng-bind="item.minLength"></span>字符,
+                    </sapn>
+                    <span class="notHigh" ng-show="data[item.name]!=null">
+                        还可输入:
+                        <span class="high" ng-bind="item.maxLength-data[item.name].length"></span>字符
+                    </span>
+                </div>
+                <div class="desc notHigh" style="padding:2px;"
+                     ng-if="isEdit&&!item.readOnly&&item.desc!=null&&item.desc!=''"
+                     ng-bind="item.desc"></div>
+            </div>
+            <div class="isNotNull high" ng-if="isEdit&&item.minLength>0">*</div>
+        </div>
+    </div>
+    <div class="buttonCon down" ng-show="!hideDownCon&&isEdit">
+        <button class="button" type="submit" ng-if="isEdit">提交</button>
+        <button class="button highN" type="button" ng-if="isEdit" ng-click="setNewData()">清空</button>
+    </div>
+</form>

@@ -1,0 +1,13 @@
+<table style="width:100%;">
+    <tr style="text-align: center;background-color: #eee">
+        <td style="width: 40px;"
+            ng-class="(headerRowObj.selectedRowCount<headerRowObj.items.length&&headerRowObj.selectedRowCount>0?'notHigh ':'')+(headerRowObj.selectedRowCount>0?'icon-checkbox-checked':'icon-checkbox-unchecked')"
+            ng-click="selectAll(headerRowObj)"></td>
+        <td style="font-weight: bold">栏位名称</td>
+    </tr>
+    <tr ng-repeat="item in headerRowObj.items" ng-style="{backgroundColor:item.$$selected?'#eee':''}">
+        <td style="text-align: center" ng-click="selectItem(headerRowObj,$index)"
+            ng-class="item.$$selected?'icon-checkbox-checked':'icon-checkbox-unchecked'"></td>
+        <td ng-bind="item.$$name+' ('+item.name+')'"></td>
+    </tr>
+</table>

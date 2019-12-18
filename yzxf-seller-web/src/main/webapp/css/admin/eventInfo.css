@@ -1,0 +1,752 @@
+.topCon {
+    padding: 4px;
+}
+
+.desc img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    padding: 5px 0;
+}
+
+#main .desc > p {
+    line-height: 30px;
+
+}
+
+.descDiv {
+    float: right;
+
+}
+
+.descDiv > .desc {
+    padding-bottom: 5px;
+}
+
+.descDiv > .desc > .text > .descCon {
+    position: inherit;
+    top: 0;
+    left: 0;
+    height: auto;
+    border: 0;
+}
+
+.descDiv > .desc > .button {
+    width: 25px;
+    float: left;
+}
+
+.descDiv > .desc > .button > button {
+    font-size: 15px;
+    padding: 2px;
+    height: 20px;
+}
+
+.descDiv > .desc > .text {
+    width: 92%;
+    float: left;
+}
+
+.descDiv > .desc > .text > .value {
+    line-height: 27px;
+    height: 78px;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    border: 0;
+    box-shadow: none;
+}
+
+#description, #eDescription {
+    font-size: 14px;
+    line-height: 1.42 !important;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.descDiv > .desc > .text > .value:focus {
+    border: 1px solid #ccc;
+
+}
+
+.leftCon, .rightCon {
+    min-height: 600px;
+    margin-top: 15px;
+}
+
+.mediaReportItem {
+    padding: 5px 20px;
+    list-style-type: circle;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.mediaReportItem p:hover {
+    cursor: pointer;
+    color: #ac0034;
+}
+
+.mediaReportItem > li, .mediaReportItem > li > a {
+    font-size: 15px;
+}
+
+.leftCon {
+    float: left;
+    width: 620px;
+}
+
+.rightCon {
+    float: right;
+    width: 330px;
+}
+
+.addPost {
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.addPost > div.tabCon > div.item {
+    float: left;
+    border-left: 2px solid #999;
+    padding-left: 8px;
+    margin-left: 8px;
+}
+
+.addPost > div.tabCon > div.item:FIRST-CHILD {
+    border-left: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.addPost > div.tabCon input {
+    padding: 0;
+    margin: 0;
+}
+
+.addPost label {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.projectInfo {
+    padding: 15px;
+    border-bottom: 1px solid #aaa;
+}
+
+.memberCon {
+    padding: 10px 0;
+}
+
+.memberCon > .item {
+    float: left;
+    padding: 5px 5px 5px 4px;
+    height: 40px;
+    margin: 1px;
+    border: 1px solid #fff;
+}
+
+.memberCon > .item:hover {
+    border: 1px solid #850029;
+}
+
+.memberCon a > span.name {
+    display: inline-table;
+    height: 22px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 80px;
+}
+
+.infoCon > .title {
+    text-transform: uppercase;
+    width: 120px;
+    float: left;
+    font-weight: bold;
+}
+
+.infoCon > .value {
+    color: #888;
+}
+
+.infoCon {
+    padding: 6px 0;
+}
+
+.actionBar > .title {
+    padding: 4px 12px 0 6px;
+    color: #fff;
+    float: left;
+}
+
+.actionBar:HOVER {
+    background-color: #fff;
+}
+
+.actionBar:HOVER > .title {
+    color: #444;
+}
+
+.bdshare_popup_bottom {
+    display: none;
+}
+
+#shareSpaceMain {
+
+}
+
+#shareSpaceMain ul.actions li {
+    display: inline-block;
+    margin: 0 .2em;
+    cursor: pointer;
+}
+
+#shareSpaceMain ul.actions li::before {
+    font-size: 1.2em;
+    padding: 0 0.3em 0 0.2em;
+}
+
+#shareSpaceMain .fa-chevron-left::before {
+    font-size: 1.2em;
+    padding: 0 0.3em 0 0.2em;
+    content: "\f053";
+}
+
+#shareSpaceMain .fa-chevron-right::before {
+    font-size: 1.2em;
+    padding: 0 0.3em 0 0.2em;
+    content: "\f054";
+}
+
+#shareSpaceMain ul.actions li.flag {
+    float: right;
+}
+
+#shareSpaceMain ul.actions li[data-active='true'], #shareSpaceMain ul.actions li.ACTIVE {
+    background-color: none;
+    color: #ad0035;
+}
+
+.preLeaveout, .endLeaveout {
+    color: #a92851;
+    display: none;
+}
+
+#shareSpacePage {
+    text-align: center;
+}
+
+#shareSpacePage > a {
+    background-color: #fff;
+    padding: 3px 6px;
+    margin: 0px 3px;
+    line-height: 0;
+    color: #a92851;
+    font-size: 12px;
+}
+
+#shareSpacePage > .selected {
+    background-color: #a92851;
+    color: #fff;
+}
+
+.share_space_item {
+    border: 1px solid #ddd;
+    float: left;
+    height: 330px;
+    margin-right: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+    width: 324px;
+}
+
+.share_space_item:HOVER {
+    box-shadow: 0 0 2px #a92851;
+    border: 1px solid #fff;
+}
+
+.share_space_item .shareSpaceImg {
+    height: 210px;
+    width: 324px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+.shareSpaceImg table {
+    height: 210px;
+    width: 100%;
+}
+
+.share_space_item .content {
+    color: #333;
+    font-size: 14px;
+    height: 40px;
+    line-height: 22px;
+    margin-top: 2px;
+    overflow: hidden;
+    padding: 5px 15px;
+    width: 246px;
+}
+
+.itemInfo > p a {
+    color: #ad0035;
+}
+
+.itemInfo > p {
+    padding: 5px 0px;
+}
+
+.itemInfo > p > span {
+    margin-right: 15px;
+}
+
+.rowItem {
+    margin: 15px 0;
+}
+
+.rowItem > .field {
+    float: left;
+    width: 34%;
+    line-height: 33px;
+    text-align: right;
+}
+
+.joinTemplateValue {
+    width: 64%;
+    float: right;
+    text-align: left;
+}
+
+.rowItem > .value {
+    float: left;
+    color: #666;
+    margin-top: -5px;
+    margin-left: 10px;
+    width: 63%;
+}
+
+#mailFile {
+    width: 100%;
+    opacity: 0.01;
+    top: 0px;
+    position: absolute;
+    left: 0px;
+}
+
+.groupName {
+    background-color: #ad0035;
+    color: #eee;
+    float: left;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding: 4px;
+}
+
+#imgshow {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: #333;
+    padding: 5px;
+    color: #fff;
+    display: none;
+}
+
+#replyToAddr {
+    margin-top: -5px;
+
+}
+
+.rowItem > .rightValue {
+    margin-left: 5px;
+}
+
+.prePhoto {
+    position: absolute;
+    top: 53px;
+    font-size: 100px;
+    color: #aaa;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.prePhoto:hover {
+    cursor: pointer;
+    color: #ddd;
+}
+
+.showFullImgCon:hover .changePhoto {
+    display: block;
+}
+
+.changePhoto {
+    position: absolute;
+    top: 53px;
+    font-size: 55px;
+    color: #aaa;
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+}
+
+.changePhoto:hover {
+    cursor: pointer;
+    color: #ddd;
+}
+
+.projectClose {
+    cursor: pointer;
+    height: 36px;
+    position: absolute;
+    width: 36px;
+    z-index: 8040;
+    margin-left: 650px;
+    margin-top: -54px;
+}
+
+.cancelProject {
+    margin-right: 20px;
+    float: left;
+}
+
+.block .photoCon {
+    padding: 10px 0;
+}
+
+.block .memberTitle {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+}
+
+.totalCeter {
+    text-align: center;
+    padding: 15px 0;
+}
+
+#relatedEventMain {
+    margin-top: 20px;
+}
+
+#relatedEventMain > .item {
+    max-width: 600px;
+}
+
+#relatedEventMain > .item > .fieldName > .nameTitle {
+    font-size: 15px;
+}
+
+#relatedEventMain > .item {
+    max-width: 600px;
+}
+
+#relatedEventMain > .item .relatedEventBtn {
+    margin-left: 30px;
+}
+
+.projectItem {
+    float: left;
+    width: 209px;
+    height: 280px;
+    margin-right: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 15px;
+    position: relative;
+}
+
+.projectItem:HOVER {
+    border: 1px solid #ad0035;
+}
+
+.projectItem .imgLink {
+    line-height: 0;
+}
+
+.projectItem:HOVER .projectTitle > a {
+    color: #C48297;
+}
+
+.projectItem > .projectTitle {
+    padding-top: 15px;
+    overflow: hidden;
+    height: 46px;
+}
+
+.projectItem > .projectTitle > a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.projectItem .projectImg {
+    height: 180px;
+    width: 100%;
+}
+
+.relateEventUl {
+    margin-top: 5px;
+}
+
+.relateEventUl > li {
+    list-style: none;
+    padding: 3px 0;
+}
+
+.relateEventUl > li > a {
+    font-size: 14px;
+}
+
+.shareSpaceImg table .img {
+    max-width: 280px;
+    max-height: 210px;
+}
+
+.shareSpaceImg table .smallImg {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.shareSpaceImg table .smallImg {
+    display: none;
+}
+
+.btuP {
+    background: #a5a5a5;
+    color: #fff;
+    text-shadow: none;
+}
+
+.btuP:hover {
+    background: #aaa;
+    border: 1px solid #aaa;
+}
+
+#fullPhotoDiv p.desc {
+    position: absolute;
+    background: #666;
+    opacity: 0.8;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 4px;
+}
+
+.gridtable {
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: #333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+
+.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+
+.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.addLeftCon {
+    float: left;
+    width: 16%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.addLeftCon .selected {
+    background-color: #ad0035;
+    color: #fff;
+    width: 80%;
+    padding: 5px;
+    height: 18px;
+}
+
+.content > .item {
+    margin-bottom: 15px;
+}
+
+.content > .item > .fieldName {
+    float: left;
+    width: 15%;
+}
+
+#editShareSpaceForm .content > .item > .fieldName {
+    float: none;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+#editShareSpaceForm .content > .item .allowedToJoin {
+    margin: 10px 0;
+}
+
+.content > .item > .valueCon {
+    float: right;
+    width: 85%;
+}
+
+.content > .item div input {
+    margin-top: -6px;
+    width: 75%;
+}
+
+.projectMemberDiv {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    width: 93%;
+    margin-left: 0px;
+}
+
+.cancelEvent {
+    margin-right: 20px;
+    float: left;
+}
+
+.frEventCon {
+    float: right;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.commonValue {
+    margin-top: -6px;
+    width: 63.5%;
+    float: left;
+    margin-left: 6px;
+}
+
+.editProejctFlCon .choosed {
+    color: #ad0035;
+}
+
+.popWin > .ponBtn {
+    position: absolute;
+    bottom: 42px;
+    right: 25px;
+}
+
+.popWin > .ponBtn > button {
+    margin-left: 5px;
+}
+
+.shareSetting {
+    border: 1px solid #ccc;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 20px;
+}
+
+.shareSetting > .settingBtn {
+    float: right;
+    margin-right: 20px;
+}
+
+.addBtn > button {
+    float: left;
+    margin-left: 15px;
+}
+
+.createAlbumCon > .albumBtn > input {
+    width: 160px !important;
+    margin: 5px !important;
+}
+
+.createAlbumCon > .albumItem {
+    float: left;
+    border: 2px solid #ccc;
+    margin: 5px;
+    padding: 5px 8px 5px 12px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.createAlbumCon > .albumItem:hover, .createAlbumCon > .albumItem.selected {
+    border: 2px solid #ad0035;
+    cursor: pointer;
+}
+
+.createAlbumCon > .albumItem > a {
+    margin-left: 10px;
+}
+
+.albumShareItem .imgCon {
+    float: left;
+    border: 2px solid #ccc;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.albumShareItem .imgCon:hover, .albumShareItem .imgCon.selected {
+    border: 2px solid #ad0035;
+    cursor: pointer;
+}
+
+.frEventCon > .naviCon > .selected {
+    color: #ad0035;
+}
+
+.department > label > input {
+    width: 15px !important;
+    margin-top: 4px !important;
+    margin-left: 5px;
+    height: 20px;
+}
+
+#downloadFrom .table {
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 70%;
+    overflow: auto;
+
+}
+.commodityIcon {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #bbb;
+    margin: 15px 5px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.commodityIcon > img {
+    width: 100%;
+    height: 100%;
+}
+
+.commodityIcon > .del {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 0 0 4px;
+    background-color: red;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+}

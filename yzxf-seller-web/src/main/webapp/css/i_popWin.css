@@ -1,0 +1,68 @@
+.popWin {
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 2px #ddd;
+    max-width: 780px;
+}
+
+.popWin.max {
+    width: auto !important;
+    height: auto !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    max-width: none !important;
+}
+
+.popWin > .layout > .top {
+    background-color: #ddd;
+}
+
+.popWin > .layout > .top > .title {
+    padding: 4px 6px;
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.popWin > .layout > .top > .layout > .right {
+    font-size: 11px;
+    padding: 8px;
+    border: 0 solid #ccc;
+    border-left-width: 1px;
+    background-color: #ddd;
+    border-radius: 0;
+}
+
+.popWin > .layout > .top > .layout > .right.max > div {
+    border: 2px solid #444;
+    height: 11px;
+}
+
+.popWin > .layout > .top > .layout > .right.max:HOVER > div {
+    border: 2px solid #fff;
+}
+
+.popWin > .layout > .top > .layout > .right:HOVER {
+    background-color: #444;
+    color: #fff;
+}
+
+.popWin > .layout > .bottom {
+    background-color: #ddd;
+    text-align: center;
+}
+
+.mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.7;
+}

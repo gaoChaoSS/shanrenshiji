@@ -1,0 +1,640 @@
+/*顶部标题*/
+/*.title_section *{*/
+    /*padding:0;*/
+    /*margin:0;*/
+/*}*/
+.title_section a{
+    text-decoration: none;
+}
+/*顶部标题*/
+.title_section .title {
+    position:relative;
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    /*margin-bottom:20px;*/
+}
+.title_section .titleStoreAddress {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 2%;
+    color: #999;
+}
+.title_section .titleBottom {
+    position:relative;
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+/*标题*/
+.title_section .titleRed{
+    background:#268BBF;
+    color:#fff;
+}
+/*margin-bottom 10px*/
+.title_section .titleRedBottom{
+    background:#268BBF;
+    color:#fff;
+    margin-bottom: 10px;
+}
+/*顶部标题左侧地址按钮*/
+.title_section .titleAddress{
+    left:0;
+    color:#fff;
+}
+.title_section .titleAddressTwo{
+    left: 15px;
+    position: absolute;
+    line-height: 40px;
+    font-size: 22px;
+}
+.title_section .titleAddress>span{
+    font-size:18px;
+    color:#fff;
+}
+.title_section .titleAddressTwo>span{
+    font-size:18px;
+    color:#000;
+}
+/*顶部标题左侧返回按钮*/
+.title_section .titleBack{
+    font-size:20px;
+    left:0;
+}
+/*顶部标题右侧按钮*/
+.title_section .titleManage{
+    font-size:14px;
+    right:0;
+}
+.title_section .titleBack,.title_section .titleManage,.title_section .titleAddress{
+    position:absolute;
+    top:0;
+    float:left;
+    padding:0 10px;
+    height:45px;
+    line-height:45px;
+}
+.title_section .titleRight {
+    position: absolute;
+    top: 0px;
+    height: 45px;
+    line-height: 45px;
+    right: 15px;
+}
+.title_section .titleRight >span{
+    color: #fff;
+    font-size: 22px;
+}
+/*如果顶部有两个可切换页面的标题按钮*/
+.title_section .titleTwo{
+    margin:0 auto;
+    width:70%;
+}
+/*如果顶部有3个可切换页面的标题按钮*/
+.title_section .titleThree{
+    margin:0 auto;
+    width:90%;
+}
+/*标题文字*/
+.title_section .titleText{
+    display:inline-block;
+    height:45px;
+    line-height:45px;
+    color:#fff;
+    font-size:18px;
+    width:25%;
+    box-sizing:border-box;
+}
+.title_section .titleTextTwo{
+    color:#555;
+}
+/*商品自营标志靠右相对定位*/
+.title_section .abRight{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*已选中1:白色下边框*/
+.title_section .titleTextCheck{
+    border-bottom:3px solid #fff;
+}
+/*已选中2:蓝色下边框*/
+.title_section .titleTextCheckRed {
+    color:#268BBF;
+    border-bottom:3px solid #268BBF;
+}
+
+/*"我的"页面*/
+/*页面头部粉色部分*/
+.my_page_myHead{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image:url('/yzxfMember_page/img/myHeadBG.jpg');
+    background-size:100%,100%;
+}
+.my_page_myHead>.my_page_myHead_left{
+    color: #F2F2F2;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    font-size: 30px;
+}
+.my_page_myHead_div{
+    margin: 22px auto 0px;
+    width: 100px;
+    height: 100px;
+}
+.my_page_myHead_img{
+    width: 100%;
+    height: 100%;
+    border-radius:50px;
+    border: solid #FFFFFF 2px;
+}
+.my_page_myHead>.my_page_myHead_right{
+    color: #f2f2f2;
+    position: absolute;
+    right: 25px;
+    top: 11px;
+    font-size: 32px;
+}
+/*登陆注册按钮*/
+.my_page_myHead_loginReg{
+    text-align: center;
+    bottom: 14px;
+    margin-top: 10px;
+}
+.my_page_myHead_loginRegText{
+    color: #f2f2f2;
+}
+.my_page_myHead_loginRegText > a {
+    font-size: 16px;
+    text-decoration:none;
+    color: #f2f2f2;
+}
+/*商家版商家页面*/
+/*商家模糊样式*/
+.store_page_storeHead{
+    width: 100%;
+    height: 188px;
+    overflow: hidden;
+    position: relative;
+    /*background:url('/yzxfSeller_page/img/notImg02.jpg')no-repeat center center;*/
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:100% 100%;
+}
+/*背景图模糊*/
+.storeHeadBlur{
+    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+/*商家头部样式2*/
+.store_page_Head{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.store_page_Head>.store_page_Head_right{
+    color: #f2f2f2;
+    position: absolute;
+    right: 25px;
+    top: 11px;
+    font-size: 32px;
+    text-shadow: 0 0 3px #000;
+}
+.store_page_Head>.store_page_Head_left{
+    color: #fff;
+    position: absolute;
+    left: 5px;
+    top: 18px;
+    font-size: 18px;
+    text-shadow: 0 0 3px #000;
+}
+.btn1{
+    padding: 4px 20px;
+    background: #F19041;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 0 2px;
+    transition: 0.5s all;
+    cursor: pointer;
+    outline: none;
+}
+
+/*字体颜色*/
+/*深蓝色*/
+.title_section .deepBlue{color:#123F9C;}
+.title_section .colorBlue {color:#138bbe;}
+/*宝蓝色*/
+.title_section .dodgerBlue {color:#3F99ED;}
+/*浅蓝色*/
+.title_section .skyBlue {color:#4AD9EB;}
+/*橘红色*/
+.title_section .orangeRed {color:#F2765D;}
+.title_section .orangeRed2{color:#FA9479;}
+.title_section .orangeRed3{color: #fa554c;}
+/*土黄色*/
+.title_section .loessYellow{color:#FBBA00;}
+.title_section .littleYellow{color:#E9B965;}
+/*黑色*/
+.title_section .black {color: #000;}
+/*亮红*/
+.title_section .errorRed {color:red;}
+/*深红*/
+.title_section .deepRed {color: #D81F07;}
+/*石灰绿/微信绿*/
+.title_section .limeGreen {color:limegreen;}
+/*#eee灰色*/
+.title_section .grayeee{color:#eee;}
+/*#aaa灰色*/
+.title_section .grayaaa{color:#aaa;}
+/*#333灰色*/
+.title_section .gray333{color:#333;}
+.title_section .gray444{color:#444;}
+/*#666灰色*/
+.title_section .gray666{color:#666;}
+/*#888灰色*/
+.title_section .gray888{color:#888;}
+/*白色*/
+.title_section .whitefff{color:#fff;}
+
+/*字体大小:12*/
+.title_section .textSize12{font-size:12px;}
+/*字体大小:13*/
+.title_section .textSize13{font-size:13px;}
+/*字体大小:15*/
+.title_section .textSize15{font-size:15px;}
+/*字体大小:16*/
+.title_section .textSize16{font-size:16px;}
+/*字体大小:18*/
+.title_section .textSize18{font-size:18px;}
+.title_section .textSize20{font-size:20px;}
+/*字体大小:22*/
+.title_section .textSize22{font-size:22px;}
+.title_section .textSize25{font-size:25px;}
+.title_section .textSize28{font-size:28px;}
+/*字体大小:30*/
+.title_section .textSize30{font-size:30px;}
+/*字体大小:50*/
+.title_section .textSize50{font-size:50px;}
+.title_section .textSize70{font-size:70px;}
+.title_section .textSize85{font-size:85px;}
+.title_section .textSize130{font-size:130px;}
+
+/*20行高*/
+.title_section .lineHeight20{line-height:20px;}
+/*25行高*/
+.title_section .lineHeight25{line-height:25px;}
+/*30行高*/
+.title_section .lineHeight30{line-height:30px;}
+/*33行高*/
+.title_section .lineHeight33{line-height:33px;}
+/*45行高*/
+.title_section .lineHeight40{line-height:40px;}
+.title_section .lineHeight45{line-height:45px;}
+/*50行高*/
+.title_section .lineHeight50{line-height:50px;}
+/*55行高*/
+.title_section .lineHeight55{line-height:55px;}
+/*70行高*/
+.title_section .lineHeight70{line-height:70px;}
+/*100行高*/
+.title_section .lineHeight100{line-height:100px;}
+
+/*高度*/
+.title_section .rowHeight20 {height:20px;}
+.title_section .rowHeight50 {height:50px;}
+/*最小高度*/
+.title_section .rowMinHeight20{min-height:20px;}
+
+/*左边距*/
+.title_section .mainRowLeft0 {margin-left:0;}
+.title_section .mainRowLeft5 {margin-left:5px;}
+.title_section .mainRowLeft10 {margin-left:10px;}
+.title_section .mainRowLeft25 {margin-left:25px;}
+.title_section .mainRowLeft70 {margin-left:70px;}
+.title_section .mainRowLeft80 {margin-left:80px;}
+.title_section .mainRowLeft135 {margin-left:135px;}
+.title_section .mainRowLeftB15 {margin-left:15%;}
+.title_section .mainRowLeftB25 {margin-left:25%;}
+.title_section .mainRowLeftB40 {margin-left:40%;}
+/*上边距*/
+.title_section .mainRowTop5 {margin-top:5px;}
+.title_section .mainRowTop10 {margin-top:10px;}
+.title_section .mainRowTop20 {margin-top:20px;}
+.title_section .mainRowTop215 {margin-top:215px;}
+.title_section .mainRowTop50 {margin-top:50px;}
+/*右边距*/
+.title_section .mainRowRight10{margin-right:10px;}
+.title_section .mainRowRight20{margin-right:20px;}
+/*下边距*/
+.title_section .mainRowBottom10 {margin-Bottom:10px;}
+.title_section .mainRowBottom20 {margin-Bottom:20px;}
+/*定位右边距*/
+.title_section .mainRowRightP40{right:40px;font-size: 15px}
+.title_section .mainRowRightP100{right: 100px;font-size: 15px}
+
+.title_section .mainRowTopBottom20{margin:20px auto;}
+
+/*左浮动*/
+.title_section .floatLeft{float:left;}
+/*右浮动*/
+.title_section .floatRight{float:right;}
+
+/*背景颜色*/
+/*橘红色*/
+.title_section .bgOrange{background: #E75352;}
+.title_section .bgRed2{background: #FE1F44;}
+.title_section .bgOrange2{background: #de9999;}
+/*紫红色*/
+.title_section .bgPurpleRed{background:#C71F6B;}
+/*白色*/
+.title_section .bgWhite{background:#fff;}
+/*蓝色*/
+/*.title_section .bgBlue{background: #0080ff;}*/
+/*绿色*/
+.title_section .bgGreen{background:limegreen}
+.title_section .bgGreen2{background: #7fcd81}
+/*蓝色*/
+.title_section .bgBlue{background:#138bbe;}
+.title_section .bgBlue2{background:#111727;}
+.title_section .bgBlue3{background:#4E7FDD;}
+.title_section .bgRed{background:#E75452;}
+.title_section .bgYellow{background:#f1ae59;}
+.title_section .bgGray{background:#aaa;}
+/*灰色*/
+.title_section .bgGrayeee{background:#eee;}
+.title_section .bgGrayddd{background:#ddd;}
+.title_section .bgGrayccc{background:#ccc;}
+.title_section .bgGraybbb{background:#bbb;}
+.title_section .bgGrayaaa{background:#aaa;}
+.title_section .bgNone{background:none;}
+
+/*文本居中*/
+.title_section .textCenter{text-align: center}
+/*文本居右*/
+.title_section .textRight{text-align: right}
+/*文本间距*/
+.title_section .textSpacing10{letter-spacing:10px}
+/*上边框线*/
+.title_section .rowBorderTop{border-top:1px solid #ddd;}
+/*下边框线*/
+.title_section .rowBorderBottom{border-bottom:1px solid #ddd;}
+
+/*首行缩进*/
+.title_section .textIndent30{text-indent:30px;}
+
+/*圆角*/
+.title_section .radius5{border-radius:5px;}
+
+/*内边距*/
+/*下内边距:无*/
+.title_section .paddingBottomNot{padding-bottom:0!important;}
+.title_section .paddingBottom10{padding-bottom:10px;}
+.title_section .paddingBottom50{padding-bottom:50px;}
+/*上下内边距*/
+.title_section .paddingTopBottom50{padding:50px 0}
+.title_section .paddingRight{padding-right:20px}
+/*红色边框*/
+.title_section .borderRed{border:1px solid red;}
+.title_section .borderBlue{border:1px solid #138bbe;}
+/*灰色虚线下边框*/
+.title_section .borderBottomGray{border-bottom:1px dashed #ddd;}
+
+/*下边框虚线*/
+.title_section .rowDashedBottom {border-bottom: 1px dashed #ddd;  }
+
+/*红色上边框线*/
+.title_section .borderTopRed{border-top: 84px solid #138bbe;}
+.title_section .borderTopGray{border-top: 84px solid #aaa;}
+.title_section .borderTopYellow{border-top: 84px solid #f1ae59;}
+
+/*溢出元素:隐藏*/
+.title_section .overflowHidden{overflow: hidden;}
+/*溢出元素:自动*/
+.title_section .overflowAuto{overflow: auto;}
+/*清除浮动*/
+.title_section .clearLeft{clear:left;}
+.title_section .clearRight{clear:right;}
+
+/*相对定位*/
+.title_section .positionRelative{position:relative;}
+
+/*百分比固定宽度*/
+.title_section .widthPercent20{width:30%;}
+.title_section .widthPercent40{width:40%;}
+/*百分比固定宽度Hidden*/
+.title_section .widthPercent20H{width:20%;overflow: hidden}
+
+/*大图标*/
+.title_section .iconBig{
+    font-size:18px;
+    color:#999;
+}
+/*行:超出文本省略*/
+.title_section .textEllipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*发卡页面标题*/
+.form_section .cardTitle{
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    height: 45px;
+    color: #fff;
+    text-align: center;
+}/*发卡页面标题按钮*/
+.form_section .cardTitleBtn{
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    right: 10px;
+    top: 10px;
+    background-color: #3E89A8;
+    border-radius: 40px;
+    width: 20%;
+}
+/*内容为空时显示的提示框*/
+.title_section .isNullBox{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #ccc;
+    width: 80%;
+    height: 100px;
+    line-height: 100px;
+    margin: 50px auto;
+}
+.title_section .isNullBox>div{
+    font-weight: 900;
+    font-size: 70px;
+    color: #ccc;
+}
+
+.loadingBk{
+    background: url('/yzxfSeller_page/img/qidongye.jpg') center center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+    width:100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*flex布局1:不确定宽高上下左右垂直水平居中*/
+.flex1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*flex布局2:水平排列,一行不够换行*/
+.flex2{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*flex布局3:不确定宽高上下左右垂直两端居中*/
+.flex3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+/*flex布局4:垂直排列*/
+.flex4{
+    display:flex;
+    flex-direction:column;
+}
+/*flex布局5:在x轴上以顶部对齐*/
+.flex5{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.title-fixed{
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 3px #ccc;
+    z-index: 9;
+}
+
+.article{
+    padding: 5% 5% 100px 5%;
+}
+.article>h6{
+    margin-top:10px;
+    font-size: 16px;
+}
+
+.form_section .mod-bottom1{
+    position:fixed;
+    bottom:48px;
+    left:0;
+    border:1px solid #eee;
+    border-left:none;
+    border-right:none;
+    width:100%;
+    height:50px;
+    overflow:hidden;
+    background:#fff;
+    z-index:1;
+}
+.form_section .bottom1-btn{
+    float:right;
+    background:#138bbe;
+    color:#fff;
+    width:25%;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    font-size:18px;
+}
+
+.article::-webkit-scrollbar {
+    width: 0;
+}
+
+.hide-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    padding: 10px 10%;
+}
+.hide-bottom>button{
+    position:relative;
+    display: block;
+    background: #fff;
+    color: #666;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    width: 100%;
+    margin: 10px 0;
+    line-height: 30px;
+}
+
+.hide-bottom input{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+/*弹窗动画*/
+.alert-anim-close {
+    animation: alert-close 0.5s cubic-bezier(0.9, 0.1, 0, 1.01);
+}
+
+@keyframes alert-close {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+}
+
+/*弹出框动画*/
+.alert-anim {
+    animation: alert-show 0.5s cubic-bezier(0.9, 0.1, 0, 1.01);
+}
+
+@keyframes alert-show {
+    0% {
+        transform: scale(0.2);
+        opacity: 0.2;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
